@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_4aR7kCRWEeemuIjPBnO6cQ" defaultContext="Default" jobType="Big_Data_Batch" framework="Spark">
+  <context xmi:id="_4aR7kSRWEeemuIjPBnO6cQ" confirmationNeeded="false" name="Default"/>
+  <parameters xmi:id="_4aR7kiRWEeemuIjPBnO6cQ">
+    <elementParameter xmi:id="_4aR7kyRWEeemuIjPBnO6cQ" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_4aR7lCRWEeemuIjPBnO6cQ" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_4aR7lSRWEeemuIjPBnO6cQ" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_4aR7liRWEeemuIjPBnO6cQ" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_4aR7lyRWEeemuIjPBnO6cQ" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_4aR7mCRWEeemuIjPBnO6cQ" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_4aR7mSRWEeemuIjPBnO6cQ" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_4aR7miRWEeemuIjPBnO6cQ" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_4aR7myRWEeemuIjPBnO6cQ" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_4aR7nCRWEeemuIjPBnO6cQ" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_4aR7nSRWEeemuIjPBnO6cQ" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_4aR7niRWEeemuIjPBnO6cQ" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_4aR7nyRWEeemuIjPBnO6cQ" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_4aR7oCRWEeemuIjPBnO6cQ" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_4aR7oSRWEeemuIjPBnO6cQ" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_4aR7oiRWEeemuIjPBnO6cQ" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_4aR7oyRWEeemuIjPBnO6cQ" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_4aR7pCRWEeemuIjPBnO6cQ" field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter xmi:id="_4aR7pSRWEeemuIjPBnO6cQ" field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter xmi:id="_4aR7piRWEeemuIjPBnO6cQ" field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter xmi:id="_4aR7pyRWEeemuIjPBnO6cQ" field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter xmi:id="_4aR7qCRWEeemuIjPBnO6cQ" field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter xmi:id="_4aR7qSRWEeemuIjPBnO6cQ" field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR7qiRWEeemuIjPBnO6cQ" field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR7qyRWEeemuIjPBnO6cQ" field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR7rCRWEeemuIjPBnO6cQ" field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR7rSRWEeemuIjPBnO6cQ" field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter xmi:id="_4aR7riRWEeemuIjPBnO6cQ" field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter xmi:id="_4aR7ryRWEeemuIjPBnO6cQ" field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter xmi:id="_4aR7sCRWEeemuIjPBnO6cQ" field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter xmi:id="_4aR7sSRWEeemuIjPBnO6cQ" field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR7siRWEeemuIjPBnO6cQ" field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter xmi:id="_4aR7syRWEeemuIjPBnO6cQ" field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR7tCRWEeemuIjPBnO6cQ" field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR7tSRWEeemuIjPBnO6cQ" field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR7tiRWEeemuIjPBnO6cQ" field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR7tyRWEeemuIjPBnO6cQ" field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR7uCRWEeemuIjPBnO6cQ" field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR7uSRWEeemuIjPBnO6cQ" field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR7uiRWEeemuIjPBnO6cQ" field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR7uyRWEeemuIjPBnO6cQ" field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_4aR7vCRWEeemuIjPBnO6cQ" field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR7vSRWEeemuIjPBnO6cQ" field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR7viRWEeemuIjPBnO6cQ" field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR7vyRWEeemuIjPBnO6cQ" field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter xmi:id="_4aR7wCRWEeemuIjPBnO6cQ" field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter xmi:id="_4aR7wSRWEeemuIjPBnO6cQ" field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR7wiRWEeemuIjPBnO6cQ" field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR7wyRWEeemuIjPBnO6cQ" field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR7xCRWEeemuIjPBnO6cQ" field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR7xSRWEeemuIjPBnO6cQ" field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter xmi:id="_4aR7xiRWEeemuIjPBnO6cQ" field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter xmi:id="_4aR7xyRWEeemuIjPBnO6cQ" field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter xmi:id="_4aR7yCRWEeemuIjPBnO6cQ" field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR7ySRWEeemuIjPBnO6cQ" field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR7yiRWEeemuIjPBnO6cQ" field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/Administrator/workspace/.metadata&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR7yyRWEeemuIjPBnO6cQ" field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR7zCRWEeemuIjPBnO6cQ" field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR7zSRWEeemuIjPBnO6cQ" field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR7ziRWEeemuIjPBnO6cQ" field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter xmi:id="_4aR7zyRWEeemuIjPBnO6cQ" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter xmi:id="_4aR70CRWEeemuIjPBnO6cQ" field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR70SRWEeemuIjPBnO6cQ" field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter xmi:id="_4aR70iRWEeemuIjPBnO6cQ" field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter xmi:id="_4aR70yRWEeemuIjPBnO6cQ" field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR71CRWEeemuIjPBnO6cQ" field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter xmi:id="_4aR71SRWEeemuIjPBnO6cQ" field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR71iRWEeemuIjPBnO6cQ" field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR71yRWEeemuIjPBnO6cQ" field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR72CRWEeemuIjPBnO6cQ" field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR72SRWEeemuIjPBnO6cQ" field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR72iRWEeemuIjPBnO6cQ" field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR72yRWEeemuIjPBnO6cQ" field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR73CRWEeemuIjPBnO6cQ" field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR73SRWEeemuIjPBnO6cQ" field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR73iRWEeemuIjPBnO6cQ" field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_4aR73yRWEeemuIjPBnO6cQ" field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR74CRWEeemuIjPBnO6cQ" field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR74SRWEeemuIjPBnO6cQ" field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR74iRWEeemuIjPBnO6cQ" field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR74yRWEeemuIjPBnO6cQ" field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter xmi:id="_4aR75CRWEeemuIjPBnO6cQ" field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter xmi:id="_4aR75SRWEeemuIjPBnO6cQ" field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter xmi:id="_4aR75iRWEeemuIjPBnO6cQ" field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR75yRWEeemuIjPBnO6cQ" field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter xmi:id="_4aR76CRWEeemuIjPBnO6cQ" field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR76SRWEeemuIjPBnO6cQ" field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_4aR76iRWEeemuIjPBnO6cQ" field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter xmi:id="_4aR76yRWEeemuIjPBnO6cQ" field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter xmi:id="_4aR77CRWEeemuIjPBnO6cQ" field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter xmi:id="_4aR77SRWEeemuIjPBnO6cQ" field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR77iRWEeemuIjPBnO6cQ" field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_4aR77yRWEeemuIjPBnO6cQ" field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter xmi:id="_4aR78CRWEeemuIjPBnO6cQ" field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <elementParameter xmi:id="_4aR78SRWEeemuIjPBnO6cQ" field="CHECK" name="SPARK_LOCAL_MODE" value="false"/>
+    <elementParameter xmi:id="_4aR78iRWEeemuIjPBnO6cQ" field="CLOSED_LIST" name="SPARK_LOCAL_VERSION" value="SPARK_2_0_0" show="false"/>
+    <elementParameter xmi:id="_4aR78yRWEeemuIjPBnO6cQ" field="TECHNICAL" name="MR_PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter xmi:id="_4aR79CRWEeemuIjPBnO6cQ" field="TECHNICAL" name="MR_PROPERTY:REPOSITORY_PROPERTY_TYPE" value="__Gd-ABflEeey88ZHeG1iIA" show="false"/>
+    <elementParameter xmi:id="_4aR79SRWEeemuIjPBnO6cQ" field="CLOSED_LIST" name="DISTRIBUTION" value="CLOUDERA"/>
+    <elementParameter xmi:id="_4aR79iRWEeemuIjPBnO6cQ" field="CLOSED_LIST" name="SPARK_VERSION" value="Cloudera_CDH5_8"/>
+    <elementParameter xmi:id="_4aR79yRWEeemuIjPBnO6cQ" field="HADOOP_DISTRIBUTION" name="SPARKBATCH" value=""/>
+    <elementParameter xmi:id="_4aR7-CRWEeemuIjPBnO6cQ" field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter xmi:id="_4aR7-SRWEeemuIjPBnO6cQ" field="LABEL" name="NOTE" value="** The version of Spark must be 1.3.0 or later." show="false"/>
+    <elementParameter xmi:id="_4aR7-iRWEeemuIjPBnO6cQ" field="CLOSED_LIST" name="SPARK_API_VERSION" value="SPARK_200" show="false"/>
+    <elementParameter xmi:id="_4aR7-yRWEeemuIjPBnO6cQ" field="CLOSED_LIST" name="SPARK_MODE" value="YARN_CLIENT"/>
+    <elementParameter xmi:id="_4aR7_CRWEeemuIjPBnO6cQ" field="TEXT" name="RESOURCE_MANAGER" value="&quot;10.128.88.12:8032&quot;"/>
+    <elementParameter xmi:id="_4aR7_SRWEeemuIjPBnO6cQ" field="CHECK" name="SET_SCHEDULER_ADDRESS" value="true"/>
+    <elementParameter xmi:id="_4aR7_iRWEeemuIjPBnO6cQ" field="TEXT" name="RESOURCEMANAGER_SCHEDULER_ADDRESS" value="&quot;10.128.88.12:8030&quot;"/>
+    <elementParameter xmi:id="_4aR7_yRWEeemuIjPBnO6cQ" field="CHECK" name="SET_JOBHISTORY_ADDRESS" value="true"/>
+    <elementParameter xmi:id="_4aR8ACRWEeemuIjPBnO6cQ" field="TEXT" name="JOBHISTORY_ADDRESS" value="&quot;10.128.88.12:10020&quot;"/>
+    <elementParameter xmi:id="_4aR8ASRWEeemuIjPBnO6cQ" field="CHECK" name="SET_STAGING_DIRECTORY" value="true"/>
+    <elementParameter xmi:id="_4aR8AiRWEeemuIjPBnO6cQ" field="TEXT" name="STAGING_DIRECTORY" value="&quot;/user&quot;"/>
+    <elementParameter xmi:id="_4aR8AyRWEeemuIjPBnO6cQ" field="TEXT" name="HDINSIGHT_ENDPOINT" value="&quot;https://xxxx.azurehdinsight.net&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8BCRWEeemuIjPBnO6cQ" field="TEXT" name="HDINSIGHT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8BSRWEeemuIjPBnO6cQ" field="PASSWORD" name="HDINSIGHT_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_4aR8BiRWEeemuIjPBnO6cQ" field="TEXT" name="LIVY_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8ByRWEeemuIjPBnO6cQ" field="TEXT" name="LIVY_PORT" value="&quot;443&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8CCRWEeemuIjPBnO6cQ" field="TEXT" name="LIVY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8CSRWEeemuIjPBnO6cQ" field="TEXT" name="HDINSIGHT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8CiRWEeemuIjPBnO6cQ" field="PASSWORD" name="HDINSIGHT_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_4aR8CyRWEeemuIjPBnO6cQ" field="TEXT" name="WASB_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8DCRWEeemuIjPBnO6cQ" field="TEXT" name="WASB_CONTAINER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8DSRWEeemuIjPBnO6cQ" field="TEXT" name="WASB_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8DiRWEeemuIjPBnO6cQ" field="PASSWORD" name="WASB_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_4aR8DyRWEeemuIjPBnO6cQ" field="TEXT" name="REMOTE_FOLDER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8ECRWEeemuIjPBnO6cQ" field="TEXT" name="SPARK_HOST" value="&quot;spark://localhost:7077&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8ESRWEeemuIjPBnO6cQ" field="TEXT" name="SPARK_HOME" value="&quot;/usr/lib/spark&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8EiRWEeemuIjPBnO6cQ" field="CHECK" name="DEFINE_HADOOP_HOME_DIR" value="false"/>
+    <elementParameter xmi:id="_4aR8EyRWEeemuIjPBnO6cQ" field="TEXT" name="HADOOP_HOME_DIR" value="&quot;C:/Talend/winutils&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8FCRWEeemuIjPBnO6cQ" field="CHECK" name="DEFINE_SPARK_DRIVER_HOST" value="false"/>
+    <elementParameter xmi:id="_4aR8FSRWEeemuIjPBnO6cQ" field="TEXT" name="SPARK_DRIVER_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8FiRWEeemuIjPBnO6cQ" field="CHECK" name="USE_KRB" value="false"/>
+    <elementParameter xmi:id="_4aR8FyRWEeemuIjPBnO6cQ" field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" value="&quot;yarn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8GCRWEeemuIjPBnO6cQ" field="TEXT" name="JOBHISTORY_PRINCIPAL" value="&quot;mapred/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8GSRWEeemuIjPBnO6cQ" field="CHECK" name="USE_KEYTAB" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR8GiRWEeemuIjPBnO6cQ" field="TEXT" name="PRINCIPAL" value="&quot;hdfs&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8GyRWEeemuIjPBnO6cQ" field="FILE" name="KEYTAB_PATH" value="&quot;/tmp/hdfs.headless.keytab&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8HCRWEeemuIjPBnO6cQ" field="TEXT" name="USERNAME" value="&quot;hdfs&quot;"/>
+    <elementParameter xmi:id="_4aR8HSRWEeemuIjPBnO6cQ" field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR8HiRWEeemuIjPBnO6cQ" field="PASSWORD" name="MAPRTICKET_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_4aR8HyRWEeemuIjPBnO6cQ" field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8ICRWEeemuIjPBnO6cQ" field="TEXT" name="MAPRTICKET_DURATION" value="86400L" show="false"/>
+    <elementParameter xmi:id="_4aR8ISRWEeemuIjPBnO6cQ" field="CHECK" name="SET_MAPR_HOME_DIR" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR8IiRWEeemuIjPBnO6cQ" field="TEXT" name="MAPR_HOME_DIR" value="&quot;/opt/mapr&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8IyRWEeemuIjPBnO6cQ" field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR8JCRWEeemuIjPBnO6cQ" field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8JSRWEeemuIjPBnO6cQ" field="CHECK" name="ADVANCED_SETTINGS_CHECK" value="true"/>
+    <elementParameter xmi:id="_4aR8JiRWEeemuIjPBnO6cQ" field="TEXT" name="SPARK_DRIVER_MEM" value="&quot;512m&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8JyRWEeemuIjPBnO6cQ" field="TEXT" name="SPARK_DRIVER_CORES" value="&quot;1&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8KCRWEeemuIjPBnO6cQ" field="TEXT" name="SPARK_EXECUTOR_MEM" value="&quot;6G&quot;"/>
+    <elementParameter xmi:id="_4aR8KSRWEeemuIjPBnO6cQ" field="CHECK" name="SET_SPARK_EXECUTOR_MEM_OVERHEAD" value="false"/>
+    <elementParameter xmi:id="_4aR8KiRWEeemuIjPBnO6cQ" field="TEXT" name="SPARK_EXECUTOR_MEM_OVERHEAD" value="&quot;384&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8KyRWEeemuIjPBnO6cQ" field="CHECK" name="SPARK_EXECUTOR_CORES_CHECK" value="true"/>
+    <elementParameter xmi:id="_4aR8LCRWEeemuIjPBnO6cQ" field="TEXT" name="SPARK_EXECUTOR_CORES" value="&quot;4&quot;"/>
+    <elementParameter xmi:id="_4aR8LSRWEeemuIjPBnO6cQ" field="CLOSED_LIST" name="SPARK_YARN_ALLOC_TYPE" value="DYNAMIC"/>
+    <elementParameter xmi:id="_4aR8LiRWEeemuIjPBnO6cQ" field="TEXT" name="SPARK_EXECUTOR_INSTANCES" value="&quot;2&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8LyRWEeemuIjPBnO6cQ" field="TEXT" name="SPARK_YARN_DYN_INIT" value="&quot;1&quot;"/>
+    <elementParameter xmi:id="_4aR8MCRWEeemuIjPBnO6cQ" field="TEXT" name="SPARK_YARN_DYN_MIN" value="&quot;0&quot;"/>
+    <elementParameter xmi:id="_4aR8MSRWEeemuIjPBnO6cQ" field="TEXT" name="SPARK_YARN_DYN_MAX" value="&quot;MAX&quot;"/>
+    <elementParameter xmi:id="_4aR8MiRWEeemuIjPBnO6cQ" field="CHECK" name="WEB_UI_PORT_CHECK" value="false"/>
+    <elementParameter xmi:id="_4aR8MyRWEeemuIjPBnO6cQ" field="TEXT" name="WEB_UI_PORT" value="&quot;4040&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8NCRWEeemuIjPBnO6cQ" field="CLOSED_LIST" name="SPARK_BROADCAST_FACTORY" value="AUTO"/>
+    <elementParameter xmi:id="_4aR8NSRWEeemuIjPBnO6cQ" field="CHECK" name="CUSTOMIZE_SPARK_SERIALIZER" value="false"/>
+    <elementParameter xmi:id="_4aR8NiRWEeemuIjPBnO6cQ" field="TEXT" name="SPARK_SERIALIZER" value="&quot;org.apache.spark.serializer.KryoSerializer&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8NyRWEeemuIjPBnO6cQ" field="CHECK" name="ENABLE_SPARK_EVENT_LOGGING" value="false"/>
+    <elementParameter xmi:id="_4aR8OCRWEeemuIjPBnO6cQ" field="CHECK" name="COMPRESS_SPARK_EVENT_LOGS" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR8OSRWEeemuIjPBnO6cQ" field="TEXT" name="SPARK_EVENT_LOG_DIR" value="&quot;hdfs://namenode:8020/user/spark/applicationHistory&quot;&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter xmi:id="_4aR8OiRWEeemuIjPBnO6cQ" field="TEXT" name="SPARKHISTORY_ADDRESS" value="&quot;sparkHistoryServer:18080&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8OyRWEeemuIjPBnO6cQ" field="CHECK" name="USE_CLOUDERA_NAVIGATOR" value="false"/>
+    <elementParameter xmi:id="_4aR8PCRWEeemuIjPBnO6cQ" field="TEXT" name="CLOUDERA_NAVIGATOR_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8PSRWEeemuIjPBnO6cQ" field="PASSWORD" name="CLOUDERA_NAVIGATOR_PASSWORD" value="PoLvNyVG2XWndNDdLn696A==" show="false"/>
+    <elementParameter xmi:id="_4aR8PiRWEeemuIjPBnO6cQ" field="TEXT" name="CLOUDERA_NAVIGATOR_URL" value="&quot;http://localhost:7187/api/v8/&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8PyRWEeemuIjPBnO6cQ" field="TEXT" name="CLOUDERA_NAVIGATOR_METADATA_URL" value="&quot;http://localhost:7187/api/v8/metadata/plugin&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8QCRWEeemuIjPBnO6cQ" field="TEXT" name="CLOUDERA_NAVIGATOR_CLIENT_URL" value="&quot;http://localhost&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8QSRWEeemuIjPBnO6cQ" field="CHECK" name="CLOUDERA_NAVIGATOR_AUTOCOMMIT" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR8QiRWEeemuIjPBnO6cQ" field="CHECK" name="CLOUDERA_NAVIGATOR_DISABLE_SSL_VALIDATION" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR8QyRWEeemuIjPBnO6cQ" field="CHECK" name="CLOUDERA_NAVIGATOR_DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter xmi:id="_4aR8RCRWEeemuIjPBnO6cQ" field="CHECK" name="USE_ATLAS" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR8RSRWEeemuIjPBnO6cQ" field="TEXT" name="ATLAS_URL" value="&quot;http://localhost:21000&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8RiRWEeemuIjPBnO6cQ" field="TEXT" name="ATLAS_USERNAME" value="&quot;admin&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8RyRWEeemuIjPBnO6cQ" field="PASSWORD" name="ATLAS_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_4aR8SCRWEeemuIjPBnO6cQ" field="CHECK" name="SET_ATLAS_APPLICATION_PROPERTIES" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR8SSRWEeemuIjPBnO6cQ" field="TEXT" name="ATLAS_APPLICATION_PROPERTIES" value="&quot;/user/atlas/atlas-application.properties&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8SiRWEeemuIjPBnO6cQ" field="CHECK" name="ATLAS_DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR8SyRWEeemuIjPBnO6cQ" field="TEXT" name="SPARK_SCRATCH_DIR" value="&quot;/user/spark&quot;"/>
+    <elementParameter xmi:id="_4aR8TCRWEeemuIjPBnO6cQ" field="CHECK" name="USE_CHECKPOINT" value="false"/>
+    <elementParameter xmi:id="_4aR8TSRWEeemuIjPBnO6cQ" field="TEXT" name="CHECKPOINT_DIR" value="&quot;file:///tmp/mycheckpoint&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8TiRWEeemuIjPBnO6cQ" field="TABLE" name="SPARK_ADVANCED_PROPERTIES"/>
+    <elementParameter xmi:id="_DmXWcMF8EeeIi49gPXwe0g" field="CLOSED_LIST" name="SUPPORTED_SPARK_VERSION" value="SPARK_1_6_0"/>
+    <routinesParameter xmi:id="_MZuYwiLnEeeFzZGkv9UGsQ" id="_z_PpABeEEee9PdHJqXFM7A" name="DQTechnical"/>
+    <routinesParameter xmi:id="_MZuYwyLnEeeFzZGkv9UGsQ" id="_z7LBUBeEEee9PdHJqXFM7A" name="DataMasking"/>
+    <routinesParameter xmi:id="_MZuYxCLnEeeFzZGkv9UGsQ" id="_zwOVkBeEEee9PdHJqXFM7A" name="DataOperation"/>
+    <routinesParameter xmi:id="_MZuYxSLnEeeFzZGkv9UGsQ" id="_z9TIQBeEEee9PdHJqXFM7A" name="DataQualityDependencies"/>
+    <routinesParameter xmi:id="_MZuYxiLnEeeFzZGkv9UGsQ" id="_z8Lt8BeEEee9PdHJqXFM7A" name="DataQuality"/>
+    <routinesParameter xmi:id="_MZuYxyLnEeeFzZGkv9UGsQ" id="_z-R_sBeEEee9PdHJqXFM7A" name="DqStringHandling"/>
+    <routinesParameter xmi:id="_MZuYyCLnEeeFzZGkv9UGsQ" id="_0AMrQBeEEee9PdHJqXFM7A" name="MDM"/>
+    <routinesParameter xmi:id="_MZuYySLnEeeFzZGkv9UGsQ" id="_zz0cIBeEEee9PdHJqXFM7A" name="Mathematical"/>
+    <routinesParameter xmi:id="_MZuYyiLnEeeFzZGkv9UGsQ" id="_z01v0BeEEee9PdHJqXFM7A" name="Numeric"/>
+    <routinesParameter xmi:id="_MZuYyyLnEeeFzZGkv9UGsQ" id="_z13DgBeEEee9PdHJqXFM7A" name="Relational"/>
+    <routinesParameter xmi:id="_MZuYzCLnEeeFzZGkv9UGsQ" id="_0BHRQBeEEee9PdHJqXFM7A" name="SQLike"/>
+    <routinesParameter xmi:id="_MZuYzSLnEeeFzZGkv9UGsQ" id="_z3HnwBeEEee9PdHJqXFM7A" name="StringHandling"/>
+    <routinesParameter xmi:id="_MZuYziLnEeeFzZGkv9UGsQ" id="_z4HtUBeEEee9PdHJqXFM7A" name="TalendDataGenerator"/>
+    <routinesParameter xmi:id="_MZuYzyLnEeeFzZGkv9UGsQ" id="_z5IZ8BeEEee9PdHJqXFM7A" name="TalendDate"/>
+    <routinesParameter xmi:id="_MZuY0CLnEeeFzZGkv9UGsQ" id="_z6JGkBeEEee9PdHJqXFM7A" name="TalendString"/>
+  </parameters>
+  <node xmi:id="_4aR8TyRWEeemuIjPBnO6cQ" componentName="tHDFSConfiguration" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="64">
+    <elementParameter xmi:id="_4aR8UCRWEeemuIjPBnO6cQ" field="TEXT" name="UNIQUE_NAME" value="tHDFSConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_4aR8USRWEeemuIjPBnO6cQ" field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter xmi:id="_4aR8UiRWEeemuIjPBnO6cQ" field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_EO3p4BikEeedi5boDuC6Fw" show="false"/>
+    <elementParameter xmi:id="_4aR8UyRWEeemuIjPBnO6cQ" field="CLOSED_LIST" name="DISTRIBUTION" value="CLOUDERA"/>
+    <elementParameter xmi:id="_4aR8VCRWEeemuIjPBnO6cQ" field="CLOSED_LIST" name="DB_VERSION" value="Cloudera_CDH5_8"/>
+    <elementParameter xmi:id="_4aR8VSRWEeemuIjPBnO6cQ" field="HADOOP_DISTRIBUTION" name="HDFS" value=""/>
+    <elementParameter xmi:id="_4aR8ViRWEeemuIjPBnO6cQ" field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter xmi:id="_4aR8VyRWEeemuIjPBnO6cQ" field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://10.128.88.12:8020&quot;"/>
+    <elementParameter xmi:id="_4aR8WCRWEeemuIjPBnO6cQ" field="CHECK" name="USE_KRB" value="false"/>
+    <elementParameter xmi:id="_4aR8WSRWEeemuIjPBnO6cQ" field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;nn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8WiRWEeemuIjPBnO6cQ" field="CHECK" name="USE_KEYTAB" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR8WyRWEeemuIjPBnO6cQ" field="TEXT" name="PRINCIPAL" value="&quot;hdfs&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8XCRWEeemuIjPBnO6cQ" field="FILE" name="KEYTAB_PATH" value="&quot;/tmp/hdfs.headless.keytab&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8XSRWEeemuIjPBnO6cQ" field="TEXT" name="USERNAME" value="&quot;hdfs&quot;"/>
+    <elementParameter xmi:id="_4aR8XiRWEeemuIjPBnO6cQ" field="TEXT" name="GROUP" value="&quot;supergroup&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8XyRWEeemuIjPBnO6cQ" field="CHECK" name="USE_DATANODE_HOSTNAME" value="true"/>
+    <elementParameter xmi:id="_4aR8YCRWEeemuIjPBnO6cQ" field="TEXT" name="TEMP_FOLDER" value="&quot;/tmp&quot;"/>
+    <elementParameter xmi:id="_4aR8YSRWEeemuIjPBnO6cQ" field="CHECK" name="USE_HDFS_ENCRYPTION" value="false"/>
+    <elementParameter xmi:id="_4aR8YiRWEeemuIjPBnO6cQ" field="TEXT" name="HDFS_ENCRYPTION_KEY_PROVIDER" value="&quot;kms://http@localhost:16000/kms&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8YyRWEeemuIjPBnO6cQ" field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter xmi:id="_4aR8ZCRWEeemuIjPBnO6cQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_4aR8ZSRWEeemuIjPBnO6cQ" componentName="tHiveConfiguration" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="64">
+    <elementParameter xmi:id="_4aR8ZiRWEeemuIjPBnO6cQ" field="TEXT" name="UNIQUE_NAME" value="tHiveConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_4aR8ZyRWEeemuIjPBnO6cQ" field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter xmi:id="_4aR8aCRWEeemuIjPBnO6cQ" field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_E3BJECHmEeeWzuN4mxM4XA" show="false"/>
+    <elementParameter xmi:id="_4aR8aSRWEeemuIjPBnO6cQ" field="CLOSED_LIST" name="DISTRIBUTION" value="CLOUDERA"/>
+    <elementParameter xmi:id="_4aR8aiRWEeemuIjPBnO6cQ" field="CLOSED_LIST" name="DB_VERSION" value="Cloudera_CDH5_8"/>
+    <elementParameter xmi:id="_4aR8ayRWEeemuIjPBnO6cQ" field="HADOOP_DISTRIBUTION" name="HIVEONSPARK" value=""/>
+    <elementParameter xmi:id="_4aR8bCRWEeemuIjPBnO6cQ" field="TEXT" name="HOST" value="&quot;10.128.88.12&quot;"/>
+    <elementParameter xmi:id="_4aR8bSRWEeemuIjPBnO6cQ" field="TEXT" name="PORT" value="&quot;9083&quot;"/>
+    <elementParameter xmi:id="_4aR8biRWEeemuIjPBnO6cQ" field="CHECK" name="USE_KRB" value="false"/>
+    <elementParameter xmi:id="_4aR8byRWEeemuIjPBnO6cQ" field="TEXT" name="HIVE_PRINCIPAL" value="&quot;hive/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8cCRWEeemuIjPBnO6cQ" field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter xmi:id="_4aR8cSRWEeemuIjPBnO6cQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_4aR8ciRWEeemuIjPBnO6cQ" componentName="tFileInputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="192">
+    <elementParameter xmi:id="_4aR8cyRWEeemuIjPBnO6cQ" field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter xmi:id="_4aR8dCRWEeemuIjPBnO6cQ" field="CHECK" name="DEFINE_STORAGE_CONFIGURATION" value="true"/>
+    <elementParameter xmi:id="_4aR8dSRWEeemuIjPBnO6cQ" field="COMPONENT_LIST" name="STORAGE_CONFIGURATION" value="tHDFSConfiguration_1"/>
+    <elementParameter xmi:id="_4aR8diRWEeemuIjPBnO6cQ" field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter xmi:id="_4aR8dyRWEeemuIjPBnO6cQ" field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_EO3p4BikEeedi5boDuC6Fw" show="false"/>
+    <elementParameter xmi:id="_4aR8eCRWEeemuIjPBnO6cQ" field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter xmi:id="_4aR8eSRWEeemuIjPBnO6cQ" field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Hr65MBsNEee3Z-JaIAVJLw - metadata" show="false"/>
+    <elementParameter xmi:id="_4aR8eiRWEeemuIjPBnO6cQ" field="TEXT" name="FIELD" value="line" show="false"/>
+    <elementParameter xmi:id="_4aR8eyRWEeemuIjPBnO6cQ" field="BOTH_HADOOP" name="FILENAME" value="&quot;/user/esimond/ODLS/PRM_Personne_pseudonymiseCORRIGE.csv&quot;"/>
+    <elementParameter xmi:id="_4aR8fCRWEeemuIjPBnO6cQ" field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter xmi:id="_4aR8fSRWEeemuIjPBnO6cQ" field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter xmi:id="_4aR8fiRWEeemuIjPBnO6cQ" field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8fyRWEeemuIjPBnO6cQ" field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter xmi:id="_4aR8gCRWEeemuIjPBnO6cQ" field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8gSRWEeemuIjPBnO6cQ" field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8giRWEeemuIjPBnO6cQ" field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter xmi:id="_4aR8gyRWEeemuIjPBnO6cQ" field="TEXT" name="HEADER" value="1"/>
+    <elementParameter xmi:id="_4aR8hCRWEeemuIjPBnO6cQ" field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter xmi:id="_4aR8hSRWEeemuIjPBnO6cQ" field="CHECK" name="USE_MIN_PARTITIONS" value="false"/>
+    <elementParameter xmi:id="_4aR8hiRWEeemuIjPBnO6cQ" field="TEXT" name="MIN_PARTITIONS" value="2" show="false"/>
+    <elementParameter xmi:id="_4aR8hyRWEeemuIjPBnO6cQ" field="CHECK" name="CUSTOM_ENCODING" value="false"/>
+    <elementParameter xmi:id="_4aR8iCRWEeemuIjPBnO6cQ" field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8iSRWEeemuIjPBnO6cQ" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8" show="false"/>
+    <elementParameter xmi:id="_4aR8iiRWEeemuIjPBnO6cQ" field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter xmi:id="_4aR8iyRWEeemuIjPBnO6cQ" field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8jCRWEeemuIjPBnO6cQ" field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter xmi:id="_4aR8jSRWEeemuIjPBnO6cQ" field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter xmi:id="_4aR8jiRWEeemuIjPBnO6cQ" field="TABLE" name="TRIMSELECT">
+      <elementValue xmi:id="_4aR8jyRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="IDENTIFIANT_PERSONNE"/>
+      <elementValue xmi:id="_4aR8kCRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aR8kSRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="EMAIL_ENR"/>
+      <elementValue xmi:id="_4aR8kiRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aR8kyRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="NOM_ENR"/>
+      <elementValue xmi:id="_4aR8lCRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aR8lSRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_PRENOM_ENR"/>
+      <elementValue xmi:id="_4aR8liRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aR8lyRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_DATE_NAIS_E"/>
+      <elementValue xmi:id="_4aR8mCRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aR8mSRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="CODE_POSTAL_ENR"/>
+      <elementValue xmi:id="_4aR8miRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aR8myRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_RAISON_SO_ENR"/>
+      <elementValue xmi:id="_4aR8nCRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aR8nSRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_SIRET_ENR"/>
+      <elementValue xmi:id="_4aR8niRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTwwCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_SIREN_ENR"/>
+      <elementValue xmi:id="_4aTwwSRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTwwiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="LANGUE"/>
+      <elementValue xmi:id="_4aTwwyRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTwxCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="VILLE"/>
+      <elementValue xmi:id="_4aTwxSRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTwxiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PAYS"/>
+      <elementValue xmi:id="_4aTwxyRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTwyCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_CIVILIT"/>
+      <elementValue xmi:id="_4aTwySRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTwyiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_NATIONALITE"/>
+      <elementValue xmi:id="_4aTwyyRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTwzCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_CSP"/>
+      <elementValue xmi:id="_4aTwzSRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTwziRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_SIT_FAM_MAR"/>
+      <elementValue xmi:id="_4aTwzyRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw0CRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_RO"/>
+      <elementValue xmi:id="_4aTw0SRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw0iRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_SEXE"/>
+      <elementValue xmi:id="_4aTw0yRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw1CRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_NAT_CONJOIN"/>
+      <elementValue xmi:id="_4aTw1SRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw1iRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_DT_NAI_CONJ"/>
+      <elementValue xmi:id="_4aTw1yRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw2CRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_DT_NAI_ENF1"/>
+      <elementValue xmi:id="_4aTw2SRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw2iRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_DT_NAI_ENF2"/>
+      <elementValue xmi:id="_4aTw2yRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw3CRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_DT_NAI_ENF3"/>
+      <elementValue xmi:id="_4aTw3SRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw3iRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_DT_NAI_ENF4"/>
+      <elementValue xmi:id="_4aTw3yRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw4CRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_DT_ANI_ENF5"/>
+      <elementValue xmi:id="_4aTw4SRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw4iRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_DT_NAI_ENF6"/>
+      <elementValue xmi:id="_4aTw4yRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw5CRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_SIRET"/>
+      <elementValue xmi:id="_4aTw5SRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw5iRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_SIREN"/>
+      <elementValue xmi:id="_4aTw5yRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw6CRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_CODE_APE"/>
+      <elementValue xmi:id="_4aTw6SRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw6iRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_CODE_NAF"/>
+      <elementValue xmi:id="_4aTw6yRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw7CRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_STA_JURIDIQUE"/>
+      <elementValue xmi:id="_4aTw7SRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw7iRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="OPTIN_PART_PROSPEC_EMAIL"/>
+      <elementValue xmi:id="_4aTw7yRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw8CRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="OPTIN_PART_PROSPEC_SMS"/>
+      <elementValue xmi:id="_4aTw8SRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw8iRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="OPTIN_PART_PROSPEC_TEL"/>
+      <elementValue xmi:id="_4aTw8yRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw9CRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="TYPE_PERSONNE"/>
+      <elementValue xmi:id="_4aTw9SRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw9iRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_CA"/>
+      <elementValue xmi:id="_4aTw9yRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw-CRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="F_SOURCE"/>
+      <elementValue xmi:id="_4aTw-SRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw-iRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PROFESSION"/>
+      <elementValue xmi:id="_4aTw-yRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw_CRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_CSP_CONJOIN"/>
+      <elementValue xmi:id="_4aTw_SRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTw_iRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="VOYAGE_PERSO_HABITUDES"/>
+      <elementValue xmi:id="_4aTw_yRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTxACRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="VOYAGE_PRO_HABITUDES"/>
+      <elementValue xmi:id="_4aTxASRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTxAiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="SPORT_HABITUDES"/>
+      <elementValue xmi:id="_4aTxAyRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTxBCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="SPORT_ABONNEMENT_SALLE"/>
+      <elementValue xmi:id="_4aTxBSRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTxBiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERSONNE_MORALE_SITE_INTE"/>
+      <elementValue xmi:id="_4aTxByRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTxCCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERSONNE_MORALE_TYPE_DE_L"/>
+      <elementValue xmi:id="_4aTxCSRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTxCiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_ACTIVITE_ETRA"/>
+      <elementValue xmi:id="_4aTxCyRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTxDCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_MATERIEL_PRO"/>
+      <elementValue xmi:id="_4aTxDSRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTxDiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_PRET_MAT_PRO"/>
+      <elementValue xmi:id="_4aTxDyRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTxECRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="STATUT_RESIDENCE_PRINCIPA"/>
+      <elementValue xmi:id="_4aTxESRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTxEiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="CREDIT_IMMOBILIER_EN_COUR"/>
+      <elementValue xmi:id="_4aTxEyRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTxFCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="CREDIT_IMMOBILIER1_DATE_F"/>
+      <elementValue xmi:id="_4aTxFSRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTxFiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="CREDIT_IMMOBILIER2_DATE_F"/>
+      <elementValue xmi:id="_4aTxFyRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTxGCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="CREDIT_IMMOBILIER3_DATE_F"/>
+      <elementValue xmi:id="_4aTxGSRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTxGiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="CREDIT_IMMOBILIER4_DATE_F"/>
+      <elementValue xmi:id="_4aTxGyRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTxHCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PAYS_RESID_SECOND"/>
+      <elementValue xmi:id="_4aTxHSRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTxHiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PAYS_RESID_SECOND2"/>
+      <elementValue xmi:id="_4aTxHyRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTxICRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="NB2_ROUES_DETENUS"/>
+      <elementValue xmi:id="_4aTxISRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTxIiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="TYPE_CB"/>
+      <elementValue xmi:id="_4aTxIyRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_4aTxJCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="NOM_BANQUE_PRINCIPALE"/>
+      <elementValue xmi:id="_4aTxJSRWEeemuIjPBnO6cQ" elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter xmi:id="_4aTxJiRWEeemuIjPBnO6cQ" field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter xmi:id="_4aTxJyRWEeemuIjPBnO6cQ" field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter xmi:id="_4aTxKCRWEeemuIjPBnO6cQ" field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter xmi:id="_4aTxKSRWEeemuIjPBnO6cQ" field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue xmi:id="_4aTxKiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="IDENTIFIANT_PERSONNE"/>
+      <elementValue xmi:id="_4aTxKyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxLCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="EMAIL_ENR"/>
+      <elementValue xmi:id="_4aTxLSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxLiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="NOM_ENR"/>
+      <elementValue xmi:id="_4aTxLyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxMCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_PRENOM_ENR"/>
+      <elementValue xmi:id="_4aTxMSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxMiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_DATE_NAIS_E"/>
+      <elementValue xmi:id="_4aTxMyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxNCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="CODE_POSTAL_ENR"/>
+      <elementValue xmi:id="_4aTxNSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxNiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_RAISON_SO_ENR"/>
+      <elementValue xmi:id="_4aTxNyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxOCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_SIRET_ENR"/>
+      <elementValue xmi:id="_4aTxOSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxOiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_SIREN_ENR"/>
+      <elementValue xmi:id="_4aTxOyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxPCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="LANGUE"/>
+      <elementValue xmi:id="_4aTxPSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxPiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="VILLE"/>
+      <elementValue xmi:id="_4aTxPyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxQCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PAYS"/>
+      <elementValue xmi:id="_4aTxQSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxQiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_CIVILIT"/>
+      <elementValue xmi:id="_4aTxQyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxRCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_NATIONALITE"/>
+      <elementValue xmi:id="_4aTxRSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxRiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_CSP"/>
+      <elementValue xmi:id="_4aTxRyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxSCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_SIT_FAM_MAR"/>
+      <elementValue xmi:id="_4aTxSSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxSiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_RO"/>
+      <elementValue xmi:id="_4aTxSyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxTCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_SEXE"/>
+      <elementValue xmi:id="_4aTxTSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxTiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_NAT_CONJOIN"/>
+      <elementValue xmi:id="_4aTxTyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxUCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_DT_NAI_CONJ"/>
+      <elementValue xmi:id="_4aTxUSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxUiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_DT_NAI_ENF1"/>
+      <elementValue xmi:id="_4aTxUyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxVCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_DT_NAI_ENF2"/>
+      <elementValue xmi:id="_4aTxVSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxViRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_DT_NAI_ENF3"/>
+      <elementValue xmi:id="_4aTxVyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxWCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_DT_NAI_ENF4"/>
+      <elementValue xmi:id="_4aTxWSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxWiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_DT_ANI_ENF5"/>
+      <elementValue xmi:id="_4aTxWyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxXCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_DT_NAI_ENF6"/>
+      <elementValue xmi:id="_4aTxXSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxXiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_SIRET"/>
+      <elementValue xmi:id="_4aTxXyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxYCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_SIREN"/>
+      <elementValue xmi:id="_4aTxYSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxYiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_CODE_APE"/>
+      <elementValue xmi:id="_4aTxYyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxZCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_CODE_NAF"/>
+      <elementValue xmi:id="_4aTxZSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxZiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_STA_JURIDIQUE"/>
+      <elementValue xmi:id="_4aTxZyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxaCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="OPTIN_PART_PROSPEC_EMAIL"/>
+      <elementValue xmi:id="_4aTxaSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxaiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="OPTIN_PART_PROSPEC_SMS"/>
+      <elementValue xmi:id="_4aTxayRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxbCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="OPTIN_PART_PROSPEC_TEL"/>
+      <elementValue xmi:id="_4aTxbSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxbiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="TYPE_PERSONNE"/>
+      <elementValue xmi:id="_4aTxbyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxcCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_CA"/>
+      <elementValue xmi:id="_4aTxcSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxciRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="F_SOURCE"/>
+      <elementValue xmi:id="_4aTxcyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxdCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PROFESSION"/>
+      <elementValue xmi:id="_4aTxdSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxdiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_PHYSIQUE_CSP_CONJOIN"/>
+      <elementValue xmi:id="_4aTxdyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxeCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="VOYAGE_PERSO_HABITUDES"/>
+      <elementValue xmi:id="_4aTxeSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxeiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="VOYAGE_PRO_HABITUDES"/>
+      <elementValue xmi:id="_4aTxeyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxfCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="SPORT_HABITUDES"/>
+      <elementValue xmi:id="_4aTxfSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxfiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="SPORT_ABONNEMENT_SALLE"/>
+      <elementValue xmi:id="_4aTxfyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxgCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERSONNE_MORALE_SITE_INTE"/>
+      <elementValue xmi:id="_4aTxgSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxgiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERSONNE_MORALE_TYPE_DE_L"/>
+      <elementValue xmi:id="_4aTxgyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxhCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_ACTIVITE_ETRA"/>
+      <elementValue xmi:id="_4aTxhSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxhiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_MATERIEL_PRO"/>
+      <elementValue xmi:id="_4aTxhyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxiCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PERS_MORALE_PRET_MAT_PRO"/>
+      <elementValue xmi:id="_4aTxiSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxiiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="STATUT_RESIDENCE_PRINCIPA"/>
+      <elementValue xmi:id="_4aTxiyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxjCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="CREDIT_IMMOBILIER_EN_COUR"/>
+      <elementValue xmi:id="_4aTxjSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxjiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="CREDIT_IMMOBILIER1_DATE_F"/>
+      <elementValue xmi:id="_4aTxjyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxkCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="CREDIT_IMMOBILIER2_DATE_F"/>
+      <elementValue xmi:id="_4aTxkSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxkiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="CREDIT_IMMOBILIER3_DATE_F"/>
+      <elementValue xmi:id="_4aTxkyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxlCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="CREDIT_IMMOBILIER4_DATE_F"/>
+      <elementValue xmi:id="_4aTxlSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxliRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PAYS_RESID_SECOND"/>
+      <elementValue xmi:id="_4aTxlyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxmCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="PAYS_RESID_SECOND2"/>
+      <elementValue xmi:id="_4aTxmSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxmiRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="NB2_ROUES_DETENUS"/>
+      <elementValue xmi:id="_4aTxmyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxnCRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="TYPE_CB"/>
+      <elementValue xmi:id="_4aTxnSRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_4aTxniRWEeemuIjPBnO6cQ" elementRef="SCHEMA_COLUMN" value="NOM_BANQUE_PRINCIPALE"/>
+      <elementValue xmi:id="_4aTxnyRWEeemuIjPBnO6cQ" elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter xmi:id="_4aTxoCRWEeemuIjPBnO6cQ" field="TEXT" name="LABEL" value="PRM_Personne_pseudonymiseCORRIGE"/>
+    <elementParameter xmi:id="_4aTxoSRWEeemuIjPBnO6cQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_4aTxoiRWEeemuIjPBnO6cQ" connector="FLOW" label="metadata" name="tFileInputDelimited_1">
+      <column xmi:id="_4aTxoyRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="IDENTIFIANT_PERSONNE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxpCRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="EMAIL_ENR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxpSRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="NOM_ENR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxpiRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_PRENOM_ENR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxpyRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_DATE_NAIS_E" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxqCRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="CODE_POSTAL_ENR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxqSRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_RAISON_SO_ENR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxqiRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_SIRET_ENR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxqyRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_SIREN_ENR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxrCRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="LANGUE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxrSRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="VILLE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxriRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PAYS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxryRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_CIVILIT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxsCRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_NATIONALITE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxsSRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_CSP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxsiRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_SIT_FAM_MAR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxsyRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_RO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxtCRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_SEXE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxtSRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_NAT_CONJOIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxtiRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_DT_NAI_CONJ" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxtyRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_DT_NAI_ENF1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxuCRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_DT_NAI_ENF2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxuSRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_DT_NAI_ENF3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxuiRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_DT_NAI_ENF4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxuyRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_DT_ANI_ENF5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxvCRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_DT_NAI_ENF6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxvSRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_SIRET" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxviRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_SIREN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxvyRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_CODE_APE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxwCRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_CODE_NAF" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxwSRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_STA_JURIDIQUE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxwiRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="OPTIN_PART_PROSPEC_EMAIL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxwyRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="OPTIN_PART_PROSPEC_SMS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxxCRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="OPTIN_PART_PROSPEC_TEL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxxSRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="TYPE_PERSONNE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxxiRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_CA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxxyRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="F_SOURCE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxyCRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PROFESSION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxySRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_CSP_CONJOIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxyiRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="VOYAGE_PERSO_HABITUDES" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxyyRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="VOYAGE_PRO_HABITUDES" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxzCRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="SPORT_HABITUDES" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxzSRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="SPORT_ABONNEMENT_SALLE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxziRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERSONNE_MORALE_SITE_INTE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTxzyRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERSONNE_MORALE_TYPE_DE_L" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx0CRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_ACTIVITE_ETRA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx0SRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_MATERIEL_PRO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx0iRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_PRET_MAT_PRO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx0yRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="STATUT_RESIDENCE_PRINCIPA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx1CRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="CREDIT_IMMOBILIER_EN_COUR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx1SRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="CREDIT_IMMOBILIER1_DATE_F" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx1iRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="CREDIT_IMMOBILIER2_DATE_F" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx1yRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="CREDIT_IMMOBILIER3_DATE_F" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx2CRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="CREDIT_IMMOBILIER4_DATE_F" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx2SRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PAYS_RESID_SECOND" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx2iRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PAYS_RESID_SECOND2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx2yRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="NB2_ROUES_DETENUS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx3CRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="TYPE_CB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx3SRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="NOM_BANQUE_PRINCIPALE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <additionalProperties xmi:id="_4aTx3iRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      <additionalProperties xmi:id="_4aTx3yRWEeemuIjPBnO6cQ" key="HDFS_FILE_TYPE" value="TEXT"/>
+      <additionalProperties xmi:id="_4aTx4CRWEeemuIjPBnO6cQ" key="HDFS_PATH" value="/user/esimond/ODLS/PRM_Personne_pseudonymiseCORRIGE.csv"/>
+    </metadata>
+    <metadata xmi:id="_4aTx4SRWEeemuIjPBnO6cQ" connector="REJECT" label="metadata" name="REJECT">
+      <column xmi:id="_4aTx4iRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="IDENTIFIANT_PERSONNE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx4yRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="EMAIL_ENR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx5CRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="NOM_ENR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx5SRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_PRENOM_ENR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx5iRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_DATE_NAIS_E" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx5yRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="CODE_POSTAL_ENR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx6CRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_RAISON_SO_ENR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx6SRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_SIRET_ENR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx6iRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_SIREN_ENR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx6yRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="LANGUE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx7CRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="VILLE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx7SRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PAYS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx7iRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_CIVILIT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx7yRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_NATIONALITE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx8CRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_CSP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx8SRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_SIT_FAM_MAR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx8iRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_RO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx8yRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_SEXE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx9CRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_NAT_CONJOIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx9SRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_DT_NAI_CONJ" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx9iRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_DT_NAI_ENF1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx9yRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_DT_NAI_ENF2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx-CRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_DT_NAI_ENF3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx-SRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_DT_NAI_ENF4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx-iRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_DT_ANI_ENF5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx-yRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_DT_NAI_ENF6" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx_CRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_SIRET" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx_SRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_SIREN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx_iRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_CODE_APE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTx_yRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_CODE_NAF" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyACRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_STA_JURIDIQUE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyASRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="OPTIN_PART_PROSPEC_EMAIL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyAiRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="OPTIN_PART_PROSPEC_SMS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyAyRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="OPTIN_PART_PROSPEC_TEL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyBCRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="TYPE_PERSONNE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyBSRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_CA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyBiRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="F_SOURCE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyByRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PROFESSION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyCCRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_PHYSIQUE_CSP_CONJOIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyCSRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="VOYAGE_PERSO_HABITUDES" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyCiRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="VOYAGE_PRO_HABITUDES" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyCyRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="SPORT_HABITUDES" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyDCRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="SPORT_ABONNEMENT_SALLE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyDSRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERSONNE_MORALE_SITE_INTE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyDiRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERSONNE_MORALE_TYPE_DE_L" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyDyRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_ACTIVITE_ETRA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyECRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_MATERIEL_PRO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyESRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PERS_MORALE_PRET_MAT_PRO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyEiRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="STATUT_RESIDENCE_PRINCIPA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyEyRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="CREDIT_IMMOBILIER_EN_COUR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyFCRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="CREDIT_IMMOBILIER1_DATE_F" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyFSRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="CREDIT_IMMOBILIER2_DATE_F" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyFiRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="CREDIT_IMMOBILIER3_DATE_F" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyFyRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="CREDIT_IMMOBILIER4_DATE_F" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyGCRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PAYS_RESID_SECOND" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyGSRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="PAYS_RESID_SECOND2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyGiRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="NB2_ROUES_DETENUS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyGyRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="TYPE_CB" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyHCRWEeemuIjPBnO6cQ" comment="" key="false" length="100" name="NOM_BANQUE_PRINCIPALE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column xmi:id="_4aTyHSRWEeemuIjPBnO6cQ" defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_4aTyHiRWEeemuIjPBnO6cQ" defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_4aTyHyRWEeemuIjPBnO6cQ" defaultValue="" key="false" length="255" name="inputLine" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties xmi:id="_4aTyICRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      <additionalProperties xmi:id="_4aTyISRWEeemuIjPBnO6cQ" key="HDFS_FILE_TYPE" value="TEXT"/>
+      <additionalProperties xmi:id="_4aTyIiRWEeemuIjPBnO6cQ" key="HDFS_PATH" value="/user/esimond/ODLS/PRM_Personne_pseudonymiseCORRIGE.csv"/>
+    </metadata>
+    <metadata xmi:id="_4aTyIyRWEeemuIjPBnO6cQ" connector="INTERMEDIATE" name="INTERMEDIATE">
+      <column xmi:id="_4aTyJCRWEeemuIjPBnO6cQ" defaultValue="" key="false" length="255" name="line" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node xmi:id="_4aTyJSRWEeemuIjPBnO6cQ" componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="192">
+    <elementParameter xmi:id="_4aTyJiRWEeemuIjPBnO6cQ" field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter xmi:id="_4aTyJyRWEeemuIjPBnO6cQ" field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter xmi:id="_4aTyKCRWEeemuIjPBnO6cQ" field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter xmi:id="_4aTyKSRWEeemuIjPBnO6cQ" field="CHECK" name="REPLICATED_JOIN" value="false"/>
+    <elementParameter xmi:id="_4aTyKiRWEeemuIjPBnO6cQ" field="IMAGE" name="PREVIEW" value="_wEnv4COgEee8dqpuv9JJpw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter xmi:id="_4aTyKyRWEeemuIjPBnO6cQ" field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter xmi:id="_4aTyLCRWEeemuIjPBnO6cQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_4aTyLSRWEeemuIjPBnO6cQ" connector="FLOW" label="prm_personne_parq" name="out">
+      <column xmi:id="_4aTyLiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="identifiant_personne" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyLyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyMCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="email_enr" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyMSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyMiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="nom_enr" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyMyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyNCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_prenom_enr" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyNSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyNiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_date_nais_e" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyNyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyOCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="code_postal_enr" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyOSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyOiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_raison_so_enr" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyOyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyPCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_siret_enr" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyPSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyPiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_siren_enr" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyPyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyQCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="langue" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyQSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyQiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="ville" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyQyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyRCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pays" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyRSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyRiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_civilit" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyRyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTySCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_nationalite" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTySSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTySiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_csp" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTySyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyTCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_sit_fam_mar" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyTSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyTiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_ro" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyTyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyUCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_sexe" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyUSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyUiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_nat_conjoin" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyUyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyVCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_dt_nai_conj" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyVSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyViRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_dt_nai_enf1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyVyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyWCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_dt_nai_enf2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyWSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyWiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_dt_nai_enf3" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyWyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyXCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_dt_nai_enf4" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyXSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyXiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_dt_ani_enf5" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aTyXyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aTyYCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_dt_nai_enf6" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX0CRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX0SRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_siret" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX0iRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX0yRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_siren" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX1CRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX1SRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_code_ape" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX1iRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX1yRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_code_naf" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX2CRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX2SRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_sta_juridique" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX2iRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX2yRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="optin_part_prospec_email" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX3CRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX3SRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="optin_part_prospec_sms" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX3iRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX3yRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="optin_part_prospec_tel" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX4CRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX4SRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="type_personne" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX4iRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX4yRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_ca" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX5CRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX5SRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="f_source" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX5iRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX5yRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="profession" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX6CRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX6SRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_csp_conjoin" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX6iRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX6yRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="voyage_perso_habitudes" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX7CRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX7SRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="voyage_pro_habitudes" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX7iRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX7yRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="sport_habitudes" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX8CRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX8SRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="sport_abonnement_salle" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX8iRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX8yRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="personne_morale_site_inte" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX9CRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX9SRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="personne_morale_type_de_l" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX9iRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX9yRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_activite_etra" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX-CRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX-SRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_materiel_pro" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX-iRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX-yRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_pret_mat_pro" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX_CRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX_SRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="statut_residence_principa" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUX_iRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUX_yRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="credit_immobilier_en_cour" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYACRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYASRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="credit_immobilier1_date_f" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYAiRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYAyRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="credit_immobilier2_date_f" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYBCRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYBSRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="credit_immobilier3_date_f" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYBiRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYByRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="credit_immobilier4_date_f" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYCCRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYCSRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pays_resid_second" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYCiRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYCyRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pays_resid_second2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYDCRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYDSRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="nb2_roues_detenus" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYDiRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYDyRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="type_cb" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYECRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYESRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="nom_banque_principale" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYEiRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <additionalProperties xmi:id="_4aUYEyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData" xmi:id="_4aUYFCRWEeemuIjPBnO6cQ">
+      <uiProperties xmi:id="_4aUYFSRWEeemuIjPBnO6cQ" shellMaximized="true"/>
+      <varTables xmi:id="_4aUYFiRWEeemuIjPBnO6cQ" sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables xmi:id="_4aUYFyRWEeemuIjPBnO6cQ" sizeState="INTERMEDIATE" name="out">
+        <mapperTableEntries xmi:id="_4aUYGCRWEeemuIjPBnO6cQ" name="identifiant_personne" expression="row1.IDENTIFIANT_PERSONNE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYGSRWEeemuIjPBnO6cQ" name="email_enr" expression="row1.EMAIL_ENR" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYGiRWEeemuIjPBnO6cQ" name="nom_enr" expression="row1.NOM_ENR" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYGyRWEeemuIjPBnO6cQ" name="pers_physique_prenom_enr" expression="row1.PERS_PHYSIQUE_PRENOM_ENR" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYHCRWEeemuIjPBnO6cQ" name="pers_physique_date_nais_e" expression="row1.PERS_PHYSIQUE_DATE_NAIS_E" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYHSRWEeemuIjPBnO6cQ" name="code_postal_enr" expression="row1.CODE_POSTAL_ENR" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYHiRWEeemuIjPBnO6cQ" name="pers_morale_raison_so_enr" expression="row1.PERS_MORALE_RAISON_SO_ENR" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYHyRWEeemuIjPBnO6cQ" name="pers_morale_siret_enr" expression="row1.PERS_MORALE_SIRET_ENR" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYICRWEeemuIjPBnO6cQ" name="pers_morale_siren_enr" expression="row1.PERS_MORALE_SIREN_ENR" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYISRWEeemuIjPBnO6cQ" name="langue" expression="row1.LANGUE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYIiRWEeemuIjPBnO6cQ" name="ville" expression="row1.VILLE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYIyRWEeemuIjPBnO6cQ" name="pays" expression="row1.PAYS" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYJCRWEeemuIjPBnO6cQ" name="pers_physique_civilit" expression="row1.PERS_PHYSIQUE_CIVILIT" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYJSRWEeemuIjPBnO6cQ" name="pers_physique_nationalite" expression="row1.PERS_PHYSIQUE_NATIONALITE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYJiRWEeemuIjPBnO6cQ" name="pers_physique_csp" expression="row1.PERS_PHYSIQUE_CSP" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYJyRWEeemuIjPBnO6cQ" name="pers_physique_sit_fam_mar" expression="row1.PERS_PHYSIQUE_SIT_FAM_MAR" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYKCRWEeemuIjPBnO6cQ" name="pers_physique_ro" expression="row1.PERS_PHYSIQUE_RO" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYKSRWEeemuIjPBnO6cQ" name="pers_physique_sexe" expression="row1.PERS_PHYSIQUE_SEXE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYKiRWEeemuIjPBnO6cQ" name="pers_physique_nat_conjoin" expression="row1.PERS_PHYSIQUE_NAT_CONJOIN" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYKyRWEeemuIjPBnO6cQ" name="pers_physique_dt_nai_conj" expression="row1.PERS_PHYSIQUE_DT_NAI_CONJ" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYLCRWEeemuIjPBnO6cQ" name="pers_physique_dt_nai_enf1" expression="row1.PERS_PHYSIQUE_DT_NAI_ENF1" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYLSRWEeemuIjPBnO6cQ" name="pers_physique_dt_nai_enf2" expression="row1.PERS_PHYSIQUE_DT_NAI_ENF2" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYLiRWEeemuIjPBnO6cQ" name="pers_physique_dt_nai_enf3" expression="row1.PERS_PHYSIQUE_DT_NAI_ENF3" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYLyRWEeemuIjPBnO6cQ" name="pers_physique_dt_nai_enf4" expression="row1.PERS_PHYSIQUE_DT_NAI_ENF4" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYMCRWEeemuIjPBnO6cQ" name="pers_physique_dt_ani_enf5" expression="row1.PERS_PHYSIQUE_DT_ANI_ENF5" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYMSRWEeemuIjPBnO6cQ" name="pers_physique_dt_nai_enf6" expression="row1.PERS_PHYSIQUE_DT_NAI_ENF6" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYMiRWEeemuIjPBnO6cQ" name="pers_morale_siret" expression="row1.PERS_MORALE_SIRET" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYMyRWEeemuIjPBnO6cQ" name="pers_morale_siren" expression="row1.PERS_MORALE_SIREN" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYNCRWEeemuIjPBnO6cQ" name="pers_morale_code_ape" expression="row1.PERS_MORALE_CODE_APE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYNSRWEeemuIjPBnO6cQ" name="pers_morale_code_naf" expression="row1.PERS_MORALE_CODE_NAF" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYNiRWEeemuIjPBnO6cQ" name="pers_morale_sta_juridique" expression="row1.PERS_MORALE_STA_JURIDIQUE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYNyRWEeemuIjPBnO6cQ" name="optin_part_prospec_email" expression="row1.OPTIN_PART_PROSPEC_EMAIL" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYOCRWEeemuIjPBnO6cQ" name="optin_part_prospec_sms" expression="row1.OPTIN_PART_PROSPEC_SMS" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYOSRWEeemuIjPBnO6cQ" name="optin_part_prospec_tel" expression="row1.OPTIN_PART_PROSPEC_TEL" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYOiRWEeemuIjPBnO6cQ" name="type_personne" expression="row1.TYPE_PERSONNE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYOyRWEeemuIjPBnO6cQ" name="pers_morale_ca" expression="row1.PERS_MORALE_CA" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYPCRWEeemuIjPBnO6cQ" name="f_source" expression="row1.F_SOURCE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYPSRWEeemuIjPBnO6cQ" name="profession" expression="row1.PROFESSION" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYPiRWEeemuIjPBnO6cQ" name="pers_physique_csp_conjoin" expression="row1.PERS_PHYSIQUE_CSP_CONJOIN" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYPyRWEeemuIjPBnO6cQ" name="voyage_perso_habitudes" expression="row1.VOYAGE_PERSO_HABITUDES" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYQCRWEeemuIjPBnO6cQ" name="voyage_pro_habitudes" expression="row1.VOYAGE_PRO_HABITUDES" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYQSRWEeemuIjPBnO6cQ" name="sport_habitudes" expression="row1.SPORT_HABITUDES" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYQiRWEeemuIjPBnO6cQ" name="sport_abonnement_salle" expression="row1.SPORT_ABONNEMENT_SALLE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYQyRWEeemuIjPBnO6cQ" name="personne_morale_site_inte" expression="row1.PERSONNE_MORALE_SITE_INTE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYRCRWEeemuIjPBnO6cQ" name="personne_morale_type_de_l" expression="row1.PERSONNE_MORALE_TYPE_DE_L" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYRSRWEeemuIjPBnO6cQ" name="pers_morale_activite_etra" expression="row1.PERS_MORALE_ACTIVITE_ETRA" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYRiRWEeemuIjPBnO6cQ" name="pers_morale_materiel_pro" expression="row1.PERS_MORALE_MATERIEL_PRO" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYRyRWEeemuIjPBnO6cQ" name="pers_morale_pret_mat_pro" expression="row1.PERS_MORALE_PRET_MAT_PRO" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYSCRWEeemuIjPBnO6cQ" name="statut_residence_principa" expression="row1.STATUT_RESIDENCE_PRINCIPA" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYSSRWEeemuIjPBnO6cQ" name="credit_immobilier_en_cour" expression="row1.CREDIT_IMMOBILIER_EN_COUR" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYSiRWEeemuIjPBnO6cQ" name="credit_immobilier1_date_f" expression="row1.CREDIT_IMMOBILIER1_DATE_F" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYSyRWEeemuIjPBnO6cQ" name="credit_immobilier2_date_f" expression="row1.CREDIT_IMMOBILIER2_DATE_F" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYTCRWEeemuIjPBnO6cQ" name="credit_immobilier3_date_f" expression="row1.CREDIT_IMMOBILIER3_DATE_F" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYTSRWEeemuIjPBnO6cQ" name="credit_immobilier4_date_f" expression="row1.CREDIT_IMMOBILIER4_DATE_F" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYTiRWEeemuIjPBnO6cQ" name="pays_resid_second" expression="row1.PAYS_RESID_SECOND" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYTyRWEeemuIjPBnO6cQ" name="pays_resid_second2" expression="row1.PAYS_RESID_SECOND2" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYUCRWEeemuIjPBnO6cQ" name="nb2_roues_detenus" expression="row1.NB2_ROUES_DETENUS" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYUSRWEeemuIjPBnO6cQ" name="type_cb" expression="row1.TYPE_CB" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYUiRWEeemuIjPBnO6cQ" name="nom_banque_principale" expression="row1.NOM_BANQUE_PRINCIPALE" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables xmi:id="_4aUYUyRWEeemuIjPBnO6cQ" sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries xmi:id="_4aUYVCRWEeemuIjPBnO6cQ" name="IDENTIFIANT_PERSONNE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYVSRWEeemuIjPBnO6cQ" name="EMAIL_ENR" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYViRWEeemuIjPBnO6cQ" name="NOM_ENR" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYVyRWEeemuIjPBnO6cQ" name="PERS_PHYSIQUE_PRENOM_ENR" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYWCRWEeemuIjPBnO6cQ" name="PERS_PHYSIQUE_DATE_NAIS_E" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYWSRWEeemuIjPBnO6cQ" name="CODE_POSTAL_ENR" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYWiRWEeemuIjPBnO6cQ" name="PERS_MORALE_RAISON_SO_ENR" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYWyRWEeemuIjPBnO6cQ" name="PERS_MORALE_SIRET_ENR" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYXCRWEeemuIjPBnO6cQ" name="PERS_MORALE_SIREN_ENR" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYXSRWEeemuIjPBnO6cQ" name="LANGUE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYXiRWEeemuIjPBnO6cQ" name="VILLE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYXyRWEeemuIjPBnO6cQ" name="PAYS" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYYCRWEeemuIjPBnO6cQ" name="PERS_PHYSIQUE_CIVILIT" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYYSRWEeemuIjPBnO6cQ" name="PERS_PHYSIQUE_NATIONALITE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYYiRWEeemuIjPBnO6cQ" name="PERS_PHYSIQUE_CSP" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYYyRWEeemuIjPBnO6cQ" name="PERS_PHYSIQUE_SIT_FAM_MAR" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYZCRWEeemuIjPBnO6cQ" name="PERS_PHYSIQUE_RO" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYZSRWEeemuIjPBnO6cQ" name="PERS_PHYSIQUE_SEXE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYZiRWEeemuIjPBnO6cQ" name="PERS_PHYSIQUE_NAT_CONJOIN" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYZyRWEeemuIjPBnO6cQ" name="PERS_PHYSIQUE_DT_NAI_CONJ" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYaCRWEeemuIjPBnO6cQ" name="PERS_PHYSIQUE_DT_NAI_ENF1" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYaSRWEeemuIjPBnO6cQ" name="PERS_PHYSIQUE_DT_NAI_ENF2" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYaiRWEeemuIjPBnO6cQ" name="PERS_PHYSIQUE_DT_NAI_ENF3" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYayRWEeemuIjPBnO6cQ" name="PERS_PHYSIQUE_DT_NAI_ENF4" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYbCRWEeemuIjPBnO6cQ" name="PERS_PHYSIQUE_DT_ANI_ENF5" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYbSRWEeemuIjPBnO6cQ" name="PERS_PHYSIQUE_DT_NAI_ENF6" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYbiRWEeemuIjPBnO6cQ" name="PERS_MORALE_SIRET" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYbyRWEeemuIjPBnO6cQ" name="PERS_MORALE_SIREN" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYcCRWEeemuIjPBnO6cQ" name="PERS_MORALE_CODE_APE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYcSRWEeemuIjPBnO6cQ" name="PERS_MORALE_CODE_NAF" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYciRWEeemuIjPBnO6cQ" name="PERS_MORALE_STA_JURIDIQUE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYcyRWEeemuIjPBnO6cQ" name="OPTIN_PART_PROSPEC_EMAIL" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYdCRWEeemuIjPBnO6cQ" name="OPTIN_PART_PROSPEC_SMS" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYdSRWEeemuIjPBnO6cQ" name="OPTIN_PART_PROSPEC_TEL" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYdiRWEeemuIjPBnO6cQ" name="TYPE_PERSONNE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYdyRWEeemuIjPBnO6cQ" name="PERS_MORALE_CA" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYeCRWEeemuIjPBnO6cQ" name="F_SOURCE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYeSRWEeemuIjPBnO6cQ" name="PROFESSION" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYeiRWEeemuIjPBnO6cQ" name="PERS_PHYSIQUE_CSP_CONJOIN" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYeyRWEeemuIjPBnO6cQ" name="VOYAGE_PERSO_HABITUDES" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYfCRWEeemuIjPBnO6cQ" name="VOYAGE_PRO_HABITUDES" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYfSRWEeemuIjPBnO6cQ" name="SPORT_HABITUDES" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYfiRWEeemuIjPBnO6cQ" name="SPORT_ABONNEMENT_SALLE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYfyRWEeemuIjPBnO6cQ" name="PERSONNE_MORALE_SITE_INTE" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYgCRWEeemuIjPBnO6cQ" name="PERSONNE_MORALE_TYPE_DE_L" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYgSRWEeemuIjPBnO6cQ" name="PERS_MORALE_ACTIVITE_ETRA" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYgiRWEeemuIjPBnO6cQ" name="PERS_MORALE_MATERIEL_PRO" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYgyRWEeemuIjPBnO6cQ" name="PERS_MORALE_PRET_MAT_PRO" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYhCRWEeemuIjPBnO6cQ" name="STATUT_RESIDENCE_PRINCIPA" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYhSRWEeemuIjPBnO6cQ" name="CREDIT_IMMOBILIER_EN_COUR" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYhiRWEeemuIjPBnO6cQ" name="CREDIT_IMMOBILIER1_DATE_F" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYhyRWEeemuIjPBnO6cQ" name="CREDIT_IMMOBILIER2_DATE_F" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYiCRWEeemuIjPBnO6cQ" name="CREDIT_IMMOBILIER3_DATE_F" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYiSRWEeemuIjPBnO6cQ" name="CREDIT_IMMOBILIER4_DATE_F" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYiiRWEeemuIjPBnO6cQ" name="PAYS_RESID_SECOND" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYiyRWEeemuIjPBnO6cQ" name="PAYS_RESID_SECOND2" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYjCRWEeemuIjPBnO6cQ" name="NB2_ROUES_DETENUS" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYjSRWEeemuIjPBnO6cQ" name="TYPE_CB" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_4aUYjiRWEeemuIjPBnO6cQ" name="NOM_BANQUE_PRINCIPALE" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node xmi:id="_4aUYjyRWEeemuIjPBnO6cQ" componentName="tHiveOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="192">
+    <elementParameter xmi:id="_4aUYkCRWEeemuIjPBnO6cQ" field="TEXT" name="UNIQUE_NAME" value="tHiveOutput_1" show="false"/>
+    <elementParameter xmi:id="_4aUYkSRWEeemuIjPBnO6cQ" field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter xmi:id="_4aUYkiRWEeemuIjPBnO6cQ" field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_E3BJECHmEeeWzuN4mxM4XA" show="false"/>
+    <elementParameter xmi:id="_4aUYkyRWEeemuIjPBnO6cQ" field="COMPONENT_LIST" name="HIVE_STORAGE_CONFIGURATION" value="tHiveConfiguration_1"/>
+    <elementParameter xmi:id="_4aUYlCRWEeemuIjPBnO6cQ" field="COMPONENT_LIST" name="HDFS_STORAGE_CONFIGURATION" value="tHDFSConfiguration_1"/>
+    <elementParameter xmi:id="_4aUYlSRWEeemuIjPBnO6cQ" field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter xmi:id="_4aUYliRWEeemuIjPBnO6cQ" field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_E3BJECHmEeeWzuN4mxM4XA - prm_personne_parq" show="false"/>
+    <elementParameter xmi:id="_4aUYlyRWEeemuIjPBnO6cQ" field="CLOSED_LIST" name="OUTPUT_SOURCE" value="HIVE_TABLE"/>
+    <elementParameter xmi:id="_4aUYmCRWEeemuIjPBnO6cQ" field="TEXT" name="HIVE_DATABASE_NAME" value="&quot;april&quot;"/>
+    <elementParameter xmi:id="_4aUYmSRWEeemuIjPBnO6cQ" field="DBTABLE" name="HIVE_TABLE_NAME" value="&quot;prm_personne_parq&quot;"/>
+    <elementParameter xmi:id="_4aUYmiRWEeemuIjPBnO6cQ" field="CLOSED_LIST" name="TABLEFORMAT" value="json"/>
+    <elementParameter xmi:id="_4aUYmyRWEeemuIjPBnO6cQ" field="TEXT" name="OUTPUT_FOLDER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_4aUYnCRWEeemuIjPBnO6cQ" field="CLOSED_LIST" name="SAVEMODE" value="ErrorIfExists"/>
+    <elementParameter xmi:id="_4aUYnSRWEeemuIjPBnO6cQ" field="TEXT" name="TYPE" value="HIVE" show="false"/>
+    <elementParameter xmi:id="_4aUYniRWEeemuIjPBnO6cQ" field="TEXT" name="SPARK_CONFIGURATION" value="tSparkConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_4aUYnyRWEeemuIjPBnO6cQ" field="TEXT" name="LABEL" value="__HIVE_TABLE_NAME__"/>
+    <elementParameter xmi:id="_4aUYoCRWEeemuIjPBnO6cQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_Dmvw8MF8EeeIi49gPXwe0g" field="CHECK" name="SORT_COLUMNS_ALPHABETICALLY" value="true"/>
+    <metadata xmi:id="_4aUYoSRWEeemuIjPBnO6cQ" connector="FLOW" label="prm_personne_parq" name="tHiveOutput_1">
+      <column xmi:id="_4aUYoiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="identifiant_personne" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYoyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYpCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="email_enr" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYpSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYpiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="nom_enr" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYpyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYqCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_prenom_enr" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYqSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYqiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_date_nais_e" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYqyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYrCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="code_postal_enr" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYrSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYriRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_raison_so_enr" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYryRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYsCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_siret_enr" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYsSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYsiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_siren_enr" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYsyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYtCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="langue" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYtSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYtiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="ville" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYtyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYuCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pays" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYuSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYuiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_civilit" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYuyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYvCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_nationalite" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYvSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYviRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_csp" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYvyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYwCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_sit_fam_mar" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYwSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYwiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_ro" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYwyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYxCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_sexe" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYxSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYxiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_nat_conjoin" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYxyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYyCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_dt_nai_conj" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYySRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYyiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_dt_nai_enf1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYyyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYzCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_dt_nai_enf2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYzSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUYziRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_dt_nai_enf3" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUYzyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY0CRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_dt_nai_enf4" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY0SRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY0iRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_dt_ani_enf5" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY0yRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY1CRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_dt_nai_enf6" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY1SRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY1iRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_siret" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY1yRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY2CRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_siren" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY2SRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY2iRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_code_ape" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY2yRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY3CRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_code_naf" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY3SRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY3iRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_sta_juridique" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY3yRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY4CRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="optin_part_prospec_email" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY4SRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY4iRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="optin_part_prospec_sms" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY4yRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY5CRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="optin_part_prospec_tel" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY5SRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY5iRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="type_personne" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY5yRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY6CRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_ca" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY6SRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY6iRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="f_source" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY6yRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY7CRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="profession" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY7SRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY7iRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_physique_csp_conjoin" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY7yRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY8CRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="voyage_perso_habitudes" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY8SRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY8iRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="voyage_pro_habitudes" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY8yRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY9CRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="sport_habitudes" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY9SRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY9iRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="sport_abonnement_salle" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY9yRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY-CRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="personne_morale_site_inte" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY-SRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY-iRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="personne_morale_type_de_l" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY-yRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY_CRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_activite_etra" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY_SRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUY_iRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_materiel_pro" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUY_yRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUZACRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pers_morale_pret_mat_pro" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUZASRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUZAiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="statut_residence_principa" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUZAyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUZBCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="credit_immobilier_en_cour" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUZBSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUZBiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="credit_immobilier1_date_f" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUZByRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUZCCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="credit_immobilier2_date_f" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUZCSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUZCiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="credit_immobilier3_date_f" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUZCyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUZDCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="credit_immobilier4_date_f" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUZDSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUZDiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pays_resid_second" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUZDyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUZECRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="pays_resid_second2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUZESRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUZEiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="nb2_roues_detenus" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUZEyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUZFCRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="type_cb" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUZFSRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_4aUZFiRWEeemuIjPBnO6cQ" comment="" key="false" length="2147483647" name="nom_banque_principale" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_4aUZFyRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+      </column>
+      <additionalProperties xmi:id="_4aUZGCRWEeemuIjPBnO6cQ" key="Comment" value=""/>
+    </metadata>
+  </node>
+  <connection xmi:id="_4aUZGSRWEeemuIjPBnO6cQ" connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
+    <elementParameter xmi:id="_4aUZGiRWEeemuIjPBnO6cQ" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_4aUZGyRWEeemuIjPBnO6cQ" field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection xmi:id="_4aUZHCRWEeemuIjPBnO6cQ" connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tHiveOutput_1">
+    <elementParameter xmi:id="_4aUZHSRWEeemuIjPBnO6cQ" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_4aUZHiRWEeemuIjPBnO6cQ" field="TEXT" name="UNIQUE_NAME" value="out" show="false"/>
+  </connection>
+  <subjob xmi:id="_4aUZHyRWEeemuIjPBnO6cQ">
+    <elementParameter xmi:id="_4aUZICRWEeemuIjPBnO6cQ" field="TEXT" name="UNIQUE_NAME" value="tHDFSConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_4aUZISRWEeemuIjPBnO6cQ" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_4aUZIiRWEeemuIjPBnO6cQ" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_4aUZIyRWEeemuIjPBnO6cQ">
+    <elementParameter xmi:id="_4aUZJCRWEeemuIjPBnO6cQ" field="TEXT" name="UNIQUE_NAME" value="tHiveConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_4aUZJSRWEeemuIjPBnO6cQ" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_4aUZJiRWEeemuIjPBnO6cQ" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_4aUZJyRWEeemuIjPBnO6cQ">
+    <elementParameter xmi:id="_4aUZKCRWEeemuIjPBnO6cQ" field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter xmi:id="_4aUZKSRWEeemuIjPBnO6cQ" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_4aUZKiRWEeemuIjPBnO6cQ" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
