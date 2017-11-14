@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="Depose_extraction_zip" prompt="Depose_extraction_zip?" promptNeeded="false" repositoryContextId="_PNkPkMl-EeeZcMexoz66SQ" type="id_Directory" value="C:/Data/02_Depose_extraction/"/>
+    <contextParameter comment="" name="Depose_internet" prompt="Depose_internet?" promptNeeded="false" repositoryContextId="_PNkPkMl-EeeZcMexoz66SQ" type="id_Directory" value="C:/Data/01_Depose_internet/"/>
+    <contextParameter comment="" name="Vers_HDFS" prompt="Vers_HDFS?" promptNeeded="false" repositoryContextId="_PNkPkMl-EeeZcMexoz66SQ" type="id_Directory" value="C:/Data/03_Vers_HDFS/"/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
@@ -119,8 +123,8 @@
   </node>
   <node componentName="tFileUnarchive" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileUnarchive_1" show="false"/>
-    <elementParameter field="FILE" name="ZIPFILE" value="&quot;C:/app/talendStudio/workspace/archive.zip&quot;"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/app/talendStudio/workspace&quot;"/>
+    <elementParameter field="FILE" name="ZIPFILE" value="context.Depose_internet/sirene_2017311_E_Q.zip"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.Depose_extraction_zip"/>
     <elementParameter field="CHECK" name="ROOTNAME" value="false"/>
     <elementParameter field="CHECK" name="INTEGRITY" value="false"/>
     <elementParameter field="CHECK" name="EXTRACTPATH" value="true"/>
