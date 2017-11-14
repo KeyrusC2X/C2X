@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" name="Default"/>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="C2X" jobType="Standard">
+  <context confirmationNeeded="false" name="C2X">
+    <contextParameter comment="" name="Depose_extraction_zip" prompt="Depose_extraction_zip?" promptNeeded="false" repositoryContextId="_PNkPkMl-EeeZcMexoz66SQ" type="id_Directory" value="C:/Data/02_Depose_extraction/"/>
+    <contextParameter comment="" name="Depose_internet" prompt="Depose_internet?" promptNeeded="false" repositoryContextId="_PNkPkMl-EeeZcMexoz66SQ" type="id_Directory" value="C:/Data/01_Depose_internet/"/>
+    <contextParameter comment="" name="Vers_HDFS" prompt="Vers_HDFS?" promptNeeded="false" repositoryContextId="_PNkPkMl-EeeZcMexoz66SQ" type="id_Directory" value="C:/Data/03_Vers_HDFS/"/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
@@ -120,7 +124,7 @@
     <elementParameter field="TEXT" name="URI" value="&quot;https://datanova.legroupe.laposte.fr/explore/dataset/laposte_hexasmal/download/?format=csv&amp;timezone=Europe/Berlin&amp;use_labels_for_header=true&quot;"/>
     <elementParameter field="CHECK" name="USE_CACHE" value="false"/>
     <elementParameter field="TEXT" name="SMB_URI" value="&quot;smb://host/dir/remoteFileName.txt&quot;" show="false"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/Data&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.Depose_internet"/>
     <elementParameter field="CHECK" name="MAKEDIRS" value="false"/>
     <elementParameter field="TEXT" name="FILENAME" value="&quot;laposte_hexasmal.csv&quot;"/>
     <elementParameter field="CHECK" name="ADD_HEADER" value="false"/>
@@ -165,7 +169,7 @@
     <elementParameter field="TEXT" name="URI" value="&quot;https://www.insee.fr/fr/statistiques/fichier/2525755/ensemble.xls&quot;"/>
     <elementParameter field="CHECK" name="USE_CACHE" value="false"/>
     <elementParameter field="TEXT" name="SMB_URI" value="&quot;smb://host/dir/remoteFileName.txt&quot;" show="false"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/Data&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.Depose_internet"/>
     <elementParameter field="CHECK" name="MAKEDIRS" value="false"/>
     <elementParameter field="TEXT" name="FILENAME" value="&quot;ensemble.xls&quot;"/>
     <elementParameter field="CHECK" name="ADD_HEADER" value="false"/>
@@ -206,7 +210,7 @@
     <elementParameter field="TEXT" name="URI" value="&quot;http://files.data.gouv.fr/sirene/sirene_2017311_E_Q.zip&quot;"/>
     <elementParameter field="CHECK" name="USE_CACHE" value="false"/>
     <elementParameter field="TEXT" name="SMB_URI" value="&quot;smb://host/dir/remoteFileName.txt&quot;" show="false"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/Data&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.Depose_internet"/>
     <elementParameter field="CHECK" name="MAKEDIRS" value="false"/>
     <elementParameter field="TEXT" name="FILENAME" value="&quot;sirene_2017311_E_Q.zip&quot;"/>
     <elementParameter field="CHECK" name="ADD_HEADER" value="false"/>
