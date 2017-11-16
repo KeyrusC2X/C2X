@@ -190,52 +190,6 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tConvertType_1" show="false"/>
-    <elementParameter field="CHECK" name="AUTOCAST" value="true"/>
-    <elementParameter field="TABLE" name="MANUALTABLE" show="false"/>
-    <elementParameter field="CHECK" name="EMPTYTONULL" value="false"/>
-    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="ref_insee_postal" name="tConvertType_1">
-      <column comment="" key="false" length="200" name="code_commune_insee" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="nom_commune" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="code_postal" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="coordonnees_gps_x" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="coordonnees_gps_y" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
-    <metadata connector="REJECT" label="ref_insee_postal" name="REJECT">
-      <column comment="" key="false" length="200" name="code_commune_insee" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="nom_commune" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="code_postal" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="coordonnees_gps_x" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="coordonnees_gps_y" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <additionalProperties key="Comment" value=""/>
-    </metadata>
-  </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
@@ -249,7 +203,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="ref_insee_postal" name="out1">
-      <column comment="" key="true" length="200" name="PK" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="" key="true" length="200" name="PK" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="200" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="code_commune_insee" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -271,14 +225,14 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
-        <mapperTableEntries name="PK" expression="Numeric.sequence(&quot;s1&quot;,1,1) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="code_commune_insee" expression="row2.code_commune_insee " type="id_String" nullable="true"/>
-        <mapperTableEntries name="nom_commune" expression="row2.nom_commune " type="id_String" nullable="true"/>
-        <mapperTableEntries name="code_postal" expression="row2.code_postal " type="id_String" nullable="true"/>
-        <mapperTableEntries name="coordonnees_gps_x" expression="row2.coordonnees_gps_x " type="id_String" nullable="true"/>
-        <mapperTableEntries name="coordonnees_gps_y" expression="row2.coordonnees_gps_y " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PK" expression="Numeric.sequence(&quot;s1&quot;,1,1) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="code_commune_insee" expression="row1.code_commune_insee " type="id_String" nullable="true"/>
+        <mapperTableEntries name="nom_commune" expression="row1.nom_commune " type="id_String" nullable="true"/>
+        <mapperTableEntries name="code_postal" expression="row1.code_postal " type="id_String" nullable="true"/>
+        <mapperTableEntries name="coordonnees_gps_x" expression="row1.coordonnees_gps_x " type="id_String" nullable="true"/>
+        <mapperTableEntries name="coordonnees_gps_y" expression="row1.coordonnees_gps_y " type="id_String" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="code_commune_insee" type="id_String" nullable="true"/>
         <mapperTableEntries name="nom_commune" type="id_String" nullable="true"/>
         <mapperTableEntries name="code_postal" type="id_String" nullable="true"/>
@@ -359,7 +313,7 @@
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="ref_insee_postal" name="tMysqlOutput_1">
-      <column comment="" key="true" length="200" name="PK" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="" key="true" length="200" name="PK" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="200" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="code_commune_insee" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -378,7 +332,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <metadata connector="REJECT" label="ref_insee_postal" name="REJECT">
-      <column comment="" key="true" length="200" name="PK" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="" key="true" length="200" name="PK" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="200" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="code_commune_insee" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -402,13 +356,9 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tImpalaConnection_1" offsetLabelX="0" offsetLabelY="0" source="tImpalaConnection_1" target="tImpalaInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tImpalaInput_1" offsetLabelX="0" offsetLabelY="0" source="tImpalaInput_1" target="tConvertType_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tImpalaInput_1" offsetLabelX="0" offsetLabelY="0" source="tImpalaInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tConvertType_1" offsetLabelX="0" offsetLabelY="0" source="tConvertType_1" target="tMap_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMysqlOutput_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
