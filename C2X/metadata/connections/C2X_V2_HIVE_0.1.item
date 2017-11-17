@@ -55,7 +55,6 @@
   <orgomg.cwm.resource.relational:Schema xmi:id="_ggsM4MoxEeeZRqW_lJn48A" name="default" dataManager="_KGtDkMWFEeeZcMexoz66SQ">
     <ownedElement xsi:type="relational:TdTable" xmi:id="_LXxLAMo0EeeZRqW_lJn48A" name="ref_insee_postal" id="_LXtgoMo0EeeZRqW_lJn48A" comment="Contient la liste des codes Insee. PK de la table : Code commune INSEE" label="ref_insee_postal" tableType="TABLE">
       <taggedValue xmi:id="_LXxyEMo0EeeZRqW_lJn48A" tag="Comment" value="Contient la liste des codes Insee. PK de la table : Code commune INSEE"/>
-      <taggedValue xmi:id="_LXxyEco0EeeZRqW_lJn48A" tag="Comment" value="Contient la liste des codes Insee. PK de la table : Code commune INSEE"/>
       <feature xsi:type="relational:TdColumn" xmi:id="_LXxyEso0EeeZRqW_lJn48A" name="code_commune_insee" label="code_commune_insee" length="2147483647" sourceType="STRING" talendType="id_String">
         <taggedValue xmi:id="_LXxyE8o0EeeZRqW_lJn48A" tag="Comment" value=""/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_LXxyFMo0EeeZRqW_lJn48A" language="COLUMN_DEF"/>
@@ -80,6 +79,39 @@
         <taggedValue xmi:id="_LXxyI8o0EeeZRqW_lJn48A" tag="Comment" value=""/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_LXxyJMo0EeeZRqW_lJn48A" language="COLUMN_DEF"/>
         <sqlDataType xmi:id="_LXxyJco0EeeZRqW_lJn48A" name="STRING" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_tXkDQMuSEeejn_fk1JquFQ" name="ref_insee_postal_parquet" id="_tXg_8MuSEeejn_fk1JquFQ" label="ref_insee_postal_parquet" tableType="TABLE">
+      <taggedValue xmi:id="_tXkDQcuSEeejn_fk1JquFQ" tag="Comment" value=""/>
+      <feature xsi:type="relational:TdColumn" xmi:id="_tXkDQsuSEeejn_fk1JquFQ" name="code_commune_insee" label="code_commune_insee" length="2147483647" sourceType="STRING" talendType="id_String">
+        <taggedValue xmi:id="_tXkDQ8uSEeejn_fk1JquFQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_tXkDRMuSEeejn_fk1JquFQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_tXkDRcuSEeejn_fk1JquFQ" name="STRING" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_tXkDRsuSEeejn_fk1JquFQ" name="nom_commune" label="nom_commune" length="2147483647" sourceType="STRING" talendType="id_String">
+        <taggedValue xmi:id="_tXkDR8uSEeejn_fk1JquFQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_tXkDSMuSEeejn_fk1JquFQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_tXkDScuSEeejn_fk1JquFQ" name="STRING" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_tXkDSsuSEeejn_fk1JquFQ" name="code_postal" label="code_postal" length="2147483647" sourceType="STRING" talendType="id_String">
+        <taggedValue xmi:id="_tXkDS8uSEeejn_fk1JquFQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_tXkDTMuSEeejn_fk1JquFQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_tXkDTcuSEeejn_fk1JquFQ" name="STRING" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_tXkDTsuSEeejn_fk1JquFQ" name="libelle_acheminement" label="libelle_acheminement" length="2147483647" sourceType="STRING" talendType="id_String">
+        <taggedValue xmi:id="_tXkDT8uSEeejn_fk1JquFQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_tXkDUMuSEeejn_fk1JquFQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_tXkDUcuSEeejn_fk1JquFQ" name="STRING" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_tXkDUsuSEeejn_fk1JquFQ" name="ligne_5" label="ligne_5" length="2147483647" sourceType="STRING" talendType="id_String">
+        <taggedValue xmi:id="_tXkDU8uSEeejn_fk1JquFQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_tXkDVMuSEeejn_fk1JquFQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_tXkDVcuSEeejn_fk1JquFQ" name="STRING" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_tXkDVsuSEeejn_fk1JquFQ" name="coordonnees_gps" label="coordonnees_gps" length="2147483647" sourceType="STRING" talendType="id_String">
+        <taggedValue xmi:id="_tXkDV8uSEeejn_fk1JquFQ" tag="Comment" value=""/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_tXkDWMuSEeejn_fk1JquFQ" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_tXkDWcuSEeejn_fk1JquFQ" name="STRING" javaDataType="12" nullable="columnNullable"/>
       </feature>
     </ownedElement>
   </orgomg.cwm.resource.relational:Schema>
