@@ -875,7 +875,17 @@
         <additionalField key="Comment" value=""/>
         <additionalField key="SEMANTIC_NAME" value="Postal Code"/>
       </column>
+      <column comment="" key="false" length="2147483647" name="nic" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="FR Insee Code"/>
+      </column>
       <column comment="" key="false" length="200" name="code_postal" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="code_commune_insee" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="200" name="nom_commune" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
@@ -884,7 +894,10 @@
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="codpos" expression="row1.codpos " type="id_String" nullable="true"/>
-        <mapperTableEntries name="code_postal" expression="row2.code_postal " type="id_String" nullable="true"/>
+        <mapperTableEntries name="nic" expression="row1.nic " type="id_String" nullable="true"/>
+        <mapperTableEntries name="code_postal" expression="row2.code_postal" type="id_String" nullable="true"/>
+        <mapperTableEntries name="code_commune_insee" expression="row2.code_commune_insee " type="id_String" nullable="true"/>
+        <mapperTableEntries name="nom_commune" expression="row2.nom_commune " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" activateColumnNameFilter="true" columnNameFilter="" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="siren" type="id_String" nullable="true"/>
@@ -1119,31 +1132,17 @@
         <additionalField key="Comment" value=""/>
         <additionalField key="SEMANTIC_NAME" value="Postal Code"/>
       </column>
-      <column comment="" key="false" length="2147483647" name="siren" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-        <additionalField key="SEMANTIC_NAME" value="Bank Routing Transit Number"/>
-      </column>
       <column comment="" key="false" length="2147483647" name="nic" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
         <additionalField key="SEMANTIC_NAME" value="FR Insee Code"/>
+      </column>
+      <column comment="" key="false" length="200" name="code_postal" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="200" name="code_commune_insee" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="200" name="nom_commune" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="coordonnees_gps_x" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="coordonnees_gps_y" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="2147483647" name="tel" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-        <additionalField key="SEMANTIC_NAME" value=""/>
-      </column>
-      <column comment="" key="false" length="200" name="code_postal" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
@@ -1153,6 +1152,17 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="nom_commune"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="nic"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="code_commune_insee"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
   </connection>
