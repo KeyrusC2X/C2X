@@ -926,6 +926,9 @@
       <column comment="" key="false" length="200" name="nom_commune" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="200" name="code_postal" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
       <column comment="" key="false" length="200" name="coordonnees_gps_x" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -943,6 +946,7 @@
         <mapperTableEntries name="tel" expression="row1.tel " type="id_String" nullable="true"/>
         <mapperTableEntries name="code_commune_insee" expression="row2.code_commune_insee " type="id_String" nullable="true"/>
         <mapperTableEntries name="nom_commune" expression="row2.nom_commune " type="id_String" nullable="true"/>
+        <mapperTableEntries name="code_postal" expression="row2.code_postal " type="id_String" nullable="true"/>
         <mapperTableEntries name="coordonnees_gps_x" expression="row2.coordonnees_gps_x " type="id_String" nullable="true"/>
         <mapperTableEntries name="coordonnees_gps_y" expression="row2.coordonnees_gps_y " type="id_String" nullable="true"/>
       </outputTables>
@@ -1170,6 +1174,8 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="nom_commune"/>
       <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="code_postal"/>
+      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="coordonnees_gps_x"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="coordonnees_gps_y"/>
@@ -1201,6 +1207,9 @@
       <column comment="" key="false" length="200" name="nom_commune" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="200" name="code_postal" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
       <column comment="" key="false" length="200" name="coordonnees_gps_x" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -1214,6 +1223,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="code_postal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
   </connection>
