@@ -143,7 +143,6 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="Date_Out">
-      <column comment="" key="false" length="-1" name="PK_Date" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Date_dd_MM_yyyy" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;addDate&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;date&quot;,&quot;PARAMETER_VALUE&quot;:&quot;context.Generation_Date &quot;},{&quot;PARAMETER_NAME&quot;:&quot;nb&quot;,&quot;PARAMETER_VALUE&quot;:&quot;Numeric.sequence(\&quot;s1\&quot;, 1, 1) - 1 &quot;},{&quot;PARAMETER_NAME&quot;:&quot;dateType&quot;,&quot;PARAMETER_VALUE&quot;:&quot;\&quot;dd\&quot; &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDate&quot;}"/>
       </column>
@@ -152,7 +151,6 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Date_Out">
-        <mapperTableEntries name="PK_Date" expression="Numeric.sequence(&quot;s1&quot;,1,1) " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Date_dd_MM_yyyy" expression="row1.Date " type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
@@ -174,8 +172,6 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="PK_Date"/>
-      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Date_dd_MM_yyyy"/>
       <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
@@ -183,7 +179,6 @@
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" key="false" length="-1" name="PK_Date" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Date_dd_MM_yyyy" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;addDate&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;date&quot;,&quot;PARAMETER_VALUE&quot;:&quot;context.Generation_Date &quot;},{&quot;PARAMETER_NAME&quot;:&quot;nb&quot;,&quot;PARAMETER_VALUE&quot;:&quot;Numeric.sequence(\&quot;s1\&quot;, 1, 1) - 1 &quot;},{&quot;PARAMETER_NAME&quot;:&quot;dateType&quot;,&quot;PARAMETER_VALUE&quot;:&quot;\&quot;dd\&quot; &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDate&quot;}"/>
       </column>
