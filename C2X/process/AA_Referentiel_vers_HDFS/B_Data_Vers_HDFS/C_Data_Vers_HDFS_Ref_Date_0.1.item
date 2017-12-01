@@ -159,7 +159,7 @@
         <mapperTableEntries name="Pk_Data" expression="Integer.parseInt(TalendDate.formatDate(&quot;yyyyMMdd&quot;,row1.Date)) " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Date_dd_MM_yyyy" expression="row1.Date " type="id_Date" nullable="true"/>
         <mapperTableEntries name="Date_Jour" expression="Integer.parseInt(TalendDate.formatDate(&quot;dd&quot;,row1.Date)) " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Date_Jour_libelle" expression="TalendDate.formatDate(&quot;dd&quot;,row1.Date)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Date_Jour_libelle" expression="TalendDate.formatDate(&quot;EEE&quot;,row1.Date)" type="id_String" nullable="true"/>
         <mapperTableEntries name="Date_Mois" expression="Integer.parseInt(TalendDate.formatDate(&quot;MM&quot;,row1.Date)) " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="Date_Annee" expression="Integer.parseInt(TalendDate.formatDate(&quot;yyyy&quot;,row1.Date)) " type="id_Integer" nullable="true"/>
       </outputTables>
