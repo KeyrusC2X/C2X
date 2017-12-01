@@ -920,6 +920,13 @@
         <additionalField key="Comment" value=""/>
         <additionalField key="SEMANTIC_NAME" value=""/>
       </column>
+      <column comment="" key="false" length="2147483647" name="codpos" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="Postal Code"/>
+      </column>
+      <column comment="" key="false" length="200" name="code_postal" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
       <column comment="" key="false" length="200" name="code_commune_insee" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -941,12 +948,14 @@
         <mapperTableEntries name="nic" expression="row1.nic " type="id_String" nullable="true"/>
         <mapperTableEntries name="l6_declaree" expression="row1.l6_declaree " type="id_String" nullable="true"/>
         <mapperTableEntries name="tel" expression="row1.tel " type="id_String" nullable="true"/>
+        <mapperTableEntries name="codpos" expression="row1.codpos " type="id_String" nullable="true"/>
+        <mapperTableEntries name="code_postal" expression="row2.code_postal " type="id_String" nullable="true"/>
         <mapperTableEntries name="code_commune_insee" expression="row2.code_commune_insee " type="id_String" nullable="true"/>
         <mapperTableEntries name="nom_commune" expression="row2.nom_commune " type="id_String" nullable="true"/>
         <mapperTableEntries name="coordonnees_gps_x" expression="row2.coordonnees_gps_x " type="id_String" nullable="true"/>
         <mapperTableEntries name="coordonnees_gps_y" expression="row2.coordonnees_gps_y " type="id_String" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row1" activateColumnNameFilter="true" columnNameFilter="tel" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row1" activateColumnNameFilter="true" columnNameFilter="codpos" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="siren" type="id_String" nullable="true"/>
         <mapperTableEntries name="nic" type="id_String" nullable="true"/>
         <mapperTableEntries name="l1_normalisee" type="id_String" nullable="true"/>
@@ -1170,6 +1179,13 @@
         <additionalField key="Comment" value=""/>
         <additionalField key="SEMANTIC_NAME" value=""/>
       </column>
+      <column comment="" key="false" length="2147483647" name="codpos" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="Postal Code"/>
+      </column>
+      <column comment="" key="false" length="200" name="code_postal" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
       <column comment="" key="false" length="200" name="code_commune_insee" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -1212,6 +1228,10 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="tel"/>
       <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="codpos"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="code_postal"/>
+      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="code_commune_insee"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="nom_commune"/>
@@ -1253,6 +1273,13 @@
         <additionalField key="Comment" value=""/>
         <additionalField key="SEMANTIC_NAME" value=""/>
       </column>
+      <column comment="" key="false" length="2147483647" name="codpos" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="Postal Code"/>
+      </column>
+      <column comment="" key="false" length="200" name="code_postal" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
       <column comment="" key="false" length="200" name="code_commune_insee" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -1265,12 +1292,12 @@
       <column comment="" key="false" length="200" name="coordonnees_gps_y" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column defaultValue="" key="false" length="255" name="StandardizedPhoneNumber" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="StandardizedPhoneNumber" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="IsValidPhoneNumber" nullable="true" precision="0" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="IsPossiblePhoneNumber" nullable="true" precision="0" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="IsAlreadyStandard" nullable="true" precision="0" sourceType="" type="id_Boolean" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="PhoneNumberType" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="ErrorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="PhoneNumberType" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="ErrorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tImpalaInput_1" offsetLabelX="0" offsetLabelY="0" source="tImpalaInput_1" target="tMap_1">
@@ -1278,6 +1305,14 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tStandardizePhoneNumber_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="code_postal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="codpos"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
   </connection>
