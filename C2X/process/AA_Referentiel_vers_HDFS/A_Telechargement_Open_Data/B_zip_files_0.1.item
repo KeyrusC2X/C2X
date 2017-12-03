@@ -2,7 +2,7 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="Formatage" prompt="Formatage?" promptNeeded="false" repositoryContextId="_PNkPkMl-EeeZcMexoz66SQ" type="id_Directory" value="C:/Data/02_Formatage/"/>
-    <contextParameter comment="" name="Depose_internet" prompt="Depose_internet?" promptNeeded="false" repositoryContextId="_PNkPkMl-EeeZcMexoz66SQ" type="id_Directory" value="C:/Data/01_Depose_internet/"/>
+    <contextParameter comment="" name="Depose" prompt="Depose?" promptNeeded="false" repositoryContextId="_PNkPkMl-EeeZcMexoz66SQ" type="id_Directory" value="C:/Data/01_Depose/"/>
     <contextParameter comment="" name="Vers_HDFS" prompt="Vers_HDFS?" promptNeeded="false" repositoryContextId="_PNkPkMl-EeeZcMexoz66SQ" type="id_Directory" value="C:/Data/03_Vers_HDFS/"/>
   </context>
   <parameters>
@@ -123,8 +123,8 @@
   </node>
   <node componentName="tFileUnarchive" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileUnarchive_1" show="false"/>
-    <elementParameter field="FILE" name="ZIPFILE" value="context.Depose_internet+&quot;/sirene_&quot;+TalendDate.getDate(&quot;CCYYMM&quot;)+&quot;_L_M.zip&quot;"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.Depose_internet"/>
+    <elementParameter field="FILE" name="ZIPFILE" value="context.Depose+&quot;/sirene_&quot;+TalendDate.getDate(&quot;CCYYMM&quot;)+&quot;_L_M.zip&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.Depose"/>
     <elementParameter field="CHECK" name="ROOTNAME" value="false"/>
     <elementParameter field="CHECK" name="INTEGRITY" value="false"/>
     <elementParameter field="CHECK" name="EXTRACTPATH" value="true"/>
@@ -137,7 +137,7 @@
   </node>
   <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileDelete_1" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.Depose_internet+&quot;/sirene_&quot;+TalendDate.getDate(&quot;CCYYMM&quot;)+&quot;_L_M.zip&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.Depose+&quot;/sirene_&quot;+TalendDate.getDate(&quot;CCYYMM&quot;)+&quot;_L_M.zip&quot;"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/app/talendStudio/workspace/delete_folder&quot;" show="false"/>
     <elementParameter field="TEXT" name="PATH" value="&quot;C:/app/talendStudio/workspace/delete_folder or delete_file&quot;" show="false"/>
     <elementParameter field="CHECK" name="FAILON" value="true"/>
@@ -165,7 +165,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
   </connection>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>

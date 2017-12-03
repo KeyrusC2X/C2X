@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="C2X" jobType="Standard">
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="C2X" jobType="Standard" framework="">
   <context confirmationNeeded="false" name="C2X">
     <contextParameter comment="" name="Formatage" prompt="Formatage?" promptNeeded="false" repositoryContextId="_PNkPkMl-EeeZcMexoz66SQ" type="id_Directory" value="C:/Data/02_Formatage/"/>
-    <contextParameter comment="" name="Depose_internet" prompt="Depose_internet?" promptNeeded="false" repositoryContextId="_PNkPkMl-EeeZcMexoz66SQ" type="id_Directory" value="C:/Data/01_Depose_internet/"/>
+    <contextParameter comment="" name="Depose" prompt="Depose?" promptNeeded="false" repositoryContextId="_PNkPkMl-EeeZcMexoz66SQ" type="id_Directory" value="C:/Data/01_Depose/"/>
     <contextParameter comment="" name="Vers_HDFS" prompt="Vers_HDFS?" promptNeeded="false" repositoryContextId="_PNkPkMl-EeeZcMexoz66SQ" type="id_Directory" value="C:/Data/03_Vers_HDFS/"/>
   </context>
   <parameters>
@@ -124,7 +124,7 @@
     <elementParameter field="TEXT" name="URI" value="&quot;https://datanova.legroupe.laposte.fr/explore/dataset/laposte_hexasmal/download/?format=csv&amp;timezone=Europe/Berlin&amp;use_labels_for_header=true&quot;"/>
     <elementParameter field="CHECK" name="USE_CACHE" value="false"/>
     <elementParameter field="TEXT" name="SMB_URI" value="&quot;smb://host/dir/remoteFileName.txt&quot;" show="false"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.Depose_internet"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.Depose"/>
     <elementParameter field="CHECK" name="MAKEDIRS" value="false"/>
     <elementParameter field="TEXT" name="FILENAME" value="&quot;laposte_hexasmal.csv&quot;"/>
     <elementParameter field="CHECK" name="ADD_HEADER" value="false"/>
@@ -169,7 +169,7 @@
     <elementParameter field="TEXT" name="URI" value="&quot;https://www.insee.fr/fr/statistiques/fichier/2525755/ensemble.xls&quot;"/>
     <elementParameter field="CHECK" name="USE_CACHE" value="false"/>
     <elementParameter field="TEXT" name="SMB_URI" value="&quot;smb://host/dir/remoteFileName.txt&quot;" show="false"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.Depose_internet"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.Depose"/>
     <elementParameter field="CHECK" name="MAKEDIRS" value="false"/>
     <elementParameter field="TEXT" name="FILENAME" value="&quot;ensemble.xls&quot;"/>
     <elementParameter field="CHECK" name="ADD_HEADER" value="false"/>
@@ -210,7 +210,7 @@
     <elementParameter field="TEXT" name="URI" value="&quot;http://files.data.gouv.fr/sirene/sirene_201710_L_M.zip&quot;"/>
     <elementParameter field="CHECK" name="USE_CACHE" value="false"/>
     <elementParameter field="TEXT" name="SMB_URI" value="&quot;smb://host/dir/remoteFileName.txt&quot;" show="false"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.Depose_internet"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.Depose"/>
     <elementParameter field="CHECK" name="MAKEDIRS" value="false"/>
     <elementParameter field="TEXT" name="FILENAME" value="&quot;sirene_&quot;+TalendDate.getDate(&quot;CCYYMM&quot;)+&quot;_L_M.zip&quot;"/>
     <elementParameter field="CHECK" name="ADD_HEADER" value="false"/>
@@ -270,7 +270,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
