@@ -350,29 +350,29 @@
     <elementParameter field="TEXT" name="PATH_TO_GOOGLE_CREDENTIALS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;C2X&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLEACTION" value="CREATE_IF_NOT_EXIST"/>
-    <elementParameter field="LABEL" name="PARQUET_NOTE" value="Parquet is only supported if the distribution uses embedded Hive version 0.10 or later."/>
-    <elementParameter field="CLOSED_LIST" name="STORAGE_FORMAT" value="PARQUET"/>
+    <elementParameter field="LABEL" name="PARQUET_NOTE" value="Parquet is only supported if the distribution uses embedded Hive version 0.10 or later." show="false"/>
+    <elementParameter field="CLOSED_LIST" name="STORAGE_FORMAT" value="TEXTFILE"/>
     <elementParameter field="TEXT" name="STORAGE_CLASS" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="INPUTFORMAT_CLASS" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="OUTPUTFORMAT_CLASS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="SET_PARTITIONS" value="false"/>
-    <elementParameter field="CHECK" name="SET_FILE_LOCATION" value="true"/>
-    <elementParameter field="CHECK" name="S3_LOCATION" value="false"/>
-    <elementParameter field="TEXT" name="FILE_LOCATION" value="&quot;/projects/C2X/C2X_Userdetails_hdfs.csv&quot;"/>
+    <elementParameter field="CHECK" name="SET_FILE_LOCATION" value="false"/>
+    <elementParameter field="CHECK" name="S3_LOCATION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FILE_LOCATION" value="&quot;/projects/C2X/C2X_Userdetails_hdfs.csv&quot;" show="false"/>
     <elementParameter field="TEXT" name="S3_BUCKET" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="S3_USERNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="S3_PASSWORD" value="0RMsyjmybrE=" show="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="hive_id" show="false"/>
-    <elementParameter field="CHECK" name="SET_ROW_FORMAT" value="false" show="false"/>
-    <elementParameter field="CHECK" name="SET_FIELD_TERMINATED_BY" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FIELD_TERMINATED_BY" value="&quot;;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="SET_FIELD_ESCAPE_BY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SET_ROW_FORMAT" value="true"/>
+    <elementParameter field="CHECK" name="SET_FIELD_TERMINATED_BY" value="true"/>
+    <elementParameter field="TEXT" name="FIELD_TERMINATED_BY" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="SET_FIELD_ESCAPE_BY" value="false"/>
     <elementParameter field="TEXT" name="FIELD_ESCAPE_BY" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="SET_COLLECTION_ITEM_TERMINATED_BY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SET_COLLECTION_ITEM_TERMINATED_BY" value="false"/>
     <elementParameter field="TEXT" name="COLLECTION_ITEM_TERMINATED_BY" value="&quot;\u0002&quot;" show="false"/>
-    <elementParameter field="CHECK" name="SET_MAP_KEY_TERMINATED_BY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SET_MAP_KEY_TERMINATED_BY" value="false"/>
     <elementParameter field="TEXT" name="MAP_KEY_TERMINATED_BY" value="&quot;\u0003&quot;" show="false"/>
-    <elementParameter field="CHECK" name="SET_LINES_TERMINATED_BY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SET_LINES_TERMINATED_BY" value="false"/>
     <elementParameter field="TEXT" name="LINES_TERMINATED_BY" value="&quot;\n&quot;" show="false"/>
     <elementParameter field="CHECK" name="SET_SERDE_ROW_FORMAT" value="false" show="false"/>
     <elementParameter field="TEXT" name="SERDE_NAME" value="&quot;&quot;" show="false"/>
@@ -385,7 +385,7 @@
     <elementParameter field="MEMO_SQL" name="SELECT" value="&quot;select id, name from employee&quot;" show="false"/>
     <elementParameter field="CHECK" name="SET_CLUSTERED_BY_AND_SKEWED_BY" value="false"/>
     <elementParameter field="MEMO_SQL" name="CLUSTERED_BY_AND_SKEWED_BY" value="&quot;CLUSTERED BY (col_name, col_name, ...) [SORTED BY (col_name&#xA;&#x9;&#x9;&#x9;&#x9;[ASC|DESC], ...)] INTO num_buckets BUCKETS]&#xA;&#x9;&#x9;&#x9;&#x9;SKEWED BY (col_name,&#xA;&#x9;&#x9;&#x9;&#x9;col_name, ...) ON ([(col_value, col_value, ...),&#xA;&#x9;&#x9;&#x9;&#x9;...|col_value,&#xA;&#x9;&#x9;&#x9;&#x9;col_value, ...])&#xA;&#x9;&#x9;&#x9;&#x9;&quot;&#xA;&#x9;&#x9;&#x9;" show="false"/>
-    <elementParameter field="TABLE" name="SERDE_PROPERTIES"/>
+    <elementParameter field="TABLE" name="SERDE_PROPERTIES" show="false"/>
     <elementParameter field="TABLE" name="TABLE_PROPERTIES"/>
     <elementParameter field="LABEL" name="NOTE" value="If you are on Windows, add a '/' in front of the path you type in." show="false"/>
     <elementParameter field="CHECK" name="SET_TEMP_PATH" value="false" show="false"/>
