@@ -297,10 +297,10 @@
       <column comment="" key="false" length="2147483647" name="gender" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="revenue" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="company" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="company" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="revenue" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
@@ -310,8 +310,8 @@
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="first_name" expression="row1.first_name " type="id_String" nullable="true"/>
         <mapperTableEntries name="gender" expression="row1.gender " type="id_String" nullable="true"/>
-        <mapperTableEntries name="revenue" expression="row2.revenue " type="id_String" nullable="true"/>
         <mapperTableEntries name="company" expression="row1.company " type="id_String" nullable="true"/>
+        <mapperTableEntries name="revenue" expression="row2.revenue " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="id" type="id_String" nullable="true"/>
@@ -320,7 +320,7 @@
         <mapperTableEntries name="gender" type="id_String" nullable="true"/>
         <mapperTableEntries name="company" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="id" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="first_name" expression="row1.first_name " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="last_name" type="id_String" nullable="true"/>
@@ -505,9 +505,9 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="gender"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="revenue"/>
-      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="company"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="revenue"/>
       <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
@@ -520,10 +520,10 @@
       <column comment="" key="false" length="2147483647" name="gender" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="revenue" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="company" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="2147483647" name="company" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="2147483647" name="revenue" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
