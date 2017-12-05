@@ -336,7 +336,7 @@
   <node componentName="tHiveCreateTable" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHiveCreateTable_2" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_E3BJECHmEeeWzuN4mxM4XA" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_KGnkAMWFEeeZcMexoz66SQ" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tHiveConnection_1" show="false"/>
     <elementParameter field="HADOOP_LIBRARIES" name="HIVE" value=""/>
@@ -389,7 +389,7 @@
     <elementParameter field="TEXT" name="JOBHISTORY_ADDRESS" value="&quot;localhost:10020&quot;" show="false"/>
     <elementParameter field="CHECK" name="SET_HADOOP_USER" value="false"/>
     <elementParameter field="TEXT" name="HADOOP_USER" value="&quot;hadoop&quot;" show="false"/>
-    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="false"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true"/>
     <elementParameter field="TEXT" name="WEBHCAT_HOST" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="WEBHCAT_PORT" value="&quot;443&quot;" show="false"/>
     <elementParameter field="TEXT" name="WEBHCAT_USERNAME" value="&quot;&quot;" show="false"/>
@@ -451,7 +451,11 @@
     <elementParameter field="LABEL" name="NOTE" value="If you are on Windows, add a '/' in front of the path you type in." show="false"/>
     <elementParameter field="CHECK" name="SET_TEMP_PATH" value="false" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_PATH" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES">
+      <elementValue elementRef="PROPERTY" value="&quot;-warehouse-dir&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;/user/hive/warehouse&quot;"/>
+      <elementValue elementRef="BUILDIN" value=""/>
+    </elementParameter>
     <elementParameter field="TABLE" name="ADVANCED_PROPERTIES"/>
     <elementParameter field="TEXT" name="MAPRED_JOB_MAP_MEMORY_MB" value="&quot;1000&quot;" show="false"/>
     <elementParameter field="TEXT" name="MAPRED_JOB_REDUCE_MEMORY_MB" value="&quot;1000&quot;" show="false"/>
