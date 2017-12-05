@@ -356,9 +356,9 @@
     <elementParameter field="TEXT" name="INPUTFORMAT_CLASS" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="OUTPUTFORMAT_CLASS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="SET_PARTITIONS" value="false"/>
-    <elementParameter field="CHECK" name="SET_FILE_LOCATION" value="false"/>
-    <elementParameter field="CHECK" name="S3_LOCATION" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FILE_LOCATION" value="&quot;/projects/C2X/C2X_Userdetails_hdfs.csv&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_FILE_LOCATION" value="true"/>
+    <elementParameter field="CHECK" name="S3_LOCATION" value="false"/>
+    <elementParameter field="TEXT" name="FILE_LOCATION" value="&quot;/projects/C2X/C2X_Userdetails_hdfs.csv&quot;"/>
     <elementParameter field="TEXT" name="S3_BUCKET" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="S3_USERNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="S3_PASSWORD" value="0RMsyjmybrE=" show="false"/>
@@ -405,11 +405,11 @@
     <elementParameter field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="C2X_Userdetails" name="tHiveCreateTable_1">
-      <column comment="" key="false" length="2" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="first_name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="12" name="last_name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="gender" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="13" name="Company" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="first_name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="last_name" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="gender" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Company" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <additionalProperties key="Comment" value=""/>
       <additionalProperties key="HDFS_FILE_TYPE" value="TEXT"/>
       <additionalProperties key="HDFS_PATH" value="/projects/C2X/C2X_Userdetails.csv"/>
