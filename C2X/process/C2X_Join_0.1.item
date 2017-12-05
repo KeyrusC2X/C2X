@@ -294,6 +294,9 @@
       <column comment="" key="false" length="2147483647" name="first_name" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
+      <column comment="" key="false" length="2147483647" name="last_name" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
       <column comment="" key="false" length="2147483647" name="gender" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -309,6 +312,7 @@
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="first_name" expression="row1.first_name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="last_name" expression="row2.last_name " type="id_String" nullable="true"/>
         <mapperTableEntries name="gender" expression="row1.gender " type="id_String" nullable="true"/>
         <mapperTableEntries name="company" expression="row1.company " type="id_String" nullable="true"/>
         <mapperTableEntries name="revenue" expression="row2.revenue " type="id_String" nullable="true"/>
@@ -321,8 +325,8 @@
         <mapperTableEntries name="company" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
-        <mapperTableEntries name="id" expression="" type="id_String" nullable="true"/>
-        <mapperTableEntries name="first_name" expression="row1.first_name " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="id" expression="row1.id " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="first_name" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="last_name" type="id_String" nullable="true"/>
         <mapperTableEntries name="revenue" type="id_String" nullable="true"/>
       </inputTables>
@@ -503,6 +507,8 @@
     <elementParameter field="TABLE" name="LENGTHS" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="first_name"/>
       <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="last_name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="gender"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="company"/>
@@ -515,6 +521,9 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_1">
       <column comment="" key="false" length="2147483647" name="first_name" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="last_name" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="2147483647" name="gender" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
@@ -533,6 +542,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="last_name"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
   </connection>
