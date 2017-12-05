@@ -2,6 +2,8 @@
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -111,4 +113,802 @@
     <routinesParameter id="_3xDKwMF6EeeIi49gPXwe0g" name="TalendStringUtil"/>
     <routinesParameter id="_3xAugMF6EeeIi49gPXwe0g" name="TalendString"/>
   </parameters>
+  <node componentName="tImpalaInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tImpalaInput_1" show="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_n57PkM-oEee1Y7szzbmk8w" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="IMPALA" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="IMPALA_VERSION" value="Cloudera_CDH5_10"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="IMPALA" value=""/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;node1&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;21050&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;hdfs&quot;"/>
+    <elementParameter field="TEXT" name="PASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;default&quot;"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false"/>
+    <elementParameter field="TEXT" name="IMPALA_PRINCIPAL" value="&quot;impala/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_n57PkM-oEee1Y7szzbmk8w - ref_sirene" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;ref_sirene&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  default.ref_sirene.siren, &#xA;  default.ref_sirene.nic, &#xA;  default.ref_sirene.l1_normalisee, &#xA;  default.ref_sirene.l2_normalisee, &#xA;  default.ref_sirene.l3_normalisee, &#xA;  default.ref_sirene.l4_normalisee, &#xA;  default.ref_sirene.l5_normalisee, &#xA;  default.ref_sirene.l6_normalisee, &#xA;  default.ref_sirene.l7_normalisee, &#xA;  default.ref_sirene.l1_declaree, &#xA;  default.ref_sirene.l2_declaree, &#xA;  default.ref_sirene.l3_declaree, &#xA;  default.ref_sirene.l4_declaree, &#xA;  default.ref_sirene.l5_declaree, &#xA;  default.ref_sirene.l6_declaree, &#xA;  default.ref_sirene.l7_declaree, &#xA;  default.ref_sirene.numvoie, &#xA;  default.ref_sirene.indrep, &#xA;  default.ref_sirene.typvoie, &#xA;  default.ref_sirene.libvoie, &#xA;  default.ref_sirene.codpos, &#xA;  default.ref_sirene.cedex, &#xA;  default.ref_sirene.rpet, &#xA;  default.ref_sirene.libreg, &#xA;  default.ref_sirene.depet, &#xA;  default.ref_sirene.arronet, &#xA;  default.ref_sirene.ctonet, &#xA;  default.ref_sirene.comet, &#xA;  default.ref_sirene.libcom, &#xA;  default.ref_sirene.du, &#xA;  default.ref_sirene.tu, &#xA;  default.ref_sirene.uu, &#xA;  default.ref_sirene.epci, &#xA;  default.ref_sirene.tcd, &#xA;  default.ref_sirene.zemet, &#xA;  default.ref_sirene.siege, &#xA;  default.ref_sirene.enseigne, &#xA;  default.ref_sirene.ind_publipo, &#xA;  default.ref_sirene.diffcom, &#xA;  default.ref_sirene.amintret, &#xA;  default.ref_sirene.natetab, &#xA;  default.ref_sirene.libnatetab, &#xA;  default.ref_sirene.apet700, &#xA;  default.ref_sirene.libapet, &#xA;  default.ref_sirene.dapet, &#xA;  default.ref_sirene.tefet, &#xA;  default.ref_sirene.libtefet, &#xA;  default.ref_sirene.efetcent, &#xA;  default.ref_sirene.defet, &#xA;  default.ref_sirene.origine, &#xA;  default.ref_sirene.dcret, &#xA;  default.ref_sirene.ddebact, &#xA;  default.ref_sirene.activnat, &#xA;  default.ref_sirene.lieuact, &#xA;  default.ref_sirene.actisurf, &#xA;  default.ref_sirene.saisonat, &#xA;  default.ref_sirene.modet, &#xA;  default.ref_sirene.prodet, &#xA;  default.ref_sirene.prodpart, &#xA;  default.ref_sirene.auxilt, &#xA;  default.ref_sirene.nomen_long, &#xA;  default.ref_sirene.sigle, &#xA;  default.ref_sirene.nom, &#xA;  default.ref_sirene.prenom, &#xA;  default.ref_sirene.civilite, &#xA;  default.ref_sirene.rna, &#xA;  default.ref_sirene.nicsiege, &#xA;  default.ref_sirene.rpen, &#xA;  default.ref_sirene.depcomen, &#xA;  default.ref_sirene.adr_mail, &#xA;  default.ref_sirene.nj, &#xA;  default.ref_sirene.libnj, &#xA;  default.ref_sirene.apen700, &#xA;  default.ref_sirene.libapen, &#xA;  default.ref_sirene.dapen, &#xA;  default.ref_sirene.aprm, &#xA;  default.ref_sirene.ess, &#xA;  default.ref_sirene.dateess, &#xA;  default.ref_sirene.tefen, &#xA;  default.ref_sirene.libtefen, &#xA;  default.ref_sirene.efencent, &#xA;  default.ref_sirene.defen, &#xA;  default.ref_sirene.categorie, &#xA;  default.ref_sirene.dcren, &#xA;  default.ref_sirene.amintren, &#xA;  default.ref_sirene.monoact, &#xA;  default.ref_sirene.moden, &#xA;  default.ref_sirene.proden, &#xA;  default.ref_sirene.esaann, &#xA;  default.ref_sirene.tca, &#xA;  default.ref_sirene.esaapen, &#xA;  default.ref_sirene.esasec1n, &#xA;  default.ref_sirene.esasec2n, &#xA;  default.ref_sirene.esasec3n, &#xA;  default.ref_sirene.esasec4n, &#xA;  default.ref_sirene.vmaj, &#xA;  default.ref_sirene.vmaj1, &#xA;  default.ref_sirene.vmaj2, &#xA;  default.ref_sirene.vmaj3, &#xA;  default.ref_sirene.datemaj, &#xA;  default.ref_sirene.eve, &#xA;  default.ref_sirene.dateve, &#xA;  default.ref_sirene.typcreh, &#xA;  default.ref_sirene.dreactet, &#xA;  default.ref_sirene.dreacten, &#xA;  default.ref_sirene.madresse, &#xA;  default.ref_sirene.menseigne, &#xA;  default.ref_sirene.mapet, &#xA;  default.ref_sirene.mprodet, &#xA;  default.ref_sirene.mauxilt, &#xA;  default.ref_sirene.mnomen, &#xA;  default.ref_sirene.msigle, &#xA;  default.ref_sirene.mnicsiege, &#xA;  default.ref_sirene.mnj, &#xA;  default.ref_sirene.mapen, &#xA;  default.ref_sirene.mproden, &#xA;  default.ref_sirene.siretps, &#xA;  default.ref_sirene.tel&#xA;FROM default.ref_sirene&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="siren"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nic"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="l1_normalisee"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="l2_normalisee"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="l3_normalisee"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="l4_normalisee"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="l5_normalisee"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="l6_normalisee"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="l7_normalisee"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="l1_declaree"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="l2_declaree"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="l3_declaree"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="l4_declaree"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="l5_declaree"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="l6_declaree"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="l7_declaree"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="numvoie"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="indrep"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="typvoie"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libvoie"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="codpos"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cedex"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="rpet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libreg"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="depet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="arronet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ctonet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="comet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libcom"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="du"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tu"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="uu"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="epci"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tcd"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zemet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="siege"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="enseigne"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ind_publipo"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="diffcom"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="amintret"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="natetab"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libnatetab"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="apet700"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libapet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dapet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tefet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libtefet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="efetcent"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="defet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="origine"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dcret"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ddebact"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="activnat"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lieuact"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="actisurf"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="saisonat"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="modet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="prodet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="prodpart"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="auxilt"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nomen_long"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="sigle"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nom"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="prenom"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="civilite"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="rna"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nicsiege"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="rpen"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="depcomen"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="adr_mail"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nj"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libnj"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="apen700"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libapen"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dapen"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="aprm"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ess"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dateess"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tefen"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="libtefen"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="efencent"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="defen"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="categorie"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dcren"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="amintren"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="monoact"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="moden"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="proden"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="esaann"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tca"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="esaapen"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="esasec1n"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="esasec2n"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="esasec3n"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="esasec4n"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="vmaj"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="vmaj1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="vmaj2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="vmaj3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="datemaj"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eve"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dateve"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="typcreh"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dreactet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dreacten"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="madresse"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="menseigne"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mapet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mprodet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mauxilt"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mnomen"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="msigle"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mnicsiege"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mnj"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mapen"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mproden"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="siretps"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tel"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="ref_sirene" name="tImpalaInput_1">
+      <column comment="" key="false" length="2147483647" name="siren" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="Bank Routing Transit Number"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="nic" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="FR Insee Code"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="l1_normalisee" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="Full Name"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="l2_normalisee" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="l3_normalisee" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="l4_normalisee" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="Address Line"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="l5_normalisee" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="l6_normalisee" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="l7_normalisee" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="Country"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="l1_declaree" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="Full Name"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="l2_declaree" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="l3_declaree" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="l4_declaree" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="Address Line"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="l5_declaree" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="l6_declaree" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="l7_declaree" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="numvoie" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="indrep" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="typvoie" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="Street Name"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="libvoie" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="codpos" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="Postal Code"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="cedex" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="rpet" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="libreg" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="Region"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="depet" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="arronet" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="ctonet" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="comet" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="libcom" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="FR Commune"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="du" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="tu" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="uu" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="epci" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="Bank Routing Transit Number"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="tcd" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="zemet" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="siege" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="enseigne" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="ind_publipo" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="diffcom" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="City"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="amintret" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="natetab" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="libnatetab" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="apet700" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="libapet" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="dapet" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="tefet" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="libtefet" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="efetcent" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="Language Code ISO2"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="defet" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="origine" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="dcret" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="ddebact" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="activnat" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="Country Code"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="lieuact" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="Country Code"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="actisurf" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="saisonat" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="modet" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="prodet" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="City"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="prodpart" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="auxilt" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="nomen_long" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="sigle" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="nom" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="prenom" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="civilite" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="rna" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="nicsiege" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="FR Insee Code"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="rpen" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="depcomen" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="Postal Code"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="adr_mail" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="nj" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="libnj" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="apen700" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="libapen" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="dapen" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="aprm" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="ess" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="dateess" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="tefen" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="libtefen" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="efencent" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="Language Code ISO2"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="defen" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="categorie" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="dcren" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="amintren" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="monoact" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="moden" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="proden" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="City"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="esaann" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="tca" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="esaapen" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="esasec1n" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="esasec2n" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="esasec3n" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="esasec4n" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="vmaj" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="vmaj1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="vmaj2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="vmaj3" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="29" name="datemaj" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="9" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="eve" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="dateve" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="typcreh" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="dreactet" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="dreacten" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="madresse" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="menseigne" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="mapet" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="mprodet" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="mauxilt" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="mnomen" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="msigle" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="mnicsiege" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="mnj" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="mapen" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="mproden" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="siretps" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="tel" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+      <additionalProperties key="CONCEPT_NAME" value="Address"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/tmp/out.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="2147483647" name="codpos" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+        <additionalField key="SEMANTIC_NAME" value="Postal Code"/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="code_postal" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="nom_commune" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tImpalaInput_1" offsetLabelX="0" offsetLabelY="0" source="tImpalaInput_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tImpalaInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
 </talendfile:ProcessType>
