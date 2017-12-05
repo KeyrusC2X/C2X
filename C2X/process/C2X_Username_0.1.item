@@ -472,10 +472,12 @@
     <elementParameter field="TEXT" name="STORAGE_CLASS" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="INPUTFORMAT_CLASS" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="OUTPUTFORMAT_CLASS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="SET_PARTITIONS" value="false"/>
-    <elementParameter field="CHECK" name="SET_FILE_LOCATION" value="true"/>
-    <elementParameter field="CHECK" name="S3_LOCATION" value="false"/>
-    <elementParameter field="TEXT" name="FILE_LOCATION" value="&quot;/projects/C2X/&quot;"/>
+    <elementParameter field="CHECK" name="SET_PARTITIONS" value="true"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_PARTITION:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_PARTITION:REPOSITORY_SCHEMA_TYPE" value="_KGnkAMWFEeeZcMexoz66SQ - c2x_username" show="false"/>
+    <elementParameter field="CHECK" name="SET_FILE_LOCATION" value="false"/>
+    <elementParameter field="CHECK" name="S3_LOCATION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FILE_LOCATION" value="&quot;/projects/C2X/&quot;" show="false"/>
     <elementParameter field="TEXT" name="S3_BUCKET" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="S3_USERNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="S3_PASSWORD" value="0RMsyjmybrE=" show="false"/>
@@ -541,7 +543,24 @@
       <additionalProperties key="HDFS_FILE_TYPE" value="TEXT"/>
       <additionalProperties key="HDFS_PATH" value="/projects/C2X/C2X_Userdetails_hdfs.csv"/>
     </metadata>
-    <metadata connector="PARTITION" name="PARTITION"/>
+    <metadata connector="PARTITION" label="c2x_username" name="PARTITION">
+      <column comment="" key="false" length="2147483647" name="id" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="first_name" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="last_name" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="gender" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="company" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
   </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tHDFSPut_1" offsetLabelX="0" offsetLabelY="0" source="tHDFSPut_1" target="tHiveCreateTable_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
