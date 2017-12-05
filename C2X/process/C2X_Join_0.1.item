@@ -313,9 +313,9 @@
         <mapperTableEntries name="gender" type="id_String" nullable="true"/>
         <mapperTableEntries name="company" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="id" type="id_String" nullable="true"/>
-        <mapperTableEntries name="first_name" expression="row1.id " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="first_name" expression="row1.first_name " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="last_name" type="id_String" nullable="true"/>
         <mapperTableEntries name="revenue" type="id_String" nullable="true"/>
       </inputTables>
