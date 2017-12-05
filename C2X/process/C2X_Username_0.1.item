@@ -279,6 +279,7 @@
   </node>
   <node componentName="tHiveLoad" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHiveLoad_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tHiveConnection_1" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DISTRIBUTION" value="CLOUDERA"/>
@@ -465,16 +466,16 @@
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_KGnkAMWFEeeZcMexoz66SQ - c2x_username" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;c2x_username&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLEACTION" value="CREATE_IF_NOT_EXIST"/>
+    <elementParameter field="CLOSED_LIST" name="TABLEACTION" value="CREATE_TABLE"/>
     <elementParameter field="LABEL" name="PARQUET_NOTE" value="Parquet is only supported if the distribution uses embedded Hive version 0.10 or later." show="false"/>
     <elementParameter field="CLOSED_LIST" name="STORAGE_FORMAT" value="TEXTFILE"/>
     <elementParameter field="TEXT" name="STORAGE_CLASS" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="INPUTFORMAT_CLASS" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="OUTPUTFORMAT_CLASS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="SET_PARTITIONS" value="false"/>
-    <elementParameter field="CHECK" name="SET_FILE_LOCATION" value="false"/>
-    <elementParameter field="CHECK" name="S3_LOCATION" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FILE_LOCATION" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_FILE_LOCATION" value="true"/>
+    <elementParameter field="CHECK" name="S3_LOCATION" value="false"/>
+    <elementParameter field="TEXT" name="FILE_LOCATION" value="&quot;/projects/C2X/&quot;"/>
     <elementParameter field="TEXT" name="S3_BUCKET" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="S3_USERNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="S3_PASSWORD" value="0RMsyjmybrE=" show="false"/>
@@ -546,6 +547,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tHiveCreateTable_1" offsetLabelX="0" offsetLabelY="0" source="tHiveCreateTable_1" target="tHiveLoad_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
   </connection>
   <subjob>
