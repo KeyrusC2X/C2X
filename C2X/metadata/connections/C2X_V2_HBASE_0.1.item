@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <TalendMetadata:DatabaseConnection xmi:id="_KGqnUMWFEeeZcMexoz66SQ" dataPackage="_KGqnbsWFEeeZcMexoz66SQ" DatabaseType="HBase" Port="2181" Username="hdfs" ServerName="node1,node2,node3" SID="HBase" DbmsId="mysql_id" ProductId="HBASE">
     <parameters xmi:id="_KGqnUcWFEeeZcMexoz66SQ" key="CONN_PARA_KEY_DB_PORT" value="2181"/>
     <parameters xmi:id="_KGqnUsWFEeeZcMexoz66SQ" key="CONN_PARA_KEY_USE_YARN" value="true"/>
@@ -32,5 +32,28 @@
     <parameters xmi:id="_KGqnbcWFEeeZcMexoz66SQ" key="CONN_PARA_KEY_HBASE_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
     <parameters xmi:id="_kzsCkMWQEeeZcMexoz66SQ" key="CONN_PARA_KEY_HADOOP_CUSTOM_JARS"/>
   </TalendMetadata:DatabaseConnection>
-  <orgomg.cwm.resource.relational:Catalog xmi:id="_KGqnbsWFEeeZcMexoz66SQ" name="HBase" dataManager="_KGqnUMWFEeeZcMexoz66SQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KGqnbsWFEeeZcMexoz66SQ" name="HBase" dataManager="_KGqnUMWFEeeZcMexoz66SQ">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_fjJLUdqfEeePLt2Lt4iGLg" name="Ref_Insee_Postal" id="_fjJLUNqfEeePLt2Lt4iGLg" label="Ref_Insee_Postal" tableType="TABLE">
+      <feature xsi:type="relational:TdColumn" xmi:id="_fjJLUtqfEeePLt2Lt4iGLg" name="Code_postal" label="Code_postal" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_fjJLU9qfEeePLt2Lt4iGLg" tag="COLUMN FAMILY" value="Ref_Insee_Postal"/>
+        <initialValue xmi:id="_zzVuENqfEeePLt2Lt4iGLg"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_idT2YNqfEeePLt2Lt4iGLg" name="Code_commune_INSEE" label="Code_commune_INSEE" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_idT2YdqfEeePLt2Lt4iGLg" tag="COLUMN FAMILY" value="Ref_Insee_Postal"/>
+        <initialValue xmi:id="_zzVuEdqfEeePLt2Lt4iGLg"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_lIqpYNqfEeePLt2Lt4iGLg" name="coordonnees_gps_x" label="coordonnees_gps_x" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_lIqpYdqfEeePLt2Lt4iGLg" tag="COLUMN FAMILY" value="Ref_Insee_Postal"/>
+        <initialValue xmi:id="_zzVuEtqfEeePLt2Lt4iGLg"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_n4iI8NqfEeePLt2Lt4iGLg" name="Nom_commune" label="Nom_commune" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_n4iI8dqfEeePLt2Lt4iGLg" tag="COLUMN FAMILY" value="Ref_Insee_Postal"/>
+        <initialValue xmi:id="_zzVuE9qfEeePLt2Lt4iGLg"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_qsp2YNqfEeePLt2Lt4iGLg" name="coordonnees_gps_y" label="coordonnees_gps_y" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_qsp2YdqfEeePLt2Lt4iGLg" tag="COLUMN FAMILY" value="Ref_Insee_Postal"/>
+        <initialValue xmi:id="_zzVuFNqfEeePLt2Lt4iGLg"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
 </xmi:XMI>
