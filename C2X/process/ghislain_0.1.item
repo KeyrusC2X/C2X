@@ -867,7 +867,7 @@
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="50"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="100000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out1">
@@ -908,7 +908,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="siren" expression="row1.siren" type="id_String" nullable="true"/>
@@ -922,7 +922,7 @@
         <mapperTableEntries name="coordonnees_gps_x" expression="row2.coordonnees_gps_x " type="id_String" nullable="true"/>
         <mapperTableEntries name="coordonnees_gps_y" expression="row2.coordonnees_gps_y " type="id_String" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row1" activateColumnNameFilter="true" columnNameFilter="codpos" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row1" columnNameFilter="codpos" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="siren" type="id_String" nullable="true"/>
         <mapperTableEntries name="nic" type="id_String" nullable="true"/>
         <mapperTableEntries name="l1_normalisee" type="id_String" nullable="true"/>
