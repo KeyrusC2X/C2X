@@ -275,6 +275,7 @@
     <metadata name="out">
       <column comment="" key="false" length="0" name="_account_id_" nullable="true" originalDbColumnName="accountid" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="_loan_id_" nullable="true" originalDbColumnName="loan_id" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="_amount_" nullable="true" originalDbColumnName="amount" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -282,6 +283,7 @@
       <outputTables sizeState="INTERMEDIATE" name="out">
         <mapperTableEntries name="_account_id_" expression="row1._account_id_ " type="id_String" nullable="true"/>
         <mapperTableEntries name="_loan_id_" expression="row2._loan_id_ " type="id_String" nullable="true"/>
+        <mapperTableEntries name="_amount_" expression="row2._amount_ " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="_account_id_" type="id_String" nullable="true"/>
@@ -474,6 +476,8 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="_loan_id_"/>
       <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_amount_"/>
+      <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
@@ -481,6 +485,7 @@
     <metadata connector="FLOW" name="tLogRow_1">
       <column comment="" key="false" length="0" name="_account_id_" nullable="true" originalDbColumnName="accountid" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="_loan_id_" nullable="true" originalDbColumnName="loan_id" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="_amount_" nullable="true" originalDbColumnName="amount" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tHiveConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="128">
@@ -616,6 +621,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="_account_id_"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_amount_"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
