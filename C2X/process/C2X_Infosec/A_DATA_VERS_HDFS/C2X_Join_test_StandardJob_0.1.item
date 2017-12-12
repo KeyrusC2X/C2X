@@ -389,7 +389,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="LABEL" name="PARQUET_NOTE" value="Parquet is only supported if the distribution uses embedded&#xA;&#x9;&#x9;&#x9;&#x9;Hive version 0.10 or later.&#xA;&#x9;&#x9;&#x9;"/>
     <elementParameter field="CHECK" name="USE_PARQUET" value="true"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  C2X_loan.loanid, &#xA;  C2X_loan.accountid, &#xA;  C2X_loan.date, &#xA;  C2X_loan.amount, &#xA;  C2X_loan.duration, &#xA;  C2X_loan.payments, &#xA;  C2X_loan.status&#xA;FROM default.C2X_loan&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  C2X_loan.loan_id, &#xA;  C2X_loan.accountid, &#xA;  C2X_loan.date, &#xA;  C2X_loan.amount, &#xA;  C2X_loan.duration, &#xA;  C2X_loan.payments, &#xA;  C2X_loan.status&#xA;FROM default.C2X_loan&quot;"/>
     <elementParameter field="CHECK" name="STORE_BY_HBASE" value="false" show="false"/>
     <elementParameter field="TEXT" name="ZOOKEEPER_QUORUM" value="&quot;localhost&quot;" show="false"/>
     <elementParameter field="TEXT" name="ZOOKEEPER_CLIENT_PORT" value="&quot;2181&quot;" show="false"/>
@@ -450,7 +450,7 @@
     <elementParameter field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="C2X_loan" name="tHiveInput_2">
-      <column comment="" key="false" length="100" name="_loan_id_" nullable="true" originalDbColumnName="loanid" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="_loan_id_" nullable="true" originalDbColumnName="loan_id" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="_account_id_" nullable="true" originalDbColumnName="accountid" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="_date_" nullable="true" originalDbColumnName="date" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="_amount_" nullable="true" originalDbColumnName="amount" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
