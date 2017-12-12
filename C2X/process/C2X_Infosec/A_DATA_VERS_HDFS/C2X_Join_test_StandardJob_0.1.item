@@ -273,6 +273,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata name="out">
+      <column comment="" key="false" length="100" name="_account_id_" nullable="true" originalDbColumnName="accountid" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="_loan_id_" nullable="true" originalDbColumnName="loan_id" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="_amount_" nullable="true" originalDbColumnName="amount" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="_status_" nullable="true" originalDbColumnName="status" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
@@ -282,6 +283,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out">
+        <mapperTableEntries name="_account_id_" expression="row2._account_id_ " type="id_String" nullable="true"/>
         <mapperTableEntries name="_loan_id_" expression="row2._loan_id_ " type="id_String" nullable="true"/>
         <mapperTableEntries name="_amount_" expression="row2._amount_ " type="id_String" nullable="true"/>
         <mapperTableEntries name="_status_" expression="row2._status_ " type="id_String" nullable="true"/>
@@ -474,6 +476,8 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_account_id_"/>
+      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="_loan_id_"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="_amount_"/>
@@ -487,6 +491,7 @@
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="100" name="_account_id_" nullable="true" originalDbColumnName="accountid" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="_loan_id_" nullable="true" originalDbColumnName="loan_id" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="_amount_" nullable="true" originalDbColumnName="amount" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="_status_" nullable="true" originalDbColumnName="status" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
@@ -623,6 +628,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="_loan_id_"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_account_id_"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
