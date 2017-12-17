@@ -121,20 +121,20 @@
   </parameters>
   <node componentName="tImpalaInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tImpalaInput_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_n57PkM-oEee1Y7szzbmk8w" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="IMPALA" show="false"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tImpalaConnection_1"/>
-    <elementParameter field="CLOSED_LIST" name="IMPALA_VERSION" value="Cloudera_CDH5_10" show="false"/>
-    <elementParameter field="HADOOP_DISTRIBUTION" name="IMPALA" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tImpalaConnection_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="IMPALA_VERSION" value="Cloudera_CDH5_10"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="IMPALA" value=""/>
     <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;node1&quot;" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;21050&quot;" show="false"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;hdfs&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;node1&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;21050&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;hdfs&quot;"/>
     <elementParameter field="TEXT" name="PASS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;c2x&quot;" show="false"/>
-    <elementParameter field="CHECK" name="USE_KRB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;c2x&quot;"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false"/>
     <elementParameter field="TEXT" name="IMPALA_PRINCIPAL" value="&quot;impala/_HOST@EXAMPLE.COM&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;dim_client&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -144,8 +144,8 @@
     <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  c2x.dim_client.id_client, &#xA;  c2x.dim_client.nom, &#xA;  c2x.dim_client.prenom, &#xA;  c2x.dim_client.mail, &#xA;  c2x.dim_client.genre, &#xA;  c2x.dim_client.ip, &#xA;  c2x.dim_client.version, &#xA;  c2x.dim_client.carte, &#xA;  c2x.dim_client.id_magasin, &#xA;  c2x.dim_client.ville_magasin, &#xA;  c2x.dim_client.id_vendeur, &#xA;  c2x.dim_client.telephone, &#xA;  c2x.dim_client.adresse_formate, &#xA;  c2x.dim_client.numero_de_rue, &#xA;  c2x.dim_client.ville_formate, &#xA;  c2x.dim_client.ville_formate_insee, &#xA;  c2x.dim_client.region, &#xA;  c2x.dim_client.departement, &#xA;  c2x.dim_client.pays, &#xA;  c2x.dim_client.code_postal, &#xA;  c2x.dim_client.lat, &#xA;  c2x.dim_client.lng, &#xA;  c2x.dim_client.status, &#xA;  c2x.dim_client.adresse_origine, &#xA;  c2x.dim_client.date_naissance, &#xA;  c2x.dim_client.date_creation_compte, &#xA;  c2x.dim_client.carte_fidelite, &#xA;  c2x.dim_client.compte_internet, &#xA;  c2x.dim_client.situation, &#xA;  c2x.dim_client.profession&#xA;FROM c2x.dim_client&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-    <elementParameter field="TABLE" name="TRIM_COLUMN">
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="true"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="id_client"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="nom"/>
@@ -281,38 +281,12 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tImpalaConnection" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="96">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tImpalaConnection_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_n57PkM-oEee1Y7szzbmk8w" show="false"/>
-    <elementParameter field="TEXT" name="TYPE" value="IMPALA" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="IMPALA_VERSION" value="Cloudera_CDH5_10"/>
-    <elementParameter field="HADOOP_DISTRIBUTION" name="IMPALA" value=""/>
-    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;node1&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;21050&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;hdfs&quot;"/>
-    <elementParameter field="TEXT" name="PASS" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;c2x&quot;"/>
-    <elementParameter field="CHECK" name="USE_KRB" value="false"/>
-    <elementParameter field="TEXT" name="IMPALA_PRINCIPAL" value="&quot;impala/_HOST@EXAMPLE.COM&quot;" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="C2X_Impala"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tImpalaInput_1" offsetLabelX="0" offsetLabelY="0" source="tImpalaInput_1" target="tDatasetOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tImpalaConnection_1" offsetLabelX="0" offsetLabelY="0" source="tImpalaConnection_1" target="tImpalaInput_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
-  </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tImpalaInput_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tImpalaConnection_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
