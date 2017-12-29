@@ -125,7 +125,7 @@
     <elementParameter field="TEXT" name="URI" value="&quot;http://files.data.gouv.fr/sirene/sirene_&quot;+TalendDate.formatDate(&quot;YYYYMM&quot;, TalendDate.addDate(TalendDate.getCurrentDate(), -1, &quot;MM&quot;))+&quot;_L_M.zip&quot;"/>
     <elementParameter field="CHECK" name="USE_CACHE" value="false"/>
     <elementParameter field="TEXT" name="SMB_URI" value="&quot;smb://host/dir/remoteFileName.txt&quot;" show="false"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.Depose"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.Depose_Sirene"/>
     <elementParameter field="CHECK" name="MAKEDIRS" value="false"/>
     <elementParameter field="TEXT" name="FILENAME" value="&quot;sirene_&quot;+TalendDate.formatDate(&quot;YYYYMM&quot;, TalendDate.addDate(TalendDate.getCurrentDate(), -1, &quot;MM&quot;))+&quot;_L_M.zip&quot;"/>
     <elementParameter field="CHECK" name="ADD_HEADER" value="false"/>
@@ -161,8 +161,8 @@
   </node>
   <node componentName="tFileUnarchive" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileUnarchive_1" show="false"/>
-    <elementParameter field="FILE" name="ZIPFILE" value="context.Depose+&quot;sirene_&quot;+TalendDate.formatDate(&quot;YYYYMM&quot;, TalendDate.addDate(TalendDate.getCurrentDate(), -1, &quot;MM&quot;))+&quot;_L_M.zip&quot;"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.Depose"/>
+    <elementParameter field="FILE" name="ZIPFILE" value="context.Depose_Sirene+&quot;sirene_&quot;+TalendDate.formatDate(&quot;YYYYMM&quot;, TalendDate.addDate(TalendDate.getCurrentDate(), -1, &quot;MM&quot;))+&quot;_L_M.zip&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.Depose_Sirene"/>
     <elementParameter field="CHECK" name="ROOTNAME" value="false"/>
     <elementParameter field="CHECK" name="INTEGRITY" value="false"/>
     <elementParameter field="CHECK" name="EXTRACTPATH" value="true"/>
@@ -175,7 +175,7 @@
   </node>
   <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileDelete_1" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.Depose+&quot;sirene_&quot;+TalendDate.formatDate(&quot;YYYYMM&quot;, TalendDate.addDate(TalendDate.getCurrentDate(), -1, &quot;MM&quot;))+&quot;_L_M.zip&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.Depose_Sirene+&quot;sirene_&quot;+TalendDate.formatDate(&quot;YYYYMM&quot;, TalendDate.addDate(TalendDate.getCurrentDate(), -1, &quot;MM&quot;))+&quot;_L_M.zip&quot;"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/app/talendStudio/workspace/delete_folder&quot;" show="false"/>
     <elementParameter field="TEXT" name="PATH" value="&quot;C:/app/talendStudio/workspace/delete_folder or delete_file&quot;" show="false"/>
     <elementParameter field="CHECK" name="FAILON" value="true"/>
