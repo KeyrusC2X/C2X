@@ -176,8 +176,6 @@
     <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="__D09ENteEeeMI5FuZCyJ0g - metadata" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="__D09ENteEeeMI5FuZCyJ0g - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/app/talendStudio/workspace&quot;" show="false"/>
@@ -263,7 +261,7 @@
       <column comment="" key="false" length="6" name="PAYS" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="CODE_POSTAL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="lat" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="8" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="lng" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="8" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="lng" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="8" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="54" name="ADRESSE_ORIGINE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="SCORE_MAGASIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
@@ -298,7 +296,7 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="dim_magasin" name="out1">
+    <metadata comment="" label="dim_magasin" name="out1">
       <column comment="" key="true" length="-1" name="id_magasin" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="adresse_formate" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="numero_de_rue" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -341,7 +339,7 @@
         <mapperTableEntries name="PAYS" type="id_String" nullable="true"/>
         <mapperTableEntries name="CODE_POSTAL" type="id_String" nullable="true"/>
         <mapperTableEntries name="lat" type="id_Float" nullable="true"/>
-        <mapperTableEntries name="lng" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="lng" type="id_Float" nullable="true"/>
         <mapperTableEntries name="status" type="id_String" nullable="true"/>
         <mapperTableEntries name="ADRESSE_ORIGINE" type="id_String" nullable="true"/>
         <mapperTableEntries name="SCORE_MAGASIN" type="id_Integer" nullable="true"/>
