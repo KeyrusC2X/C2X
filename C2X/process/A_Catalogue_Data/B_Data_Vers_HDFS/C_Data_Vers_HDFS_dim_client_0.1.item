@@ -394,7 +394,7 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="dim_client" name="out1">
+    <metadata comment="" label="dim_client" name="out1">
       <column comment="" key="true" length="-1" name="id_client" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="nom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="prenom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
@@ -447,7 +447,7 @@
         <mapperTableEntries name="region" expression="row1.REGION" type="id_String" nullable="true"/>
         <mapperTableEntries name="departement" expression="row1.DEPARTEMENT" type="id_String" nullable="true"/>
         <mapperTableEntries name="pays" expression="row1.PAYS" type="id_String" nullable="true"/>
-        <mapperTableEntries name="code_postale" type="id_String" nullable="true"/>
+        <mapperTableEntries name="code_postale" expression="row1.CODE_POSTAL " type="id_String" nullable="true"/>
         <mapperTableEntries name="lat" expression="row1.lat" type="id_Float" nullable="true"/>
         <mapperTableEntries name="lng" expression="row1.lng" type="id_Float" nullable="true"/>
         <mapperTableEntries name="status" expression="row1.status" type="id_String" nullable="true"/>
