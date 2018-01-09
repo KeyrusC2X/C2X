@@ -176,6 +176,8 @@
     <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
     <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_tXv4wNgwEeeyVNGvrWbfpw - metadata" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_tXv4wNgwEeeyVNGvrWbfpw - metadata" show="false"/>
     <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/app/talendStudio/workspace&quot;" show="false"/>
@@ -370,8 +372,8 @@
       <column comment="" key="false" length="-1" name="lng" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Float" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="status" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ADRESSE_ORIGINE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Date_Naissance" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Date_Creation_Compte" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Naissance" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Date_Creation_Compte" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Carte_fidelite" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Compte_internet" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Situation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_String" usefulColumn="true"/>
@@ -392,7 +394,7 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata comment="" label="dim_client" name="out1">
+    <metadata comment="" connector="FLOW" label="dim_client" name="out1">
       <column comment="" key="true" length="-1" name="id_client" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="nom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="prenom" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
@@ -424,7 +426,7 @@
       <column comment="" key="false" length="-1" name="profession" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1" activateCondensedTool="true" id="_YNZI4NtnEeeMI5FuZCyJ0g - dim_client">
         <mapperTableEntries name="id_client" expression="row1.ID_CLIENT" type="id_Integer" nullable="true"/>
