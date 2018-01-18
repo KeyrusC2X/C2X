@@ -188,6 +188,7 @@
   </node>
   <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileDelete_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.Depose_Sirene + &quot;test_demo_hdfs_sirene.zip&quot;"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;D:/Users/julien.raison/workspace_talend/delete_folder&quot;" show="false"/>
     <elementParameter field="TEXT" name="PATH" value="&quot;D:/Users/julien.raison/workspace_talend/delete_folder or delete_file&quot;" show="false"/>
@@ -202,6 +203,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileUnarchive_1" offsetLabelX="0" offsetLabelY="0" source="tFileUnarchive_1" target="tFileDelete_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
   </connection>
   <subjob>
