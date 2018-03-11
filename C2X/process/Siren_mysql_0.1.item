@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -111,4 +113,1588 @@
     <routinesParameter id="_3xDKwMF6EeeIi49gPXwe0g" name="TalendStringUtil"/>
     <routinesParameter id="_3xAugMF6EeeIi49gPXwe0g" name="TalendString"/>
   </parameters>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_f4t8wCUcEeiVdYxhttYzFA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="entreprises" name="entreprise">
+      <column comment="Identifiant de l’entreprise" key="false" length="9" name="SIREN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Identifiant de l’entreprise"/>
+      </column>
+      <column comment="Numéro interne de classement de l’établissement" key="false" length="5" name="NIC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Numéro interne de classement de l’établissement"/>
+      </column>
+      <column comment="Première ligne de l’adresse normalisée de l’établissement" key="false" length="38" name="L1_NORMALISEE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Première ligne de l’adresse normalisée de l’établissement"/>
+      </column>
+      <column comment="Deuxième ligne de l’adresse normalisée de l’établissement" key="false" length="38" name="L2_NORMALISEE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Deuxième ligne de l’adresse normalisée de l’établissement"/>
+      </column>
+      <column comment="Troisième ligne de l’adresse normalisée de l’établissement" key="false" length="38" name="L3_NORMALISEE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Troisième ligne de l’adresse normalisée de l’établissement"/>
+      </column>
+      <column comment="Quatrième ligne de l’adresse normalisée de l’établissement" key="false" length="38" name="L4_NORMALISEE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Quatrième ligne de l’adresse normalisée de l’établissement"/>
+      </column>
+      <column comment="Cinquième ligne de l’adresse normalisée de l’établissement" key="false" length="38" name="L5_NORMALISEE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Cinquième ligne de l’adresse normalisée de l’établissement"/>
+      </column>
+      <column comment="Sixième ligne de l’adresse normalisée de l’établissement" key="false" length="38" name="L6_NORMALISEE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Sixième ligne de l’adresse normalisée de l’établissement"/>
+      </column>
+      <column comment="Septième ligne de l’adresse normalisée de l’établissement" key="false" length="38" name="L7_NORMALISEE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Septième ligne de l’adresse normalisée de l’établissement"/>
+      </column>
+      <column comment="Première ligne de l’adresse déclarée de l’établissement" key="false" length="38" name="L1_DECLAREE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Première ligne de l’adresse déclarée de l’établissement"/>
+      </column>
+      <column comment="Deuxième ligne de l’adresse déclarée de l’établissement" key="false" length="38" name="L2_DECLAREE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Deuxième ligne de l’adresse déclarée de l’établissement"/>
+      </column>
+      <column comment="Troisième ligne de l’adresse déclarée de l’établissement" key="false" length="38" name="L3_DECLAREE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Troisième ligne de l’adresse déclarée de l’établissement"/>
+      </column>
+      <column comment="Quatrième ligne de l’adresse déclarée de l’établissement" key="false" length="38" name="L4_DECLAREE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Quatrième ligne de l’adresse déclarée de l’établissement"/>
+      </column>
+      <column comment="Cinquième ligne de l’adresse déclarée de l’établissement" key="false" length="38" name="L5_DECLAREE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Cinquième ligne de l’adresse déclarée de l’établissement"/>
+      </column>
+      <column comment="Sixième ligne de l’adresse déclarée de l’établissement" key="false" length="38" name="L6_DECLAREE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Sixième ligne de l’adresse déclarée de l’établissement"/>
+      </column>
+      <column comment="Septième ligne de l’adresse déclarée de l’établissement" key="false" length="38" name="L7_DECLAREE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Septième ligne de l’adresse déclarée de l’établissement"/>
+      </column>
+      <column comment="Numéro dans la voie" key="false" length="4" name="NUMVOIE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Numéro dans la voie"/>
+      </column>
+      <column comment="Indice de répétition" key="false" length="1" name="INDREP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Indice de répétition"/>
+      </column>
+      <column comment="Type de la voie de localisation de l’établissement" key="false" length="4" name="TYPVOIE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Type de la voie de localisation de l’établissement"/>
+      </column>
+      <column comment="Libellé de la voie de localisation de l’établissement" key="false" length="32" name="LIBVOIE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de la voie de localisation de l’établissement"/>
+      </column>
+      <column comment="Code postal" key="false" length="5" name="CODPOS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Code postal"/>
+      </column>
+      <column comment="Code Cedex" key="false" length="5" name="CEDEX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Code Cedex"/>
+      </column>
+      <column comment="Région de localisation de l’établissement" key="false" length="2" name="RPET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Région de localisation de l’établissement"/>
+      </column>
+      <column comment="Libellé de la région" key="false" length="70" name="LIBREG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de la région"/>
+      </column>
+      <column comment="Département de localisation de l’établissement" key="false" length="2" name="DEPET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Département de localisation de l’établissement"/>
+      </column>
+      <column comment="Arrondissement de localisation de l’établissement" key="false" length="2" name="ARRONET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Arrondissement de localisation de l’établissement"/>
+      </column>
+      <column comment="Canton de localisation de l’établissement" key="false" length="3" name="CTONET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Canton de localisation de l’établissement"/>
+      </column>
+      <column comment="Commune de localisation de l’établissement" key="false" length="3" name="COMET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Commune de localisation de l’établissement"/>
+      </column>
+      <column comment="Libellé de la commune de localisation de l’établissement" key="false" length="32" name="LIBCOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de la commune de localisation de l’établissement"/>
+      </column>
+      <column comment="Département de l’unité urbaine de la localisation de l’établissement" key="false" length="2" name="DU" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Département de l’unité urbaine de la localisation de l’établissement"/>
+      </column>
+      <column comment="Taille de l’unité urbaine" key="false" length="1" name="TU" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Taille de l’unité urbaine"/>
+      </column>
+      <column comment="Numéro de l’unité urbaine" key="false" length="2" name="UU" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Numéro de l’unité urbaine"/>
+      </column>
+      <column comment="Localisation de l’établissement dans un établissement public de coopération intercommunale" key="false" length="9" name="EPCI" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Localisation de l’établissement dans un établissement public de coopération intercommunale"/>
+      </column>
+      <column comment="Tranche de commune détaillée" key="false" length="2" name="TCD" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Tranche de commune détaillée"/>
+      </column>
+      <column comment="Zone d’emploi" key="false" length="4" name="ZEMET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Zone d’emploi"/>
+      </column>
+      <column comment="Qualité de siège ou non de l’établissement" key="false" length="1" name="SIEGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Qualité de siège ou non de l’établissement"/>
+      </column>
+      <column comment="Enseigne ou nom de l’exploitation" key="false" length="40" name="ENSEIGNE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Enseigne ou nom de l’exploitation"/>
+      </column>
+      <column comment="Indicateur du champ du publipostage" key="false" length="1" name="IND_PUBLIPO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Indicateur du champ du publipostage"/>
+      </column>
+      <column comment="Statut de diffusion de l’établissement" key="false" length="1" name="DIFFCOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Statut de diffusion de l’établissement"/>
+      </column>
+      <column comment="Année et mois d’introduction de l’établissement dans la base de diffusion" key="false" length="6" name="AMINTRET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Année et mois d’introduction de l’établissement dans la base de diffusion"/>
+      </column>
+      <column comment="Nature de l’établissement d’un entrepreneur individuel" key="false" length="1" name="NATETAB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Nature de l’établissement d’un entrepreneur individuel"/>
+      </column>
+      <column comment="Libellé de la nature de l’établissement d’un entrepreneur individuel" key="false" length="30" name="LIBNATETAB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de la nature de l’établissement d’un entrepreneur individuel"/>
+      </column>
+      <column comment="Activité principale de l’établissement" key="false" length="5" name="APET700" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Activité principale de l’établissement"/>
+      </column>
+      <column comment="Libellé de l’activité principale de l’établissement" key="false" length="65" name="LIBAPET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de l’activité principale de l’établissement"/>
+      </column>
+      <column comment="Année de validité de l’activité principale de l’établissement" key="false" length="5" name="DAPET" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Année de validité de l’activité principale de l’établissement"/>
+      </column>
+      <column comment="Tranche d’effectif salarié de l’établissement" key="false" length="2" name="TEFET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Tranche d’effectif salarié de l’établissement"/>
+      </column>
+      <column comment="Libellé de la tranche d’effectif salarié de l’établissement" key="false" length="23" name="LIBTEFET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de la tranche d’effectif salarié de l’établissement"/>
+      </column>
+      <column comment="Effectif salarié de l’établissement à la centaine près" key="false" length="6" name="EFETCENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Effectif salarié de l’établissement à la centaine près"/>
+      </column>
+      <column comment="Année de validité de l’effectif salarié de l’établissement" key="false" length="5" name="DEFET" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Année de validité de l’effectif salarié de l’établissement"/>
+      </column>
+      <column comment="Origine de la création de l’établissement" key="false" length="2" name="ORIGINE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Origine de la création de l’établissement"/>
+      </column>
+      <column comment="Année et mois de création de l’établissement" key="false" length="8" name="DCRET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Année et mois de création de l’établissement"/>
+      </column>
+      <column comment="Date de début d’activité" key="false" length="8" name="DATE_DEB_ETAT_ADM_ET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Date de début d’activité"/>
+      </column>
+      <column comment="Nature de l’activité de l’établissement" key="false" length="2" name="ACTIVNAT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Nature de l’activité de l’établissement"/>
+      </column>
+      <column comment="Lieu de l’activité de l’établissement" key="false" length="2" name="LIEUACT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Lieu de l’activité de l’établissement"/>
+      </column>
+      <column comment="Type de magasin" key="false" length="2" name="ACTISURF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Type de magasin"/>
+      </column>
+      <column comment="Caractère saisonnier ou non de l’activité de l’établissement" key="false" length="2" name="SAISONAT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Caractère saisonnier ou non de l’activité de l’établissement"/>
+      </column>
+      <column comment="Modalité de l’activité principale de l’établissement" key="false" length="1" name="MODET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Modalité de l’activité principale de l’établissement"/>
+      </column>
+      <column comment="Caractère productif de l’établissement" key="false" length="1" name="PRODET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Caractère productif de l’établissement"/>
+      </column>
+      <column comment="Participation particulière à la production de l’établissement" key="false" length="1" name="PRODPART" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Participation particulière à la production de l’établissement"/>
+      </column>
+      <column comment="Caractère auxiliaire de l’activité de l’établissement" key="false" length="3" name="AUXILT" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value="Caractère auxiliaire de l’activité de l’établissement"/>
+      </column>
+      <column comment="Nom ou raison sociale de l’entreprise" key="false" length="131" name="NOMEN_LONG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Nom ou raison sociale de l’entreprise"/>
+      </column>
+      <column comment="Sigle de lentreprise" key="false" length="20" name="SIGLE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Sigle de lentreprise"/>
+      </column>
+      <column comment="Nom de naissance" key="false" length="100" name="NOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Nom de naissance"/>
+      </column>
+      <column comment="Prénom" key="false" length="30" name="PRENOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Prénom"/>
+      </column>
+      <column comment="Civilité des entrepreneurs individuels" key="false" length="1" name="CIVILITE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Civilité des entrepreneurs individuels"/>
+      </column>
+      <column comment="Numéro d’identification au répertoire national des associations" key="false" length="10" name="RNA" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Numéro d’identification au répertoire national des associations"/>
+      </column>
+      <column comment="Numéro interne de classement de l’établissement siège" key="false" length="5" name="NICSIEGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Numéro interne de classement de l’établissement siège"/>
+      </column>
+      <column comment="Région de localisation du siège de l’entreprise" key="false" length="2" name="RPEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Région de localisation du siège de l’entreprise"/>
+      </column>
+      <column comment="Département et commune de localisation du siège de l’entreprise" key="false" length="5" name="DEPCOMEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Département et commune de localisation du siège de l’entreprise"/>
+      </column>
+      <column comment="Adresse mail" key="false" length="80" name="ADR_MAIL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Adresse mail"/>
+      </column>
+      <column comment="Nature juridique de l’entreprise" key="false" length="4" name="NJ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Nature juridique de l’entreprise"/>
+      </column>
+      <column comment="Libellé de la nature juridique" key="false" length="100" name="LIBNJ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de la nature juridique"/>
+      </column>
+      <column comment="Cope APE - Activité principale de l’entreprise" key="false" length="5" name="APEN700" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Cope APE - Activité principale de l’entreprise"/>
+      </column>
+      <column comment="Libellé de l’activité principale de l’entreprise" key="false" length="65" name="LIBAPEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de l’activité principale de l’entreprise"/>
+      </column>
+      <column comment="Année de validité de l’activité principale de l’entreprise" key="false" length="5" name="DAPEN" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Année de validité de l’activité principale de l’entreprise"/>
+      </column>
+      <column comment="Activité principale au registre des métiers" key="false" length="6" name="APRM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Activité principale au registre des métiers"/>
+      </column>
+      <column comment="Appartenance au champ de l’économie sociale et solidaire" key="false" length="1" name="ESSEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Appartenance au champ de l’économie sociale et solidaire"/>
+      </column>
+      <column comment="Date ESS" key="false" length="8" name="DATEESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Date ESS"/>
+      </column>
+      <column comment="Tranche d’effectif salarié de l’entreprise" key="false" length="2" name="TEFEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Tranche d’effectif salarié de l’entreprise"/>
+      </column>
+      <column comment="Libellé de la tranche d’effectif salarié de l’entreprise" key="false" length="23" name="LIBTEFEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de la tranche d’effectif salarié de l’entreprise"/>
+      </column>
+      <column comment="Effectif salarié de l’entreprise à la centaine près" key="false" length="6" name="EFENCENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Effectif salarié de l’entreprise à la centaine près"/>
+      </column>
+      <column comment="Année de validité de l’effectif salarié de l’entreprise" key="false" length="5" name="DEFEN" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Année de validité de l’effectif salarié de l’entreprise"/>
+      </column>
+      <column comment="Catégorie de l’entreprise" key="false" length="5" name="CATEGORIE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Catégorie de l’entreprise"/>
+      </column>
+      <column comment="Date de création de l’entreprise" key="false" length="8" name="DCREN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Date de création de l’entreprise"/>
+      </column>
+      <column comment="Année et mois d’introduction de l’entreprise dans la base de diffusion" key="false" length="6" name="AMINTREN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Année et mois d’introduction de l’entreprise dans la base de diffusion"/>
+      </column>
+      <column comment="Indice de monoactivité de l’entreprise" key="false" length="1" name="MONOACT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Indice de monoactivité de l’entreprise"/>
+      </column>
+      <column comment="Modalité de l’activité principale de l’entreprise" key="false" length="1" name="MODEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Modalité de l’activité principale de l’entreprise"/>
+      </column>
+      <column comment="Caractère productif de l’entreprise" key="false" length="1" name="PRODEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Caractère productif de l’entreprise"/>
+      </column>
+      <column comment="Année de validité des rubriques de niveau entreprise en provenance de l’ESA" key="false" length="5" name="ESAANN" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Année de validité des rubriques de niveau entreprise en provenance de l’ESA"/>
+      </column>
+      <column comment="Tranche de chiffre d’affaires pour les entreprises enquêtées par l’ESA" key="false" length="1" name="TCA" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Tranche de chiffre d’affaires pour les entreprises enquêtées par l’ESA"/>
+      </column>
+      <column comment="Activité principale de l’entreprise issue de l’ESA" key="false" length="5" name="ESAAPEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Activité principale de l’entreprise issue de l’ESA"/>
+      </column>
+      <column comment="Première activité secondaire déclarée dans l’ESA" key="false" length="5" name="ESASEC1N" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Première activité secondaire déclarée dans l’ESA"/>
+      </column>
+      <column comment="Deuxième activité secondaire déclarée dans l’ESA" key="false" length="5" name="ESASEC2N" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Deuxième activité secondaire déclarée dans l’ESA"/>
+      </column>
+      <column comment="Troisième activité secondaire déclarée dans l’ESA" key="false" length="5" name="ESASEC3N" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Troisième activité secondaire déclarée dans l’ESA"/>
+      </column>
+      <column comment="Quatrième activité secondaire déclarée dans l’ESA" key="false" length="5" name="ESASEC4N" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Quatrième activité secondaire déclarée dans l’ESA"/>
+      </column>
+      <column comment="Nature de la mise à jour (création, suppression, modification)" key="false" length="1" name="VMAJ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Nature de la mise à jour (création, suppression, modification)"/>
+      </column>
+      <column comment="Indicateur de mise à jour n°1" key="false" length="3" name="VMAJ1" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value="Indicateur de mise à jour n°1"/>
+      </column>
+      <column comment="Indicateur de mise à jour n°2" key="false" length="3" name="VMAJ2" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value="Indicateur de mise à jour n°2"/>
+      </column>
+      <column comment="Indicateur de mise à jour n°3" key="false" length="3" name="VMAJ3" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value="Indicateur de mise à jour n°3"/>
+      </column>
+      <column comment="Date de traitement de la mise à jour" key="false" length="19" name="DATEMAJ" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date de traitement de la mise à jour"/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="entreprise">
+        <mapperTableEntries name="SIREN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NIC" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L1_NORMALISEE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L2_NORMALISEE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L3_NORMALISEE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L4_NORMALISEE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L5_NORMALISEE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L6_NORMALISEE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L7_NORMALISEE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L1_DECLAREE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L2_DECLAREE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L3_DECLAREE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L4_DECLAREE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L5_DECLAREE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L6_DECLAREE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="L7_DECLAREE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NUMVOIE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INDREP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TYPVOIE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LIBVOIE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CODPOS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CEDEX" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RPET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LIBREG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DEPET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ARRONET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CTONET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COMET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LIBCOM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DU" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TU" type="id_String" nullable="true"/>
+        <mapperTableEntries name="UU" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EPCI" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TCD" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZEMET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SIEGE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ENSEIGNE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="IND_PUBLIPO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DIFFCOM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AMINTRET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NATETAB" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LIBNATETAB" type="id_String" nullable="true"/>
+        <mapperTableEntries name="APET700" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LIBAPET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DAPET" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="TEFET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LIBTEFET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EFETCENT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DEFET" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="ORIGINE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DCRET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATE_DEB_ETAT_ADM_ET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ACTIVNAT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LIEUACT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ACTISURF" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SAISONAT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MODET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRODET" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRODPART" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AUXILT" type="id_Byte" nullable="true"/>
+        <mapperTableEntries name="NOMEN_LONG" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SIGLE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NOM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRENOM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CIVILITE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RNA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NICSIEGE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RPEN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DEPCOMEN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ADR_MAIL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NJ" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LIBNJ" type="id_String" nullable="true"/>
+        <mapperTableEntries name="APEN700" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LIBAPEN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DAPEN" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="APRM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ESSEN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DATEESS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TEFEN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LIBTEFEN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EFENCENT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DEFEN" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="CATEGORIE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DCREN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AMINTREN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MONOACT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MODEN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRODEN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ESAANN" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="TCA" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ESAAPEN" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ESASEC1N" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ESASEC2N" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ESASEC3N" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ESASEC4N" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VMAJ" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VMAJ1" type="id_Byte" nullable="true"/>
+        <mapperTableEntries name="VMAJ2" type="id_Byte" nullable="true"/>
+        <mapperTableEntries name="VMAJ3" type="id_Byte" nullable="true"/>
+        <mapperTableEntries name="DATEMAJ" type="id_Date" nullable="true"/>
+      </outputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_lTB3cMsWEeefQ_H8Y7o7ew" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;10.8.1.190&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;datawarehouse&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="i3hce66Q8FkLC2lbuO2qDQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;entreprises&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_lTB3cMsWEeefQ_H8Y7o7ew - entreprises" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SIREN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NIC"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L1_NORMALISEE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L2_NORMALISEE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L3_NORMALISEE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L4_NORMALISEE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L5_NORMALISEE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L6_NORMALISEE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L7_NORMALISEE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L1_DECLAREE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L2_DECLAREE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L3_DECLAREE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L4_DECLAREE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L5_DECLAREE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L6_DECLAREE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L7_DECLAREE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUMVOIE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INDREP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPVOIE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIBVOIE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CODPOS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CEDEX"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RPET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIBREG"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEPET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ARRONET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CTONET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COMET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIBCOM"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DU"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TU"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UU"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EPCI"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TCD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ZEMET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SIEGE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ENSEIGNE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IND_PUBLIPO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DIFFCOM"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AMINTRET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NATETAB"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIBNATETAB"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="APET700"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIBAPET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DAPET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEFET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIBTEFET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EFETCENT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEFET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORIGINE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DCRET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATE_DEB_ETAT_ADM_ET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACTIVNAT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIEUACT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACTISURF"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SAISONAT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRODET"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRODPART"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUXILT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOMEN_LONG"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SIGLE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOM"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRENOM"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CIVILITE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RNA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NICSIEGE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RPEN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEPCOMEN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ADR_MAIL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NJ"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIBNJ"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="APEN700"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIBAPEN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DAPEN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="APRM"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ESSEN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATEESS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TEFEN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LIBTEFEN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EFENCENT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEFEN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CATEGORIE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DCREN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AMINTREN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MONOACT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODEN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRODEN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ESAANN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TCA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ESAAPEN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ESASEC1N"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ESASEC2N"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ESASEC3N"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ESASEC4N"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VMAJ"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VMAJ1"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VMAJ2"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VMAJ3"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATEMAJ"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="entreprises" name="tMysqlOutput_1">
+      <column comment="Identifiant de l’entreprise" key="false" length="9" name="SIREN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Identifiant de l’entreprise"/>
+      </column>
+      <column comment="Numéro interne de classement de l’établissement" key="false" length="5" name="NIC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Numéro interne de classement de l’établissement"/>
+      </column>
+      <column comment="Première ligne de l’adresse normalisée de l’établissement" key="false" length="38" name="L1_NORMALISEE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Première ligne de l’adresse normalisée de l’établissement"/>
+      </column>
+      <column comment="Deuxième ligne de l’adresse normalisée de l’établissement" key="false" length="38" name="L2_NORMALISEE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Deuxième ligne de l’adresse normalisée de l’établissement"/>
+      </column>
+      <column comment="Troisième ligne de l’adresse normalisée de l’établissement" key="false" length="38" name="L3_NORMALISEE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Troisième ligne de l’adresse normalisée de l’établissement"/>
+      </column>
+      <column comment="Quatrième ligne de l’adresse normalisée de l’établissement" key="false" length="38" name="L4_NORMALISEE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Quatrième ligne de l’adresse normalisée de l’établissement"/>
+      </column>
+      <column comment="Cinquième ligne de l’adresse normalisée de l’établissement" key="false" length="38" name="L5_NORMALISEE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Cinquième ligne de l’adresse normalisée de l’établissement"/>
+      </column>
+      <column comment="Sixième ligne de l’adresse normalisée de l’établissement" key="false" length="38" name="L6_NORMALISEE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Sixième ligne de l’adresse normalisée de l’établissement"/>
+      </column>
+      <column comment="Septième ligne de l’adresse normalisée de l’établissement" key="false" length="38" name="L7_NORMALISEE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Septième ligne de l’adresse normalisée de l’établissement"/>
+      </column>
+      <column comment="Première ligne de l’adresse déclarée de l’établissement" key="false" length="38" name="L1_DECLAREE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Première ligne de l’adresse déclarée de l’établissement"/>
+      </column>
+      <column comment="Deuxième ligne de l’adresse déclarée de l’établissement" key="false" length="38" name="L2_DECLAREE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Deuxième ligne de l’adresse déclarée de l’établissement"/>
+      </column>
+      <column comment="Troisième ligne de l’adresse déclarée de l’établissement" key="false" length="38" name="L3_DECLAREE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Troisième ligne de l’adresse déclarée de l’établissement"/>
+      </column>
+      <column comment="Quatrième ligne de l’adresse déclarée de l’établissement" key="false" length="38" name="L4_DECLAREE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Quatrième ligne de l’adresse déclarée de l’établissement"/>
+      </column>
+      <column comment="Cinquième ligne de l’adresse déclarée de l’établissement" key="false" length="38" name="L5_DECLAREE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Cinquième ligne de l’adresse déclarée de l’établissement"/>
+      </column>
+      <column comment="Sixième ligne de l’adresse déclarée de l’établissement" key="false" length="38" name="L6_DECLAREE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Sixième ligne de l’adresse déclarée de l’établissement"/>
+      </column>
+      <column comment="Septième ligne de l’adresse déclarée de l’établissement" key="false" length="38" name="L7_DECLAREE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Septième ligne de l’adresse déclarée de l’établissement"/>
+      </column>
+      <column comment="Numéro dans la voie" key="false" length="4" name="NUMVOIE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Numéro dans la voie"/>
+      </column>
+      <column comment="Indice de répétition" key="false" length="1" name="INDREP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Indice de répétition"/>
+      </column>
+      <column comment="Type de la voie de localisation de l’établissement" key="false" length="4" name="TYPVOIE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Type de la voie de localisation de l’établissement"/>
+      </column>
+      <column comment="Libellé de la voie de localisation de l’établissement" key="false" length="32" name="LIBVOIE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de la voie de localisation de l’établissement"/>
+      </column>
+      <column comment="Code postal" key="false" length="5" name="CODPOS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Code postal"/>
+      </column>
+      <column comment="Code Cedex" key="false" length="5" name="CEDEX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Code Cedex"/>
+      </column>
+      <column comment="Région de localisation de l’établissement" key="false" length="2" name="RPET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Région de localisation de l’établissement"/>
+      </column>
+      <column comment="Libellé de la région" key="false" length="70" name="LIBREG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de la région"/>
+      </column>
+      <column comment="Département de localisation de l’établissement" key="false" length="2" name="DEPET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Département de localisation de l’établissement"/>
+      </column>
+      <column comment="Arrondissement de localisation de l’établissement" key="false" length="2" name="ARRONET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Arrondissement de localisation de l’établissement"/>
+      </column>
+      <column comment="Canton de localisation de l’établissement" key="false" length="3" name="CTONET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Canton de localisation de l’établissement"/>
+      </column>
+      <column comment="Commune de localisation de l’établissement" key="false" length="3" name="COMET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Commune de localisation de l’établissement"/>
+      </column>
+      <column comment="Libellé de la commune de localisation de l’établissement" key="false" length="32" name="LIBCOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de la commune de localisation de l’établissement"/>
+      </column>
+      <column comment="Département de l’unité urbaine de la localisation de l’établissement" key="false" length="2" name="DU" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Département de l’unité urbaine de la localisation de l’établissement"/>
+      </column>
+      <column comment="Taille de l’unité urbaine" key="false" length="1" name="TU" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Taille de l’unité urbaine"/>
+      </column>
+      <column comment="Numéro de l’unité urbaine" key="false" length="2" name="UU" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Numéro de l’unité urbaine"/>
+      </column>
+      <column comment="Localisation de l’établissement dans un établissement public de coopération intercommunale" key="false" length="9" name="EPCI" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Localisation de l’établissement dans un établissement public de coopération intercommunale"/>
+      </column>
+      <column comment="Tranche de commune détaillée" key="false" length="2" name="TCD" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Tranche de commune détaillée"/>
+      </column>
+      <column comment="Zone d’emploi" key="false" length="4" name="ZEMET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Zone d’emploi"/>
+      </column>
+      <column comment="Qualité de siège ou non de l’établissement" key="false" length="1" name="SIEGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Qualité de siège ou non de l’établissement"/>
+      </column>
+      <column comment="Enseigne ou nom de l’exploitation" key="false" length="40" name="ENSEIGNE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Enseigne ou nom de l’exploitation"/>
+      </column>
+      <column comment="Indicateur du champ du publipostage" key="false" length="1" name="IND_PUBLIPO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Indicateur du champ du publipostage"/>
+      </column>
+      <column comment="Statut de diffusion de l’établissement" key="false" length="1" name="DIFFCOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Statut de diffusion de l’établissement"/>
+      </column>
+      <column comment="Année et mois d’introduction de l’établissement dans la base de diffusion" key="false" length="6" name="AMINTRET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Année et mois d’introduction de l’établissement dans la base de diffusion"/>
+      </column>
+      <column comment="Nature de l’établissement d’un entrepreneur individuel" key="false" length="1" name="NATETAB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Nature de l’établissement d’un entrepreneur individuel"/>
+      </column>
+      <column comment="Libellé de la nature de l’établissement d’un entrepreneur individuel" key="false" length="30" name="LIBNATETAB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de la nature de l’établissement d’un entrepreneur individuel"/>
+      </column>
+      <column comment="Activité principale de l’établissement" key="false" length="5" name="APET700" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Activité principale de l’établissement"/>
+      </column>
+      <column comment="Libellé de l’activité principale de l’établissement" key="false" length="65" name="LIBAPET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de l’activité principale de l’établissement"/>
+      </column>
+      <column comment="Année de validité de l’activité principale de l’établissement" key="false" length="5" name="DAPET" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Année de validité de l’activité principale de l’établissement"/>
+      </column>
+      <column comment="Tranche d’effectif salarié de l’établissement" key="false" length="2" name="TEFET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Tranche d’effectif salarié de l’établissement"/>
+      </column>
+      <column comment="Libellé de la tranche d’effectif salarié de l’établissement" key="false" length="23" name="LIBTEFET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de la tranche d’effectif salarié de l’établissement"/>
+      </column>
+      <column comment="Effectif salarié de l’établissement à la centaine près" key="false" length="6" name="EFETCENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Effectif salarié de l’établissement à la centaine près"/>
+      </column>
+      <column comment="Année de validité de l’effectif salarié de l’établissement" key="false" length="5" name="DEFET" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Année de validité de l’effectif salarié de l’établissement"/>
+      </column>
+      <column comment="Origine de la création de l’établissement" key="false" length="2" name="ORIGINE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Origine de la création de l’établissement"/>
+      </column>
+      <column comment="Année et mois de création de l’établissement" key="false" length="8" name="DCRET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Année et mois de création de l’établissement"/>
+      </column>
+      <column comment="Date de début d’activité" key="false" length="8" name="DATE_DEB_ETAT_ADM_ET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Date de début d’activité"/>
+      </column>
+      <column comment="Nature de l’activité de l’établissement" key="false" length="2" name="ACTIVNAT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Nature de l’activité de l’établissement"/>
+      </column>
+      <column comment="Lieu de l’activité de l’établissement" key="false" length="2" name="LIEUACT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Lieu de l’activité de l’établissement"/>
+      </column>
+      <column comment="Type de magasin" key="false" length="2" name="ACTISURF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Type de magasin"/>
+      </column>
+      <column comment="Caractère saisonnier ou non de l’activité de l’établissement" key="false" length="2" name="SAISONAT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Caractère saisonnier ou non de l’activité de l’établissement"/>
+      </column>
+      <column comment="Modalité de l’activité principale de l’établissement" key="false" length="1" name="MODET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Modalité de l’activité principale de l’établissement"/>
+      </column>
+      <column comment="Caractère productif de l’établissement" key="false" length="1" name="PRODET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Caractère productif de l’établissement"/>
+      </column>
+      <column comment="Participation particulière à la production de l’établissement" key="false" length="1" name="PRODPART" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Participation particulière à la production de l’établissement"/>
+      </column>
+      <column comment="Caractère auxiliaire de l’activité de l’établissement" key="false" length="3" name="AUXILT" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value="Caractère auxiliaire de l’activité de l’établissement"/>
+      </column>
+      <column comment="Nom ou raison sociale de l’entreprise" key="false" length="131" name="NOMEN_LONG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Nom ou raison sociale de l’entreprise"/>
+      </column>
+      <column comment="Sigle de lentreprise" key="false" length="20" name="SIGLE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Sigle de lentreprise"/>
+      </column>
+      <column comment="Nom de naissance" key="false" length="100" name="NOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Nom de naissance"/>
+      </column>
+      <column comment="Prénom" key="false" length="30" name="PRENOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Prénom"/>
+      </column>
+      <column comment="Civilité des entrepreneurs individuels" key="false" length="1" name="CIVILITE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Civilité des entrepreneurs individuels"/>
+      </column>
+      <column comment="Numéro d’identification au répertoire national des associations" key="false" length="10" name="RNA" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Numéro d’identification au répertoire national des associations"/>
+      </column>
+      <column comment="Numéro interne de classement de l’établissement siège" key="false" length="5" name="NICSIEGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Numéro interne de classement de l’établissement siège"/>
+      </column>
+      <column comment="Région de localisation du siège de l’entreprise" key="false" length="2" name="RPEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Région de localisation du siège de l’entreprise"/>
+      </column>
+      <column comment="Département et commune de localisation du siège de l’entreprise" key="false" length="5" name="DEPCOMEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Département et commune de localisation du siège de l’entreprise"/>
+      </column>
+      <column comment="Adresse mail" key="false" length="80" name="ADR_MAIL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Adresse mail"/>
+      </column>
+      <column comment="Nature juridique de l’entreprise" key="false" length="4" name="NJ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Nature juridique de l’entreprise"/>
+      </column>
+      <column comment="Libellé de la nature juridique" key="false" length="100" name="LIBNJ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de la nature juridique"/>
+      </column>
+      <column comment="Cope APE - Activité principale de l’entreprise" key="false" length="5" name="APEN700" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Cope APE - Activité principale de l’entreprise"/>
+      </column>
+      <column comment="Libellé de l’activité principale de l’entreprise" key="false" length="65" name="LIBAPEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de l’activité principale de l’entreprise"/>
+      </column>
+      <column comment="Année de validité de l’activité principale de l’entreprise" key="false" length="5" name="DAPEN" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Année de validité de l’activité principale de l’entreprise"/>
+      </column>
+      <column comment="Activité principale au registre des métiers" key="false" length="6" name="APRM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Activité principale au registre des métiers"/>
+      </column>
+      <column comment="Appartenance au champ de l’économie sociale et solidaire" key="false" length="1" name="ESSEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Appartenance au champ de l’économie sociale et solidaire"/>
+      </column>
+      <column comment="Date ESS" key="false" length="8" name="DATEESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Date ESS"/>
+      </column>
+      <column comment="Tranche d’effectif salarié de l’entreprise" key="false" length="2" name="TEFEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Tranche d’effectif salarié de l’entreprise"/>
+      </column>
+      <column comment="Libellé de la tranche d’effectif salarié de l’entreprise" key="false" length="23" name="LIBTEFEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de la tranche d’effectif salarié de l’entreprise"/>
+      </column>
+      <column comment="Effectif salarié de l’entreprise à la centaine près" key="false" length="6" name="EFENCENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Effectif salarié de l’entreprise à la centaine près"/>
+      </column>
+      <column comment="Année de validité de l’effectif salarié de l’entreprise" key="false" length="5" name="DEFEN" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Année de validité de l’effectif salarié de l’entreprise"/>
+      </column>
+      <column comment="Catégorie de l’entreprise" key="false" length="5" name="CATEGORIE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Catégorie de l’entreprise"/>
+      </column>
+      <column comment="Date de création de l’entreprise" key="false" length="8" name="DCREN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Date de création de l’entreprise"/>
+      </column>
+      <column comment="Année et mois d’introduction de l’entreprise dans la base de diffusion" key="false" length="6" name="AMINTREN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Année et mois d’introduction de l’entreprise dans la base de diffusion"/>
+      </column>
+      <column comment="Indice de monoactivité de l’entreprise" key="false" length="1" name="MONOACT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Indice de monoactivité de l’entreprise"/>
+      </column>
+      <column comment="Modalité de l’activité principale de l’entreprise" key="false" length="1" name="MODEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Modalité de l’activité principale de l’entreprise"/>
+      </column>
+      <column comment="Caractère productif de l’entreprise" key="false" length="1" name="PRODEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Caractère productif de l’entreprise"/>
+      </column>
+      <column comment="Année de validité des rubriques de niveau entreprise en provenance de l’ESA" key="false" length="5" name="ESAANN" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Année de validité des rubriques de niveau entreprise en provenance de l’ESA"/>
+      </column>
+      <column comment="Tranche de chiffre d’affaires pour les entreprises enquêtées par l’ESA" key="false" length="1" name="TCA" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Tranche de chiffre d’affaires pour les entreprises enquêtées par l’ESA"/>
+      </column>
+      <column comment="Activité principale de l’entreprise issue de l’ESA" key="false" length="5" name="ESAAPEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Activité principale de l’entreprise issue de l’ESA"/>
+      </column>
+      <column comment="Première activité secondaire déclarée dans l’ESA" key="false" length="5" name="ESASEC1N" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Première activité secondaire déclarée dans l’ESA"/>
+      </column>
+      <column comment="Deuxième activité secondaire déclarée dans l’ESA" key="false" length="5" name="ESASEC2N" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Deuxième activité secondaire déclarée dans l’ESA"/>
+      </column>
+      <column comment="Troisième activité secondaire déclarée dans l’ESA" key="false" length="5" name="ESASEC3N" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Troisième activité secondaire déclarée dans l’ESA"/>
+      </column>
+      <column comment="Quatrième activité secondaire déclarée dans l’ESA" key="false" length="5" name="ESASEC4N" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Quatrième activité secondaire déclarée dans l’ESA"/>
+      </column>
+      <column comment="Nature de la mise à jour (création, suppression, modification)" key="false" length="1" name="VMAJ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Nature de la mise à jour (création, suppression, modification)"/>
+      </column>
+      <column comment="Indicateur de mise à jour n°1" key="false" length="3" name="VMAJ1" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value="Indicateur de mise à jour n°1"/>
+      </column>
+      <column comment="Indicateur de mise à jour n°2" key="false" length="3" name="VMAJ2" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value="Indicateur de mise à jour n°2"/>
+      </column>
+      <column comment="Indicateur de mise à jour n°3" key="false" length="3" name="VMAJ3" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value="Indicateur de mise à jour n°3"/>
+      </column>
+      <column comment="Date de traitement de la mise à jour" key="false" length="19" name="DATEMAJ" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date de traitement de la mise à jour"/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" label="entreprises" name="REJECT">
+      <column comment="Identifiant de l’entreprise" key="false" length="9" name="SIREN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Identifiant de l’entreprise"/>
+      </column>
+      <column comment="Numéro interne de classement de l’établissement" key="false" length="5" name="NIC" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Numéro interne de classement de l’établissement"/>
+      </column>
+      <column comment="Première ligne de l’adresse normalisée de l’établissement" key="false" length="38" name="L1_NORMALISEE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Première ligne de l’adresse normalisée de l’établissement"/>
+      </column>
+      <column comment="Deuxième ligne de l’adresse normalisée de l’établissement" key="false" length="38" name="L2_NORMALISEE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Deuxième ligne de l’adresse normalisée de l’établissement"/>
+      </column>
+      <column comment="Troisième ligne de l’adresse normalisée de l’établissement" key="false" length="38" name="L3_NORMALISEE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Troisième ligne de l’adresse normalisée de l’établissement"/>
+      </column>
+      <column comment="Quatrième ligne de l’adresse normalisée de l’établissement" key="false" length="38" name="L4_NORMALISEE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Quatrième ligne de l’adresse normalisée de l’établissement"/>
+      </column>
+      <column comment="Cinquième ligne de l’adresse normalisée de l’établissement" key="false" length="38" name="L5_NORMALISEE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Cinquième ligne de l’adresse normalisée de l’établissement"/>
+      </column>
+      <column comment="Sixième ligne de l’adresse normalisée de l’établissement" key="false" length="38" name="L6_NORMALISEE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Sixième ligne de l’adresse normalisée de l’établissement"/>
+      </column>
+      <column comment="Septième ligne de l’adresse normalisée de l’établissement" key="false" length="38" name="L7_NORMALISEE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Septième ligne de l’adresse normalisée de l’établissement"/>
+      </column>
+      <column comment="Première ligne de l’adresse déclarée de l’établissement" key="false" length="38" name="L1_DECLAREE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Première ligne de l’adresse déclarée de l’établissement"/>
+      </column>
+      <column comment="Deuxième ligne de l’adresse déclarée de l’établissement" key="false" length="38" name="L2_DECLAREE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Deuxième ligne de l’adresse déclarée de l’établissement"/>
+      </column>
+      <column comment="Troisième ligne de l’adresse déclarée de l’établissement" key="false" length="38" name="L3_DECLAREE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Troisième ligne de l’adresse déclarée de l’établissement"/>
+      </column>
+      <column comment="Quatrième ligne de l’adresse déclarée de l’établissement" key="false" length="38" name="L4_DECLAREE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Quatrième ligne de l’adresse déclarée de l’établissement"/>
+      </column>
+      <column comment="Cinquième ligne de l’adresse déclarée de l’établissement" key="false" length="38" name="L5_DECLAREE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Cinquième ligne de l’adresse déclarée de l’établissement"/>
+      </column>
+      <column comment="Sixième ligne de l’adresse déclarée de l’établissement" key="false" length="38" name="L6_DECLAREE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Sixième ligne de l’adresse déclarée de l’établissement"/>
+      </column>
+      <column comment="Septième ligne de l’adresse déclarée de l’établissement" key="false" length="38" name="L7_DECLAREE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Septième ligne de l’adresse déclarée de l’établissement"/>
+      </column>
+      <column comment="Numéro dans la voie" key="false" length="4" name="NUMVOIE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Numéro dans la voie"/>
+      </column>
+      <column comment="Indice de répétition" key="false" length="1" name="INDREP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Indice de répétition"/>
+      </column>
+      <column comment="Type de la voie de localisation de l’établissement" key="false" length="4" name="TYPVOIE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Type de la voie de localisation de l’établissement"/>
+      </column>
+      <column comment="Libellé de la voie de localisation de l’établissement" key="false" length="32" name="LIBVOIE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de la voie de localisation de l’établissement"/>
+      </column>
+      <column comment="Code postal" key="false" length="5" name="CODPOS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Code postal"/>
+      </column>
+      <column comment="Code Cedex" key="false" length="5" name="CEDEX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Code Cedex"/>
+      </column>
+      <column comment="Région de localisation de l’établissement" key="false" length="2" name="RPET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Région de localisation de l’établissement"/>
+      </column>
+      <column comment="Libellé de la région" key="false" length="70" name="LIBREG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de la région"/>
+      </column>
+      <column comment="Département de localisation de l’établissement" key="false" length="2" name="DEPET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Département de localisation de l’établissement"/>
+      </column>
+      <column comment="Arrondissement de localisation de l’établissement" key="false" length="2" name="ARRONET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Arrondissement de localisation de l’établissement"/>
+      </column>
+      <column comment="Canton de localisation de l’établissement" key="false" length="3" name="CTONET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Canton de localisation de l’établissement"/>
+      </column>
+      <column comment="Commune de localisation de l’établissement" key="false" length="3" name="COMET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Commune de localisation de l’établissement"/>
+      </column>
+      <column comment="Libellé de la commune de localisation de l’établissement" key="false" length="32" name="LIBCOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de la commune de localisation de l’établissement"/>
+      </column>
+      <column comment="Département de l’unité urbaine de la localisation de l’établissement" key="false" length="2" name="DU" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Département de l’unité urbaine de la localisation de l’établissement"/>
+      </column>
+      <column comment="Taille de l’unité urbaine" key="false" length="1" name="TU" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Taille de l’unité urbaine"/>
+      </column>
+      <column comment="Numéro de l’unité urbaine" key="false" length="2" name="UU" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Numéro de l’unité urbaine"/>
+      </column>
+      <column comment="Localisation de l’établissement dans un établissement public de coopération intercommunale" key="false" length="9" name="EPCI" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Localisation de l’établissement dans un établissement public de coopération intercommunale"/>
+      </column>
+      <column comment="Tranche de commune détaillée" key="false" length="2" name="TCD" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Tranche de commune détaillée"/>
+      </column>
+      <column comment="Zone d’emploi" key="false" length="4" name="ZEMET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Zone d’emploi"/>
+      </column>
+      <column comment="Qualité de siège ou non de l’établissement" key="false" length="1" name="SIEGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Qualité de siège ou non de l’établissement"/>
+      </column>
+      <column comment="Enseigne ou nom de l’exploitation" key="false" length="40" name="ENSEIGNE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Enseigne ou nom de l’exploitation"/>
+      </column>
+      <column comment="Indicateur du champ du publipostage" key="false" length="1" name="IND_PUBLIPO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Indicateur du champ du publipostage"/>
+      </column>
+      <column comment="Statut de diffusion de l’établissement" key="false" length="1" name="DIFFCOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Statut de diffusion de l’établissement"/>
+      </column>
+      <column comment="Année et mois d’introduction de l’établissement dans la base de diffusion" key="false" length="6" name="AMINTRET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Année et mois d’introduction de l’établissement dans la base de diffusion"/>
+      </column>
+      <column comment="Nature de l’établissement d’un entrepreneur individuel" key="false" length="1" name="NATETAB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Nature de l’établissement d’un entrepreneur individuel"/>
+      </column>
+      <column comment="Libellé de la nature de l’établissement d’un entrepreneur individuel" key="false" length="30" name="LIBNATETAB" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de la nature de l’établissement d’un entrepreneur individuel"/>
+      </column>
+      <column comment="Activité principale de l’établissement" key="false" length="5" name="APET700" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Activité principale de l’établissement"/>
+      </column>
+      <column comment="Libellé de l’activité principale de l’établissement" key="false" length="65" name="LIBAPET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de l’activité principale de l’établissement"/>
+      </column>
+      <column comment="Année de validité de l’activité principale de l’établissement" key="false" length="5" name="DAPET" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Année de validité de l’activité principale de l’établissement"/>
+      </column>
+      <column comment="Tranche d’effectif salarié de l’établissement" key="false" length="2" name="TEFET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Tranche d’effectif salarié de l’établissement"/>
+      </column>
+      <column comment="Libellé de la tranche d’effectif salarié de l’établissement" key="false" length="23" name="LIBTEFET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de la tranche d’effectif salarié de l’établissement"/>
+      </column>
+      <column comment="Effectif salarié de l’établissement à la centaine près" key="false" length="6" name="EFETCENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Effectif salarié de l’établissement à la centaine près"/>
+      </column>
+      <column comment="Année de validité de l’effectif salarié de l’établissement" key="false" length="5" name="DEFET" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Année de validité de l’effectif salarié de l’établissement"/>
+      </column>
+      <column comment="Origine de la création de l’établissement" key="false" length="2" name="ORIGINE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Origine de la création de l’établissement"/>
+      </column>
+      <column comment="Année et mois de création de l’établissement" key="false" length="8" name="DCRET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Année et mois de création de l’établissement"/>
+      </column>
+      <column comment="Date de début d’activité" key="false" length="8" name="DATE_DEB_ETAT_ADM_ET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Date de début d’activité"/>
+      </column>
+      <column comment="Nature de l’activité de l’établissement" key="false" length="2" name="ACTIVNAT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Nature de l’activité de l’établissement"/>
+      </column>
+      <column comment="Lieu de l’activité de l’établissement" key="false" length="2" name="LIEUACT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Lieu de l’activité de l’établissement"/>
+      </column>
+      <column comment="Type de magasin" key="false" length="2" name="ACTISURF" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Type de magasin"/>
+      </column>
+      <column comment="Caractère saisonnier ou non de l’activité de l’établissement" key="false" length="2" name="SAISONAT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Caractère saisonnier ou non de l’activité de l’établissement"/>
+      </column>
+      <column comment="Modalité de l’activité principale de l’établissement" key="false" length="1" name="MODET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Modalité de l’activité principale de l’établissement"/>
+      </column>
+      <column comment="Caractère productif de l’établissement" key="false" length="1" name="PRODET" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Caractère productif de l’établissement"/>
+      </column>
+      <column comment="Participation particulière à la production de l’établissement" key="false" length="1" name="PRODPART" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Participation particulière à la production de l’établissement"/>
+      </column>
+      <column comment="Caractère auxiliaire de l’activité de l’établissement" key="false" length="3" name="AUXILT" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value="Caractère auxiliaire de l’activité de l’établissement"/>
+      </column>
+      <column comment="Nom ou raison sociale de l’entreprise" key="false" length="131" name="NOMEN_LONG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Nom ou raison sociale de l’entreprise"/>
+      </column>
+      <column comment="Sigle de lentreprise" key="false" length="20" name="SIGLE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Sigle de lentreprise"/>
+      </column>
+      <column comment="Nom de naissance" key="false" length="100" name="NOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Nom de naissance"/>
+      </column>
+      <column comment="Prénom" key="false" length="30" name="PRENOM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Prénom"/>
+      </column>
+      <column comment="Civilité des entrepreneurs individuels" key="false" length="1" name="CIVILITE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Civilité des entrepreneurs individuels"/>
+      </column>
+      <column comment="Numéro d’identification au répertoire national des associations" key="false" length="10" name="RNA" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Numéro d’identification au répertoire national des associations"/>
+      </column>
+      <column comment="Numéro interne de classement de l’établissement siège" key="false" length="5" name="NICSIEGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Numéro interne de classement de l’établissement siège"/>
+      </column>
+      <column comment="Région de localisation du siège de l’entreprise" key="false" length="2" name="RPEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Région de localisation du siège de l’entreprise"/>
+      </column>
+      <column comment="Département et commune de localisation du siège de l’entreprise" key="false" length="5" name="DEPCOMEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Département et commune de localisation du siège de l’entreprise"/>
+      </column>
+      <column comment="Adresse mail" key="false" length="80" name="ADR_MAIL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Adresse mail"/>
+      </column>
+      <column comment="Nature juridique de l’entreprise" key="false" length="4" name="NJ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Nature juridique de l’entreprise"/>
+      </column>
+      <column comment="Libellé de la nature juridique" key="false" length="100" name="LIBNJ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de la nature juridique"/>
+      </column>
+      <column comment="Cope APE - Activité principale de l’entreprise" key="false" length="5" name="APEN700" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Cope APE - Activité principale de l’entreprise"/>
+      </column>
+      <column comment="Libellé de l’activité principale de l’entreprise" key="false" length="65" name="LIBAPEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de l’activité principale de l’entreprise"/>
+      </column>
+      <column comment="Année de validité de l’activité principale de l’entreprise" key="false" length="5" name="DAPEN" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Année de validité de l’activité principale de l’entreprise"/>
+      </column>
+      <column comment="Activité principale au registre des métiers" key="false" length="6" name="APRM" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Activité principale au registre des métiers"/>
+      </column>
+      <column comment="Appartenance au champ de l’économie sociale et solidaire" key="false" length="1" name="ESSEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Appartenance au champ de l’économie sociale et solidaire"/>
+      </column>
+      <column comment="Date ESS" key="false" length="8" name="DATEESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Date ESS"/>
+      </column>
+      <column comment="Tranche d’effectif salarié de l’entreprise" key="false" length="2" name="TEFEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Tranche d’effectif salarié de l’entreprise"/>
+      </column>
+      <column comment="Libellé de la tranche d’effectif salarié de l’entreprise" key="false" length="23" name="LIBTEFEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Libellé de la tranche d’effectif salarié de l’entreprise"/>
+      </column>
+      <column comment="Effectif salarié de l’entreprise à la centaine près" key="false" length="6" name="EFENCENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Effectif salarié de l’entreprise à la centaine près"/>
+      </column>
+      <column comment="Année de validité de l’effectif salarié de l’entreprise" key="false" length="5" name="DEFEN" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Année de validité de l’effectif salarié de l’entreprise"/>
+      </column>
+      <column comment="Catégorie de l’entreprise" key="false" length="5" name="CATEGORIE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Catégorie de l’entreprise"/>
+      </column>
+      <column comment="Date de création de l’entreprise" key="false" length="8" name="DCREN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Date de création de l’entreprise"/>
+      </column>
+      <column comment="Année et mois d’introduction de l’entreprise dans la base de diffusion" key="false" length="6" name="AMINTREN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Année et mois d’introduction de l’entreprise dans la base de diffusion"/>
+      </column>
+      <column comment="Indice de monoactivité de l’entreprise" key="false" length="1" name="MONOACT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Indice de monoactivité de l’entreprise"/>
+      </column>
+      <column comment="Modalité de l’activité principale de l’entreprise" key="false" length="1" name="MODEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Modalité de l’activité principale de l’entreprise"/>
+      </column>
+      <column comment="Caractère productif de l’entreprise" key="false" length="1" name="PRODEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Caractère productif de l’entreprise"/>
+      </column>
+      <column comment="Année de validité des rubriques de niveau entreprise en provenance de l’ESA" key="false" length="5" name="ESAANN" nullable="true" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value="Année de validité des rubriques de niveau entreprise en provenance de l’ESA"/>
+      </column>
+      <column comment="Tranche de chiffre d’affaires pour les entreprises enquêtées par l’ESA" key="false" length="1" name="TCA" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Tranche de chiffre d’affaires pour les entreprises enquêtées par l’ESA"/>
+      </column>
+      <column comment="Activité principale de l’entreprise issue de l’ESA" key="false" length="5" name="ESAAPEN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Activité principale de l’entreprise issue de l’ESA"/>
+      </column>
+      <column comment="Première activité secondaire déclarée dans l’ESA" key="false" length="5" name="ESASEC1N" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Première activité secondaire déclarée dans l’ESA"/>
+      </column>
+      <column comment="Deuxième activité secondaire déclarée dans l’ESA" key="false" length="5" name="ESASEC2N" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Deuxième activité secondaire déclarée dans l’ESA"/>
+      </column>
+      <column comment="Troisième activité secondaire déclarée dans l’ESA" key="false" length="5" name="ESASEC3N" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Troisième activité secondaire déclarée dans l’ESA"/>
+      </column>
+      <column comment="Quatrième activité secondaire déclarée dans l’ESA" key="false" length="5" name="ESASEC4N" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Quatrième activité secondaire déclarée dans l’ESA"/>
+      </column>
+      <column comment="Nature de la mise à jour (création, suppression, modification)" key="false" length="1" name="VMAJ" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Nature de la mise à jour (création, suppression, modification)"/>
+      </column>
+      <column comment="Indicateur de mise à jour n°1" key="false" length="3" name="VMAJ1" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value="Indicateur de mise à jour n°1"/>
+      </column>
+      <column comment="Indicateur de mise à jour n°2" key="false" length="3" name="VMAJ2" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value="Indicateur de mise à jour n°2"/>
+      </column>
+      <column comment="Indicateur de mise à jour n°3" key="false" length="3" name="VMAJ3" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value="Indicateur de mise à jour n°3"/>
+      </column>
+      <column comment="Date de traitement de la mise à jour" key="false" length="19" name="DATEMAJ" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="Date de traitement de la mise à jour"/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="entreprise" lineStyle="0" metaname="entreprise" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMysqlOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="entreprise" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
 </talendfile:ProcessType>
