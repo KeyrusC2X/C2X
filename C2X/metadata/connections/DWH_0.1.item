@@ -18,7 +18,6 @@
   <orgomg.cwm.resource.relational:Catalog xmi:id="_torTwMsWEeefQ_H8Y7o7ew" name="datawarehouse" dataManager="_tnUB0MsWEeefQ_H8Y7o7ew">
     <ownedElement xsi:type="relational:TdTable" xmi:id="_vYYicNZ9EeeH3eeGE8HkYQ" name="ref_insee" id="_vYU4ENZ9EeeH3eeGE8HkYQ" label="ref_insee" tableType="TABLE">
       <taggedValue xmi:id="_vYYicdZ9EeeH3eeGE8HkYQ" tag="Comment" value=""/>
-      <taggedValue xmi:id="_vYYictZ9EeeH3eeGE8HkYQ" tag="Comment" value=""/>
       <feature xsi:type="relational:TdColumn" xmi:id="_vYYic9Z9EeeH3eeGE8HkYQ" name="PK" label="PK" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
         <taggedValue xmi:id="_vYYidNZ9EeeH3eeGE8HkYQ" tag="Comment" value=""/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_vYYiddZ9EeeH3eeGE8HkYQ" language="COLUMN_DEF"/>
@@ -48,6 +47,510 @@
         <taggedValue xmi:id="_vYYiiNZ9EeeH3eeGE8HkYQ" tag="Comment" value=""/>
         <initialValue xsi:type="relational:TdExpression" xmi:id="_vYYiidZ9EeeH3eeGE8HkYQ" language="COLUMN_DEF"/>
         <sqlDataType xmi:id="_vYYiitZ9EeeH3eeGE8HkYQ" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_ytanUCUbEeiVdYxhttYzFA" name="entreprises" id="_ytSEcCUbEeiVdYxhttYzFA" label="entreprises" tableType="TABLE">
+      <taggedValue xmi:id="_ytanUSUbEeiVdYxhttYzFA" tag="Comment" value=""/>
+      <taggedValue xmi:id="_ytanUiUbEeiVdYxhttYzFA" tag="Comment" value=""/>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanUyUbEeiVdYxhttYzFA" name="SIREN" comment="Identifiant de l’entreprise" label="SIREN" length="9" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanVCUbEeiVdYxhttYzFA" tag="Comment" value="Identifiant de l’entreprise"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanVSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanViUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanVyUbEeiVdYxhttYzFA" name="NIC" comment="Numéro interne de classement de l’établissement" label="NIC" length="5" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanWCUbEeiVdYxhttYzFA" tag="Comment" value="Numéro interne de classement de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanWSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanWiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanWyUbEeiVdYxhttYzFA" name="L1_NORMALISEE" comment="Première ligne de l’adresse normalisée de l’établissement" label="L1_NORMALISEE" length="38" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanXCUbEeiVdYxhttYzFA" tag="Comment" value="Première ligne de l’adresse normalisée de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanXSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanXiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanXyUbEeiVdYxhttYzFA" name="L2_NORMALISEE" comment="Deuxième ligne de l’adresse normalisée de l’établissement" label="L2_NORMALISEE" length="38" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanYCUbEeiVdYxhttYzFA" tag="Comment" value="Deuxième ligne de l’adresse normalisée de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanYSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanYiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanYyUbEeiVdYxhttYzFA" name="L3_NORMALISEE" comment="Troisième ligne de l’adresse normalisée de l’établissement" label="L3_NORMALISEE" length="38" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanZCUbEeiVdYxhttYzFA" tag="Comment" value="Troisième ligne de l’adresse normalisée de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanZSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanZiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanZyUbEeiVdYxhttYzFA" name="L4_NORMALISEE" comment="Quatrième ligne de l’adresse normalisée de l’établissement" label="L4_NORMALISEE" length="38" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanaCUbEeiVdYxhttYzFA" tag="Comment" value="Quatrième ligne de l’adresse normalisée de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanaSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanaiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanayUbEeiVdYxhttYzFA" name="L5_NORMALISEE" comment="Cinquième ligne de l’adresse normalisée de l’établissement" label="L5_NORMALISEE" length="38" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanbCUbEeiVdYxhttYzFA" tag="Comment" value="Cinquième ligne de l’adresse normalisée de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanbSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanbiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanbyUbEeiVdYxhttYzFA" name="L6_NORMALISEE" comment="Sixième ligne de l’adresse normalisée de l’établissement" label="L6_NORMALISEE" length="38" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytancCUbEeiVdYxhttYzFA" tag="Comment" value="Sixième ligne de l’adresse normalisée de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytancSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanciUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytancyUbEeiVdYxhttYzFA" name="L7_NORMALISEE" comment="Septième ligne de l’adresse normalisée de l’établissement" label="L7_NORMALISEE" length="38" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytandCUbEeiVdYxhttYzFA" tag="Comment" value="Septième ligne de l’adresse normalisée de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytandSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytandiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytandyUbEeiVdYxhttYzFA" name="L1_DECLAREE" comment="Première ligne de l’adresse déclarée de l’établissement" label="L1_DECLAREE" length="38" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaneCUbEeiVdYxhttYzFA" tag="Comment" value="Première ligne de l’adresse déclarée de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaneSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaneiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaneyUbEeiVdYxhttYzFA" name="L2_DECLAREE" comment="Deuxième ligne de l’adresse déclarée de l’établissement" label="L2_DECLAREE" length="38" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanfCUbEeiVdYxhttYzFA" tag="Comment" value="Deuxième ligne de l’adresse déclarée de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanfSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanfiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanfyUbEeiVdYxhttYzFA" name="L3_DECLAREE" comment="Troisième ligne de l’adresse déclarée de l’établissement" label="L3_DECLAREE" length="38" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytangCUbEeiVdYxhttYzFA" tag="Comment" value="Troisième ligne de l’adresse déclarée de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytangSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytangiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytangyUbEeiVdYxhttYzFA" name="L4_DECLAREE" comment="Quatrième ligne de l’adresse déclarée de l’établissement" label="L4_DECLAREE" length="38" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanhCUbEeiVdYxhttYzFA" tag="Comment" value="Quatrième ligne de l’adresse déclarée de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanhSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanhiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanhyUbEeiVdYxhttYzFA" name="L5_DECLAREE" comment="Cinquième ligne de l’adresse déclarée de l’établissement" label="L5_DECLAREE" length="38" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaniCUbEeiVdYxhttYzFA" tag="Comment" value="Cinquième ligne de l’adresse déclarée de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaniSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaniiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaniyUbEeiVdYxhttYzFA" name="L6_DECLAREE" comment="Sixième ligne de l’adresse déclarée de l’établissement" label="L6_DECLAREE" length="38" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanjCUbEeiVdYxhttYzFA" tag="Comment" value="Sixième ligne de l’adresse déclarée de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanjSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanjiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanjyUbEeiVdYxhttYzFA" name="L7_DECLAREE" comment="Septième ligne de l’adresse déclarée de l’établissement" label="L7_DECLAREE" length="38" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytankCUbEeiVdYxhttYzFA" tag="Comment" value="Septième ligne de l’adresse déclarée de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytankSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytankiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytankyUbEeiVdYxhttYzFA" name="NUMVOIE" comment="Numéro dans la voie" label="NUMVOIE" length="4" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanlCUbEeiVdYxhttYzFA" tag="Comment" value="Numéro dans la voie"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanlSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanliUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanlyUbEeiVdYxhttYzFA" name="INDREP" comment="Indice de répétition" label="INDREP" length="1" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanmCUbEeiVdYxhttYzFA" tag="Comment" value="Indice de répétition"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanmSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanmiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanmyUbEeiVdYxhttYzFA" name="TYPVOIE" comment="Type de la voie de localisation de l’établissement" label="TYPVOIE" length="4" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytannCUbEeiVdYxhttYzFA" tag="Comment" value="Type de la voie de localisation de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytannSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanniUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytannyUbEeiVdYxhttYzFA" name="LIBVOIE" comment="Libellé de la voie de localisation de l’établissement" label="LIBVOIE" length="32" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanoCUbEeiVdYxhttYzFA" tag="Comment" value="Libellé de la voie de localisation de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanoSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanoiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanoyUbEeiVdYxhttYzFA" name="CODPOS" comment="Code postal" label="CODPOS" length="5" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanpCUbEeiVdYxhttYzFA" tag="Comment" value="Code postal"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanpSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanpiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanpyUbEeiVdYxhttYzFA" name="CEDEX" comment="Code Cedex" label="CEDEX" length="5" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanqCUbEeiVdYxhttYzFA" tag="Comment" value="Code Cedex"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanqSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanqiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanqyUbEeiVdYxhttYzFA" name="RPET" comment="Région de localisation de l’établissement" label="RPET" length="2" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanrCUbEeiVdYxhttYzFA" tag="Comment" value="Région de localisation de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanrSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanriUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanryUbEeiVdYxhttYzFA" name="LIBREG" comment="Libellé de la région" label="LIBREG" length="70" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytansCUbEeiVdYxhttYzFA" tag="Comment" value="Libellé de la région"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytansSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytansiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytansyUbEeiVdYxhttYzFA" name="DEPET" comment="Département de localisation de l’établissement" label="DEPET" length="2" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytantCUbEeiVdYxhttYzFA" tag="Comment" value="Département de localisation de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytantSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytantiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytantyUbEeiVdYxhttYzFA" name="ARRONET" comment="Arrondissement de localisation de l’établissement" label="ARRONET" length="2" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanuCUbEeiVdYxhttYzFA" tag="Comment" value="Arrondissement de localisation de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanuSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanuiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanuyUbEeiVdYxhttYzFA" name="CTONET" comment="Canton de localisation de l’établissement" label="CTONET" length="3" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanvCUbEeiVdYxhttYzFA" tag="Comment" value="Canton de localisation de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanvSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanviUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanvyUbEeiVdYxhttYzFA" name="COMET" comment="Commune de localisation de l’établissement" label="COMET" length="3" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanwCUbEeiVdYxhttYzFA" tag="Comment" value="Commune de localisation de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanwSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanwiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanwyUbEeiVdYxhttYzFA" name="LIBCOM" comment="Libellé de la commune de localisation de l’établissement" label="LIBCOM" length="32" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanxCUbEeiVdYxhttYzFA" tag="Comment" value="Libellé de la commune de localisation de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanxSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanxiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanxyUbEeiVdYxhttYzFA" name="DU" comment="Département de l’unité urbaine de la localisation de l’établissement" label="DU" length="2" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanyCUbEeiVdYxhttYzFA" tag="Comment" value="Département de l’unité urbaine de la localisation de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanySUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanyiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanyyUbEeiVdYxhttYzFA" name="TU" comment="Taille de l’unité urbaine" label="TU" length="1" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytanzCUbEeiVdYxhttYzFA" tag="Comment" value="Taille de l’unité urbaine"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytanzSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytanziUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytanzyUbEeiVdYxhttYzFA" name="UU" comment="Numéro de l’unité urbaine" label="UU" length="2" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytan0CUbEeiVdYxhttYzFA" tag="Comment" value="Numéro de l’unité urbaine"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytan0SUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytan0iUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytan0yUbEeiVdYxhttYzFA" name="EPCI" comment="Localisation de l’établissement dans un établissement public de coopération intercommunale" label="EPCI" length="9" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytan1CUbEeiVdYxhttYzFA" tag="Comment" value="Localisation de l’établissement dans un établissement public de coopération intercommunale"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytan1SUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytan1iUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytan1yUbEeiVdYxhttYzFA" name="TCD" comment="Tranche de commune détaillée" label="TCD" length="2" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytan2CUbEeiVdYxhttYzFA" tag="Comment" value="Tranche de commune détaillée"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytan2SUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytan2iUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytan2yUbEeiVdYxhttYzFA" name="ZEMET" comment="Zone d’emploi" label="ZEMET" length="4" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytan3CUbEeiVdYxhttYzFA" tag="Comment" value="Zone d’emploi"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytan3SUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytan3iUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytan3yUbEeiVdYxhttYzFA" name="SIEGE" comment="Qualité de siège ou non de l’établissement" label="SIEGE" length="1" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytan4CUbEeiVdYxhttYzFA" tag="Comment" value="Qualité de siège ou non de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytan4SUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytan4iUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytan4yUbEeiVdYxhttYzFA" name="ENSEIGNE" comment="Enseigne ou nom de l’exploitation" label="ENSEIGNE" length="40" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytan5CUbEeiVdYxhttYzFA" tag="Comment" value="Enseigne ou nom de l’exploitation"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytan5SUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytan5iUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytan5yUbEeiVdYxhttYzFA" name="IND_PUBLIPO" comment="Indicateur du champ du publipostage" label="IND_PUBLIPO" length="1" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytan6CUbEeiVdYxhttYzFA" tag="Comment" value="Indicateur du champ du publipostage"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytan6SUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytan6iUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytan6yUbEeiVdYxhttYzFA" name="DIFFCOM" comment="Statut de diffusion de l’établissement" label="DIFFCOM" length="1" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytan7CUbEeiVdYxhttYzFA" tag="Comment" value="Statut de diffusion de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytan7SUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytan7iUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytan7yUbEeiVdYxhttYzFA" name="AMINTRET" comment="Année et mois d’introduction de l’établissement dans la base de diffusion" label="AMINTRET" length="6" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytan8CUbEeiVdYxhttYzFA" tag="Comment" value="Année et mois d’introduction de l’établissement dans la base de diffusion"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytan8SUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytan8iUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytan8yUbEeiVdYxhttYzFA" name="NATETAB" comment="Nature de l’établissement d’un entrepreneur individuel" label="NATETAB" length="1" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytan9CUbEeiVdYxhttYzFA" tag="Comment" value="Nature de l’établissement d’un entrepreneur individuel"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytan9SUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytan9iUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytan9yUbEeiVdYxhttYzFA" name="LIBNATETAB" comment="Libellé de la nature de l’établissement d’un entrepreneur individuel" label="LIBNATETAB" length="30" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytan-CUbEeiVdYxhttYzFA" tag="Comment" value="Libellé de la nature de l’établissement d’un entrepreneur individuel"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytan-SUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytan-iUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytan-yUbEeiVdYxhttYzFA" name="APET700" comment="Activité principale de l’établissement" label="APET700" length="5" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytan_CUbEeiVdYxhttYzFA" tag="Comment" value="Activité principale de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytan_SUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytan_iUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytan_yUbEeiVdYxhttYzFA" name="LIBAPET" comment="Libellé de l’activité principale de l’établissement" label="LIBAPET" length="65" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoACUbEeiVdYxhttYzFA" tag="Comment" value="Libellé de l’activité principale de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoASUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoAiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoAyUbEeiVdYxhttYzFA" name="DAPET" comment="Année de validité de l’activité principale de l’établissement" label="DAPET" length="5" sourceType="SMALLINT" talendType="id_Short">
+        <taggedValue xmi:id="_ytaoBCUbEeiVdYxhttYzFA" tag="Comment" value="Année de validité de l’activité principale de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoBSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoBiUbEeiVdYxhttYzFA" name="SMALLINT" numericPrecisionRadix="10" javaDataType="5" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoByUbEeiVdYxhttYzFA" name="TEFET" comment="Tranche d’effectif salarié de l’établissement" label="TEFET" length="2" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoCCUbEeiVdYxhttYzFA" tag="Comment" value="Tranche d’effectif salarié de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoCSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoCiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoCyUbEeiVdYxhttYzFA" name="LIBTEFET" comment="Libellé de la tranche d’effectif salarié de l’établissement" label="LIBTEFET" length="23" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoDCUbEeiVdYxhttYzFA" tag="Comment" value="Libellé de la tranche d’effectif salarié de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoDSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoDiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoDyUbEeiVdYxhttYzFA" name="EFETCENT" comment="Effectif salarié de l’établissement à la centaine près" label="EFETCENT" length="6" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoECUbEeiVdYxhttYzFA" tag="Comment" value="Effectif salarié de l’établissement à la centaine près"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoESUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoEiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoEyUbEeiVdYxhttYzFA" name="DEFET" comment="Année de validité de l’effectif salarié de l’établissement" label="DEFET" length="5" sourceType="SMALLINT" talendType="id_Short">
+        <taggedValue xmi:id="_ytaoFCUbEeiVdYxhttYzFA" tag="Comment" value="Année de validité de l’effectif salarié de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoFSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoFiUbEeiVdYxhttYzFA" name="SMALLINT" numericPrecisionRadix="10" javaDataType="5" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoFyUbEeiVdYxhttYzFA" name="ORIGINE" comment="Origine de la création de l’établissement" label="ORIGINE" length="2" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoGCUbEeiVdYxhttYzFA" tag="Comment" value="Origine de la création de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoGSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoGiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoGyUbEeiVdYxhttYzFA" name="DCRET" comment="Année et mois de création de l’établissement" label="DCRET" length="8" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoHCUbEeiVdYxhttYzFA" tag="Comment" value="Année et mois de création de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoHSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoHiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoHyUbEeiVdYxhttYzFA" name="DATE_DEB_ETAT_ADM_ET" comment="Date de début d’activité" label="DATE_DEB_ETAT_ADM_ET" length="8" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoICUbEeiVdYxhttYzFA" tag="Comment" value="Date de début d’activité"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoISUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoIiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoIyUbEeiVdYxhttYzFA" name="ACTIVNAT" comment="Nature de l’activité de l’établissement" label="ACTIVNAT" length="2" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoJCUbEeiVdYxhttYzFA" tag="Comment" value="Nature de l’activité de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoJSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoJiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoJyUbEeiVdYxhttYzFA" name="LIEUACT" comment="Lieu de l’activité de l’établissement" label="LIEUACT" length="2" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoKCUbEeiVdYxhttYzFA" tag="Comment" value="Lieu de l’activité de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoKSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoKiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoKyUbEeiVdYxhttYzFA" name="ACTISURF" comment="Type de magasin" label="ACTISURF" length="2" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoLCUbEeiVdYxhttYzFA" tag="Comment" value="Type de magasin"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoLSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoLiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoLyUbEeiVdYxhttYzFA" name="SAISONAT" comment="Caractère saisonnier ou non de l’activité de l’établissement" label="SAISONAT" length="2" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoMCUbEeiVdYxhttYzFA" tag="Comment" value="Caractère saisonnier ou non de l’activité de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoMSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoMiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoMyUbEeiVdYxhttYzFA" name="MODET" comment="Modalité de l’activité principale de l’établissement" label="MODET" length="1" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoNCUbEeiVdYxhttYzFA" tag="Comment" value="Modalité de l’activité principale de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoNSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoNiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoNyUbEeiVdYxhttYzFA" name="PRODET" comment="Caractère productif de l’établissement" label="PRODET" length="1" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoOCUbEeiVdYxhttYzFA" tag="Comment" value="Caractère productif de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoOSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoOiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoOyUbEeiVdYxhttYzFA" name="PRODPART" comment="Participation particulière à la production de l’établissement" label="PRODPART" length="1" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoPCUbEeiVdYxhttYzFA" tag="Comment" value="Participation particulière à la production de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoPSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoPiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoPyUbEeiVdYxhttYzFA" name="AUXILT" comment="Caractère auxiliaire de l’activité de l’établissement" label="AUXILT" length="3" sourceType="TINYINT" talendType="id_Byte">
+        <taggedValue xmi:id="_ytaoQCUbEeiVdYxhttYzFA" tag="Comment" value="Caractère auxiliaire de l’activité de l’établissement"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoQSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoQiUbEeiVdYxhttYzFA" name="TINYINT" numericPrecisionRadix="10" javaDataType="-6" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoQyUbEeiVdYxhttYzFA" name="NOMEN_LONG" comment="Nom ou raison sociale de l’entreprise" label="NOMEN_LONG" length="131" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoRCUbEeiVdYxhttYzFA" tag="Comment" value="Nom ou raison sociale de l’entreprise"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoRSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoRiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoRyUbEeiVdYxhttYzFA" name="SIGLE" comment="Sigle de lentreprise" label="SIGLE" length="20" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoSCUbEeiVdYxhttYzFA" tag="Comment" value="Sigle de lentreprise"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoSSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoSiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoSyUbEeiVdYxhttYzFA" name="NOM" comment="Nom de naissance" label="NOM" length="100" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoTCUbEeiVdYxhttYzFA" tag="Comment" value="Nom de naissance"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoTSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoTiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoTyUbEeiVdYxhttYzFA" name="PRENOM" comment="Prénom" label="PRENOM" length="30" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoUCUbEeiVdYxhttYzFA" tag="Comment" value="Prénom"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoUSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoUiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoUyUbEeiVdYxhttYzFA" name="CIVILITE" comment="Civilité des entrepreneurs individuels" label="CIVILITE" length="1" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoVCUbEeiVdYxhttYzFA" tag="Comment" value="Civilité des entrepreneurs individuels"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoVSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoViUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoVyUbEeiVdYxhttYzFA" name="RNA" comment="Numéro d’identification au répertoire national des associations" label="RNA" length="10" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoWCUbEeiVdYxhttYzFA" tag="Comment" value="Numéro d’identification au répertoire national des associations"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoWSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoWiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoWyUbEeiVdYxhttYzFA" name="NICSIEGE" comment="Numéro interne de classement de l’établissement siège" label="NICSIEGE" length="5" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoXCUbEeiVdYxhttYzFA" tag="Comment" value="Numéro interne de classement de l’établissement siège"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoXSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoXiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoXyUbEeiVdYxhttYzFA" name="RPEN" comment="Région de localisation du siège de l’entreprise" label="RPEN" length="2" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoYCUbEeiVdYxhttYzFA" tag="Comment" value="Région de localisation du siège de l’entreprise"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoYSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoYiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoYyUbEeiVdYxhttYzFA" name="DEPCOMEN" comment="Département et commune de localisation du siège de l’entreprise" label="DEPCOMEN" length="5" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoZCUbEeiVdYxhttYzFA" tag="Comment" value="Département et commune de localisation du siège de l’entreprise"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoZSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoZiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoZyUbEeiVdYxhttYzFA" name="ADR_MAIL" comment="Adresse mail" label="ADR_MAIL" length="80" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoaCUbEeiVdYxhttYzFA" tag="Comment" value="Adresse mail"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoaSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoaiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoayUbEeiVdYxhttYzFA" name="NJ" comment="Nature juridique de l’entreprise" label="NJ" length="4" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaobCUbEeiVdYxhttYzFA" tag="Comment" value="Nature juridique de l’entreprise"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaobSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaobiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaobyUbEeiVdYxhttYzFA" name="LIBNJ" comment="Libellé de la nature juridique" label="LIBNJ" length="100" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaocCUbEeiVdYxhttYzFA" tag="Comment" value="Libellé de la nature juridique"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaocSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaociUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaocyUbEeiVdYxhttYzFA" name="APEN700" comment="Cope APE - Activité principale de l’entreprise" label="APEN700" length="5" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaodCUbEeiVdYxhttYzFA" tag="Comment" value="Cope APE - Activité principale de l’entreprise"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaodSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaodiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaodyUbEeiVdYxhttYzFA" name="LIBAPEN" comment="Libellé de l’activité principale de l’entreprise" label="LIBAPEN" length="65" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoeCUbEeiVdYxhttYzFA" tag="Comment" value="Libellé de l’activité principale de l’entreprise"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoeSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoeiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoeyUbEeiVdYxhttYzFA" name="DAPEN" comment="Année de validité de l’activité principale de l’entreprise" label="DAPEN" length="5" sourceType="SMALLINT" talendType="id_Short">
+        <taggedValue xmi:id="_ytaofCUbEeiVdYxhttYzFA" tag="Comment" value="Année de validité de l’activité principale de l’entreprise"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaofSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaofiUbEeiVdYxhttYzFA" name="SMALLINT" numericPrecisionRadix="10" javaDataType="5" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaofyUbEeiVdYxhttYzFA" name="APRM" comment="Activité principale au registre des métiers" label="APRM" length="6" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaogCUbEeiVdYxhttYzFA" tag="Comment" value="Activité principale au registre des métiers"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaogSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaogiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaogyUbEeiVdYxhttYzFA" name="ESSEN" comment="Appartenance au champ de l’économie sociale et solidaire" label="ESSEN" length="1" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaohCUbEeiVdYxhttYzFA" tag="Comment" value="Appartenance au champ de l’économie sociale et solidaire"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaohSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaohiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaohyUbEeiVdYxhttYzFA" name="DATEESS" comment="Date ESS" label="DATEESS" length="8" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoiCUbEeiVdYxhttYzFA" tag="Comment" value="Date ESS"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoiSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoiiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoiyUbEeiVdYxhttYzFA" name="TEFEN" comment="Tranche d’effectif salarié de l’entreprise" label="TEFEN" length="2" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaojCUbEeiVdYxhttYzFA" tag="Comment" value="Tranche d’effectif salarié de l’entreprise"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaojSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaojiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaojyUbEeiVdYxhttYzFA" name="LIBTEFEN" comment="Libellé de la tranche d’effectif salarié de l’entreprise" label="LIBTEFEN" length="23" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaokCUbEeiVdYxhttYzFA" tag="Comment" value="Libellé de la tranche d’effectif salarié de l’entreprise"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaokSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaokiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaokyUbEeiVdYxhttYzFA" name="EFENCENT" comment="Effectif salarié de l’entreprise à la centaine près" label="EFENCENT" length="6" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaolCUbEeiVdYxhttYzFA" tag="Comment" value="Effectif salarié de l’entreprise à la centaine près"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaolSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoliUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaolyUbEeiVdYxhttYzFA" name="DEFEN" comment="Année de validité de l’effectif salarié de l’entreprise" label="DEFEN" length="5" sourceType="SMALLINT" talendType="id_Short">
+        <taggedValue xmi:id="_ytaomCUbEeiVdYxhttYzFA" tag="Comment" value="Année de validité de l’effectif salarié de l’entreprise"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaomSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaomiUbEeiVdYxhttYzFA" name="SMALLINT" numericPrecisionRadix="10" javaDataType="5" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaomyUbEeiVdYxhttYzFA" name="CATEGORIE" comment="Catégorie de l’entreprise" label="CATEGORIE" length="5" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaonCUbEeiVdYxhttYzFA" tag="Comment" value="Catégorie de l’entreprise"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaonSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoniUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaonyUbEeiVdYxhttYzFA" name="DCREN" comment="Date de création de l’entreprise" label="DCREN" length="8" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaooCUbEeiVdYxhttYzFA" tag="Comment" value="Date de création de l’entreprise"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaooSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaooiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaooyUbEeiVdYxhttYzFA" name="AMINTREN" comment="Année et mois d’introduction de l’entreprise dans la base de diffusion" label="AMINTREN" length="6" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaopCUbEeiVdYxhttYzFA" tag="Comment" value="Année et mois d’introduction de l’entreprise dans la base de diffusion"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaopSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaopiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaopyUbEeiVdYxhttYzFA" name="MONOACT" comment="Indice de monoactivité de l’entreprise" label="MONOACT" length="1" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoqCUbEeiVdYxhttYzFA" tag="Comment" value="Indice de monoactivité de l’entreprise"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoqSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoqiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoqyUbEeiVdYxhttYzFA" name="MODEN" comment="Modalité de l’activité principale de l’entreprise" label="MODEN" length="1" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaorCUbEeiVdYxhttYzFA" tag="Comment" value="Modalité de l’activité principale de l’entreprise"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaorSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoriUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoryUbEeiVdYxhttYzFA" name="PRODEN" comment="Caractère productif de l’entreprise" label="PRODEN" length="1" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaosCUbEeiVdYxhttYzFA" tag="Comment" value="Caractère productif de l’entreprise"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaosSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaosiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaosyUbEeiVdYxhttYzFA" name="ESAANN" comment="Année de validité des rubriques de niveau entreprise en provenance de l’ESA" label="ESAANN" length="5" sourceType="SMALLINT" talendType="id_Short">
+        <taggedValue xmi:id="_ytaotCUbEeiVdYxhttYzFA" tag="Comment" value="Année de validité des rubriques de niveau entreprise en provenance de l’ESA"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaotSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaotiUbEeiVdYxhttYzFA" name="SMALLINT" numericPrecisionRadix="10" javaDataType="5" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaotyUbEeiVdYxhttYzFA" name="TCA" comment="Tranche de chiffre d’affaires pour les entreprises enquêtées par l’ESA" label="TCA" length="1" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaouCUbEeiVdYxhttYzFA" tag="Comment" value="Tranche de chiffre d’affaires pour les entreprises enquêtées par l’ESA"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaouSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaouiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaouyUbEeiVdYxhttYzFA" name="ESAAPEN" comment="Activité principale de l’entreprise issue de l’ESA" label="ESAAPEN" length="5" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaovCUbEeiVdYxhttYzFA" tag="Comment" value="Activité principale de l’entreprise issue de l’ESA"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaovSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoviUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaovyUbEeiVdYxhttYzFA" name="ESASEC1N" comment="Première activité secondaire déclarée dans l’ESA" label="ESASEC1N" length="5" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaowCUbEeiVdYxhttYzFA" tag="Comment" value="Première activité secondaire déclarée dans l’ESA"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaowSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaowiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaowyUbEeiVdYxhttYzFA" name="ESASEC2N" comment="Deuxième activité secondaire déclarée dans l’ESA" label="ESASEC2N" length="5" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoxCUbEeiVdYxhttYzFA" tag="Comment" value="Deuxième activité secondaire déclarée dans l’ESA"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoxSUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytaoxiUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytaoxyUbEeiVdYxhttYzFA" name="ESASEC3N" comment="Troisième activité secondaire déclarée dans l’ESA" label="ESASEC3N" length="5" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytaoyCUbEeiVdYxhttYzFA" tag="Comment" value="Troisième activité secondaire déclarée dans l’ESA"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytaoySUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytbOYCUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytbOYSUbEeiVdYxhttYzFA" name="ESASEC4N" comment="Quatrième activité secondaire déclarée dans l’ESA" label="ESASEC4N" length="5" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytbOYiUbEeiVdYxhttYzFA" tag="Comment" value="Quatrième activité secondaire déclarée dans l’ESA"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytbOYyUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytbOZCUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytbOZSUbEeiVdYxhttYzFA" name="VMAJ" comment="Nature de la mise à jour (création, suppression, modification)" label="VMAJ" length="1" sourceType="VARCHAR" talendType="id_String">
+        <taggedValue xmi:id="_ytbOZiUbEeiVdYxhttYzFA" tag="Comment" value="Nature de la mise à jour (création, suppression, modification)"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytbOZyUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytbOaCUbEeiVdYxhttYzFA" name="VARCHAR" numericPrecisionRadix="10" javaDataType="12" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytbOaSUbEeiVdYxhttYzFA" name="VMAJ1" comment="Indicateur de mise à jour n°1" label="VMAJ1" length="3" sourceType="TINYINT" talendType="id_Byte">
+        <taggedValue xmi:id="_ytbOaiUbEeiVdYxhttYzFA" tag="Comment" value="Indicateur de mise à jour n°1"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytbOayUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytbObCUbEeiVdYxhttYzFA" name="TINYINT" numericPrecisionRadix="10" javaDataType="-6" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytbObSUbEeiVdYxhttYzFA" name="VMAJ2" comment="Indicateur de mise à jour n°2" label="VMAJ2" length="3" sourceType="TINYINT" talendType="id_Byte">
+        <taggedValue xmi:id="_ytbObiUbEeiVdYxhttYzFA" tag="Comment" value="Indicateur de mise à jour n°2"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytbObyUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytbOcCUbEeiVdYxhttYzFA" name="TINYINT" numericPrecisionRadix="10" javaDataType="-6" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytbOcSUbEeiVdYxhttYzFA" name="VMAJ3" comment="Indicateur de mise à jour n°3" label="VMAJ3" length="3" sourceType="TINYINT" talendType="id_Byte">
+        <taggedValue xmi:id="_ytbOciUbEeiVdYxhttYzFA" tag="Comment" value="Indicateur de mise à jour n°3"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytbOcyUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytbOdCUbEeiVdYxhttYzFA" name="TINYINT" numericPrecisionRadix="10" javaDataType="-6" nullable="columnNullable"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_ytbOdSUbEeiVdYxhttYzFA" name="DATEMAJ" comment="Date de traitement de la mise à jour" label="DATEMAJ" length="19" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <taggedValue xmi:id="_ytbOdiUbEeiVdYxhttYzFA" tag="Comment" value="Date de traitement de la mise à jour"/>
+        <initialValue xsi:type="relational:TdExpression" xmi:id="_ytbOdyUbEeiVdYxhttYzFA" language="COLUMN_DEF"/>
+        <sqlDataType xmi:id="_ytbOeCUbEeiVdYxhttYzFA" name="DATETIME" numericPrecisionRadix="10" javaDataType="93" nullable="columnNullable"/>
       </feature>
     </ownedElement>
   </orgomg.cwm.resource.relational:Catalog>
