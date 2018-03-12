@@ -884,6 +884,20 @@
     <metadata connector="FLOW" name="out1">
       <column comment="" key="false" length="250" name="SIREN" nullable="true" originalDbColumnName="siren" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
       <column comment="" key="false" length="250" name="NIC" nullable="true" originalDbColumnName="nic" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L1_NORMALISEE" nullable="true" originalDbColumnName="l1_normalisee" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L2_NORMALISEE" nullable="true" originalDbColumnName="l2_normalisee" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L3_NORMALISEE" nullable="true" originalDbColumnName="l3_normalisee" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L4_NORMALISEE" nullable="true" originalDbColumnName="l4_normalisee" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L5_NORMALISEE" nullable="true" originalDbColumnName="l5_normalisee" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L6_NORMALISEE" nullable="true" originalDbColumnName="l6_normalisee" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L7_NORMALISEE" nullable="true" originalDbColumnName="l7_normalisee" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L1_DECLAREE" nullable="true" originalDbColumnName="l1_declaree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L2_DECLAREE" nullable="true" originalDbColumnName="l2_declaree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L3_DECLAREE" nullable="true" originalDbColumnName="l3_declaree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L4_DECLAREE" nullable="true" originalDbColumnName="l4_declaree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L5_DECLAREE" nullable="true" originalDbColumnName="l5_declaree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L6_DECLAREE" nullable="true" originalDbColumnName="l6_declaree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L7_DECLAREE" nullable="true" originalDbColumnName="l7_declaree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
       <column comment="" key="false" length="250" name="CODPOS" nullable="true" originalDbColumnName="codpos" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
       <column comment="" key="false" length="250" name="LIBCOM" nullable="true" originalDbColumnName="libcom" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
       <column comment="" key="false" length="250" name="SIEGE" nullable="true" originalDbColumnName="siege" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
@@ -893,7 +907,8 @@
       <column comment="" key="false" length="250" name="NOM" nullable="true" originalDbColumnName="nom" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
       <column comment="" key="false" length="250" name="PRENOM" nullable="true" originalDbColumnName="prenom" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
       <column comment="" key="false" length="250" name="CIVILITE" nullable="true" originalDbColumnName="civilite" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MENSEIGNE" nullable="true" originalDbColumnName="menseigne" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="CATEGORIE" nullable="true" originalDbColumnName="categorie" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="MENSEIGNE" nullable="true" originalDbColumnName="menseigne" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="250" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -901,6 +916,20 @@
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="SIREN" expression="row1.SIREN " type="id_String" nullable="true"/>
         <mapperTableEntries name="NIC" expression="row1.NIC " type="id_String" nullable="true"/>
+        <mapperTableEntries name="L1_NORMALISEE" expression="row1.L1_NORMALISEE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="L2_NORMALISEE" expression="row1.L2_NORMALISEE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="L3_NORMALISEE" expression="row1.L3_NORMALISEE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="L4_NORMALISEE" expression="row1.L4_NORMALISEE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="L5_NORMALISEE" expression="row1.L5_NORMALISEE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="L6_NORMALISEE" expression="row1.L6_NORMALISEE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="L7_NORMALISEE" expression="row1.L7_NORMALISEE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="L1_DECLAREE" expression="row1.L1_DECLAREE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="L2_DECLAREE" expression="row1.L2_DECLAREE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="L3_DECLAREE" expression="row1.L3_DECLAREE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="L4_DECLAREE" expression="row1.L4_DECLAREE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="L5_DECLAREE" expression="row1.L5_DECLAREE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="L6_DECLAREE" expression="row1.L6_DECLAREE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="L7_DECLAREE" expression="row1.L7_DECLAREE " type="id_String" nullable="true"/>
         <mapperTableEntries name="CODPOS" expression="row1.CODPOS " type="id_String" nullable="true"/>
         <mapperTableEntries name="LIBCOM" expression="row1.LIBCOM " type="id_String" nullable="true"/>
         <mapperTableEntries name="SIEGE" expression="row1.SIEGE " type="id_String" nullable="true"/>
@@ -910,6 +939,7 @@
         <mapperTableEntries name="NOM" expression="row1.NOM " type="id_String" nullable="true"/>
         <mapperTableEntries name="PRENOM" expression="row1.PRENOM " type="id_String" nullable="true"/>
         <mapperTableEntries name="CIVILITE" expression="row1.CIVILITE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CATEGORIE" expression="row1.CATEGORIE " type="id_String" nullable="true"/>
         <mapperTableEntries name="MENSEIGNE" expression="row1.MENSEIGNE " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
@@ -1077,6 +1107,76 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L1_NORMALISEE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L2_NORMALISEE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L3_NORMALISEE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L4_NORMALISEE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L5_NORMALISEE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L6_NORMALISEE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L7_NORMALISEE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L1_DECLAREE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L2_DECLAREE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L3_DECLAREE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L4_DECLAREE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L5_DECLAREE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L6_DECLAREE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="L7_DECLAREE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CODPOS"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
@@ -1122,6 +1222,11 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CATEGORIE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="MENSEIGNE"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
@@ -1138,6 +1243,20 @@
     <metadata connector="FLOW" name="tMysqlOutput_1">
       <column comment="" key="false" length="250" name="SIREN" nullable="true" originalDbColumnName="siren" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
       <column comment="" key="false" length="250" name="NIC" nullable="true" originalDbColumnName="nic" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L1_NORMALISEE" nullable="true" originalDbColumnName="l1_normalisee" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L2_NORMALISEE" nullable="true" originalDbColumnName="l2_normalisee" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L3_NORMALISEE" nullable="true" originalDbColumnName="l3_normalisee" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L4_NORMALISEE" nullable="true" originalDbColumnName="l4_normalisee" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L5_NORMALISEE" nullable="true" originalDbColumnName="l5_normalisee" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L6_NORMALISEE" nullable="true" originalDbColumnName="l6_normalisee" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L7_NORMALISEE" nullable="true" originalDbColumnName="l7_normalisee" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L1_DECLAREE" nullable="true" originalDbColumnName="l1_declaree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L2_DECLAREE" nullable="true" originalDbColumnName="l2_declaree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L3_DECLAREE" nullable="true" originalDbColumnName="l3_declaree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L4_DECLAREE" nullable="true" originalDbColumnName="l4_declaree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L5_DECLAREE" nullable="true" originalDbColumnName="l5_declaree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L6_DECLAREE" nullable="true" originalDbColumnName="l6_declaree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L7_DECLAREE" nullable="true" originalDbColumnName="l7_declaree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
       <column comment="" key="false" length="250" name="CODPOS" nullable="true" originalDbColumnName="codpos" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
       <column comment="" key="false" length="250" name="LIBCOM" nullable="true" originalDbColumnName="libcom" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
       <column comment="" key="false" length="250" name="SIEGE" nullable="true" originalDbColumnName="siege" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
@@ -1147,12 +1266,27 @@
       <column comment="" key="false" length="250" name="NOM" nullable="true" originalDbColumnName="nom" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
       <column comment="" key="false" length="250" name="PRENOM" nullable="true" originalDbColumnName="prenom" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
       <column comment="" key="false" length="250" name="CIVILITE" nullable="true" originalDbColumnName="civilite" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MENSEIGNE" nullable="true" originalDbColumnName="menseigne" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="CATEGORIE" nullable="true" originalDbColumnName="categorie" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="MENSEIGNE" nullable="true" originalDbColumnName="menseigne" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="false" length="250" name="SIREN" nullable="true" originalDbColumnName="siren" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
       <column comment="" key="false" length="250" name="NIC" nullable="true" originalDbColumnName="nic" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L1_NORMALISEE" nullable="true" originalDbColumnName="l1_normalisee" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L2_NORMALISEE" nullable="true" originalDbColumnName="l2_normalisee" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L3_NORMALISEE" nullable="true" originalDbColumnName="l3_normalisee" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L4_NORMALISEE" nullable="true" originalDbColumnName="l4_normalisee" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L5_NORMALISEE" nullable="true" originalDbColumnName="l5_normalisee" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L6_NORMALISEE" nullable="true" originalDbColumnName="l6_normalisee" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L7_NORMALISEE" nullable="true" originalDbColumnName="l7_normalisee" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L1_DECLAREE" nullable="true" originalDbColumnName="l1_declaree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L2_DECLAREE" nullable="true" originalDbColumnName="l2_declaree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L3_DECLAREE" nullable="true" originalDbColumnName="l3_declaree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L4_DECLAREE" nullable="true" originalDbColumnName="l4_declaree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L5_DECLAREE" nullable="true" originalDbColumnName="l5_declaree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L6_DECLAREE" nullable="true" originalDbColumnName="l6_declaree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="L7_DECLAREE" nullable="true" originalDbColumnName="l7_declaree" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
       <column comment="" key="false" length="250" name="CODPOS" nullable="true" originalDbColumnName="codpos" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
       <column comment="" key="false" length="250" name="LIBCOM" nullable="true" originalDbColumnName="libcom" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
       <column comment="" key="false" length="250" name="SIEGE" nullable="true" originalDbColumnName="siege" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
@@ -1162,7 +1296,8 @@
       <column comment="" key="false" length="250" name="NOM" nullable="true" originalDbColumnName="nom" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
       <column comment="" key="false" length="250" name="PRENOM" nullable="true" originalDbColumnName="prenom" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
       <column comment="" key="false" length="250" name="CIVILITE" nullable="true" originalDbColumnName="civilite" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MENSEIGNE" nullable="true" originalDbColumnName="menseigne" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="CATEGORIE" nullable="true" originalDbColumnName="categorie" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
+      <column comment="" key="false" length="250" name="MENSEIGNE" nullable="true" originalDbColumnName="menseigne" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" originalLength="250" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       <additionalProperties key="Comment" value=""/>
@@ -1190,6 +1325,51 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="PRENOM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CATEGORIE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="L1_NORMALISEE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="L1_DECLAREE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="L5_NORMALISEE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="L2_DECLAREE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="L4_DECLAREE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="L6_DECLAREE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="L3_NORMALISEE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="L2_NORMALISEE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="L4_NORMALISEE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="L6_NORMALISEE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="L5_DECLAREE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="L7_DECLAREE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="L7_NORMALISEE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="L3_DECLAREE"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
